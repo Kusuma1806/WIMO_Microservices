@@ -3,6 +3,7 @@ package com.wimo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,12 +23,12 @@ public class UserRoleController {
 	UserRoleService service;
 
 	@PostMapping("/save")
-	public String saveUser(@RequestBody UserRole userRole) {
+	public String saveUser(@RequestBody @Validated UserRole userRole) {
 		return service.saveUser(userRole);
 	}
 
 	@PutMapping("/update")
-	public UserRole updateUser(@RequestBody UserRole userRole){
+	public UserRole updateUser(@RequestBody @Validated UserRole userRole){
 		return service.updateUser(userRole);
 	}
 	@GetMapping("/fetchById/{id}")

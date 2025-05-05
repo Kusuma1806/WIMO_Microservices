@@ -3,6 +3,7 @@ package com.wimo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,12 +22,12 @@ public class VendorController {
 	VendorService service;
 
 	@PostMapping("/save")
-	public String saveVendor(@RequestBody Vendor vendor) {
+	public String saveVendor(@RequestBody @Validated Vendor vendor) {
 		return service.saveVendor(vendor);
 	}
 
 	@PutMapping("/update")
-	public Vendor updateVendor(@RequestBody Vendor vendor){
+	public Vendor updateVendor(@RequestBody @Validated Vendor vendor){
 		return service.updateVendor(vendor);
 	}
 	@GetMapping("/fetchById/{id}")
