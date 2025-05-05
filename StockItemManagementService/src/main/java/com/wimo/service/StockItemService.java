@@ -17,7 +17,8 @@ public interface StockItemService {
 	
 	public abstract List<StockItem> findByStockCategoryIs(String stockCategory);
 	
-	public abstract List<StockItem> findByZoneIdIs(String zoneId);
+	public abstract List<StockItem> findByZoneIdIs(int zoneId);
+
 	
 
 }

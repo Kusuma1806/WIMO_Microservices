@@ -23,21 +23,21 @@ public class ZoneController {
     ZoneService service;
     
     @PostMapping("/save")
-	public String saveZone(@RequestBody Zone Zone) {
-		return service.saveZone(Zone);
+	public String saveZone(@RequestBody Zone zone) {
+		return service.saveZone(zone);
 	}
 
 	@PutMapping("/update")
-	public Zone updateZone(@RequestBody Zone Zone){
-		return service.updateZone(Zone);
+	public Zone updateZone(@RequestBody Zone zone){
+		return service.updateZone(zone);
 	}
 	@GetMapping("/fetchById/{id}")
-	public Zone getZoneById(@PathVariable("id") int ZoneId){
-		return service.getZoneById(ZoneId);
+	public Zone getZoneById(@PathVariable("id") int zoneId){
+		return service.getZoneById(zoneId);
 	}
 	@DeleteMapping("/deleteById/{id}")
-	public String removeZone(@PathVariable("id") int ZoneId) {
-		return service.removeZone(ZoneId);
+	public String removeZone(@PathVariable("id") int zoneId) {
+		return service.removeZone(zoneId);
 	}
 	@GetMapping("/fetchAll")
 	public List<Zone> getAllZones() {

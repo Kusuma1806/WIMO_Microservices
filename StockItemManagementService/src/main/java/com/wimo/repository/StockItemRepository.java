@@ -10,6 +10,6 @@ public interface StockItemRepository extends JpaRepository<StockItem,Integer> {
 
 	List<StockItem> findByStockCategoryIs(String stockCategory);
 
-	List<StockItem> findByZoneIdIs(String zoneId);
+	List<StockItem> findByZoneIdIs(int zoneId);
 
 }

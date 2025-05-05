@@ -2,17 +2,20 @@ package com.wimo.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.wimo.model.StockItem;
 import com.wimo.repository.StockItemRepository;
-
+@Service
 public class StockItemServiceImpl implements StockItemService {
-	
+	@Autowired
 	StockItemRepository repository;
 
 	@Override
 	public String saveStockItem(StockItem stockItem) {
 		repository.save(stockItem);
-		return "Stock Item Saved!!!";
+		return "StockItem Saved!!!";
 	}
 
 	@Override
@@ -23,7 +26,7 @@ public class StockItemServiceImpl implements StockItemService {
 	@Override
 	public String removeStockItem(int stockId) {
 		repository.deleteById(stockId);
-		return "stock Item Deleted!!!";
+		return "StockItem Deleted!!!";
 	}
 
 	@Override
@@ -42,7 +45,7 @@ public class StockItemServiceImpl implements StockItemService {
 	}
 
 	@Override
-	public List<StockItem> findByZoneIdIs(String zoneId) {
+	public List<StockItem> findByZoneIdIs(int zoneId) {
 		return repository.findByZoneIdIs(zoneId);
 	}
 

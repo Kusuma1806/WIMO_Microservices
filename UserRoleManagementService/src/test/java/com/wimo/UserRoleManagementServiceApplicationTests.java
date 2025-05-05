@@ -2,7 +2,6 @@ package com.wimo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -26,37 +25,34 @@ class UserRoleManagementServiceApplicationTests {
  
 	@InjectMocks
 	UserRoleServiceImpl service;
- 
+
 	@Test
 	void saveUserRoleTest() {
-		UserRole userRole = new UserRole(1,"Kusuma","kusuma","kusumaraju@gmail.com","admin");
+		UserRole userRole =new UserRole(2,"kusumaaaa","kussuu","raju@gmail.com","USER");
 		Mockito.when(repository.save(userRole)).thenReturn(userRole);
- 
 		String response = service.saveUser(userRole);
 		assertEquals("User Saved!!!", response);
 	}
- 
 	@Test
 	void updateUserRoleTest() {
-		UserRole userRole = new UserRole(1,"Kusua","kusma","kusumaraju@gmail.com","admin");
-		userRole.setUserId(1);
- 
+	UserRole userRole = new UserRole(1,"Kusua","kusma","kusumaraju@gmail.com","admin");
+	userRole.setUserId(1);
+
 		Mockito.when(repository.save(userRole)).thenReturn(userRole);
  
 		UserRole updatedUser = service.updateUser(userRole);
 		assertEquals(userRole, updatedUser);
 	}
- 
+
 	@Test
 	void removeUserRoleTest() {
 		int userId = 1;
- 
-		Mockito.doNothing().when(repository).deleteById(userId);
- 
+ 		Mockito.doNothing().when(repository).deleteById(userId);
+
 		String response = service.removeUser(userId);
 		assertEquals("User Deleted!!!", response);
 	}
- 
+
 	@Test
 	void getUserRoleTest() throws UserRoleNotFound {
 		int userId = 1;
@@ -68,18 +64,17 @@ class UserRoleManagementServiceApplicationTests {
 		UserRole foundUser= service.getUserById(userId);
 		assertEquals(userRole, foundUser);
 	}
- 
+
 //	@Test
 //	void getUserRoleNotFoundTest() {
 //		int userId = 1;
-// 
 //		Mockito.when(repository.findById(userId)).thenReturn(Optional.empty());
 // 
 //		assertThrows(UserRoleNotFound.class, () -> {
 //			service.getUserById(userId);
 //		});
 //	}
- 
+
 	@Test
 	void getAllUsersTest() {
 		List<UserRole> userRoles = Arrays.asList(new UserRole(1,"Kusuma","kusuma","kusumaraju@gmail.com","admin"),
