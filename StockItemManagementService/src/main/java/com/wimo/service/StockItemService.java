@@ -2,6 +2,7 @@ package com.wimo.service;
 
 import java.util.List;
 
+import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.model.StockItem;
 
 public interface StockItemService {
@@ -11,7 +12,7 @@ public interface StockItemService {
 
 	public abstract String removeStockItem(int stockId);
 
-	public abstract StockItem getStockItemById(int stockId);
+	public abstract StockItem getStockItemById(int stockId) throws StockItemNotFound;
 
 	public abstract List<StockItem> getAllStockItems();
 	

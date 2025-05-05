@@ -1,6 +1,7 @@
 package com.wimo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.Arrays;
 import java.util.List;
@@ -65,15 +66,15 @@ class UserRoleManagementServiceApplicationTests {
 		assertEquals(userRole, foundUser);
 	}
 
-//	@Test
-//	void getUserRoleNotFoundTest() {
-//		int userId = 1;
-//		Mockito.when(repository.findById(userId)).thenReturn(Optional.empty());
-// 
-//		assertThrows(UserRoleNotFound.class, () -> {
-//			service.getUserById(userId);
-//		});
-//	}
+	@Test
+	void getUserRoleNotFoundTest() {
+		int userId = 1;
+		Mockito.when(repository.findById(userId)).thenReturn(Optional.empty());
+ 
+		assertThrows(UserRoleNotFound.class, () -> {
+			service.getUserById(userId);
+		});
+	}
 
 	@Test
 	void getAllUsersTest() {

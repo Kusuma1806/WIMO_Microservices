@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.wimo.exceptions.ZoneNotFound;
 import com.wimo.model.Zone;
 import com.wimo.service.ZoneService;
 
@@ -33,7 +34,7 @@ public class ZoneController {
 		return service.updateZone(zone);
 	}
 	@GetMapping("/fetchById/{id}")
-	public Zone getZoneById(@PathVariable("id") int zoneId){
+	public Zone getZoneById(@PathVariable("id") int zoneId) throws ZoneNotFound{
 		return service.getZoneById(zoneId);
 	}
 	@DeleteMapping("/deleteById/{id}")

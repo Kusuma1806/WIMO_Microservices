@@ -1,10 +1,12 @@
 package com.wimo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.model.StockItem;
 import com.wimo.repository.StockItemRepository;
 @Service
@@ -30,8 +32,12 @@ public class StockItemServiceImpl implements StockItemService {
 	}
 
 	@Override
-	public StockItem getStockItemById(int stockId) {
-		return repository.findById(stockId).get();
+	public StockItem getStockItemById(int userId) throws StockItemNotFound{
+		Optional<StockItem> optional=repository.findById(userId);
+		if(optional.isPresent())
+			return optional.get();
+		else
+			throw new StockItemNotFound("Stock is not Found........");
 	}
 
 	@Override

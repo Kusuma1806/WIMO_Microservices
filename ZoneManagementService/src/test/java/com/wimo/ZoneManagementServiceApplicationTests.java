@@ -1,6 +1,7 @@
 package com.wimo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.Arrays;
 import java.util.List;
@@ -68,16 +69,16 @@ class ZoneManagementServiceApplicationTests {
 		assertEquals(zone, foundZone);
 	}
  
-//	@Test
-//	void getZoneNotFoundTest() {
-//		int ZoneId = 1;
-// 
-//		Mockito.when(repository.findById(ZoneId)).thenReturn(Optional.empty());
-// 
-//		assertThrows(ZoneNotFound.class, () -> {
-//			service.getZoneById(ZoneId);
-//		});
-//	}
+	@Test
+	void getZoneNotFoundTest() {
+		int zoneId = 1;
+ 
+		Mockito.when(repository.findById(zoneId)).thenReturn(Optional.empty());
+ 
+		assertThrows(ZoneNotFound.class, () -> {
+			service.getZoneById(zoneId);
+		});
+	}
  
 	@Test
 	void getAllZonesTest() {

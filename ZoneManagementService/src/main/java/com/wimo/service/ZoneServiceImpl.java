@@ -1,10 +1,12 @@
 package com.wimo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.wimo.exceptions.ZoneNotFound;
 import com.wimo.model.Zone;
 import com.wimo.repository.ZoneRepository;
 
@@ -32,8 +34,12 @@ public class ZoneServiceImpl implements ZoneService {
 	}
 
 	@Override
-	public Zone getZoneById(int zoneId) {
-		return repository.findById(zoneId).get();
+	public Zone getZoneById(int userId) throws ZoneNotFound{
+		Optional<Zone> optional=repository.findById(userId);
+		if(optional.isPresent())
+			return optional.get();
+		else
+			throw new ZoneNotFound("Zone is not Found........");
 	}
 
 	@Override

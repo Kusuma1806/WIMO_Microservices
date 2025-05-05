@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.wimo.exceptions.UserRoleNotFound;
 import com.wimo.model.UserRole;
 import com.wimo.service.UserRoleService;
 @RestController
@@ -32,7 +33,7 @@ public class UserRoleController {
 		return service.updateUser(userRole);
 	}
 	@GetMapping("/fetchById/{id}")
-	public UserRole getUserById(@PathVariable("id") int userId){
+	public UserRole getUserById(@PathVariable("id") int userId) throws UserRoleNotFound{
 		return service.getUserById(userId);
 	}
 	@DeleteMapping("/deleteById/{id}")

@@ -1,6 +1,7 @@
 package com.wimo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.Arrays;
 import java.util.List;
@@ -68,16 +69,16 @@ class StockItemManagementServiceApplicationTests {
 			assertEquals(stockItem, foundStockItem);
 		}
 	 
-//		@Test
-//		void getStockItemNotFoundTest() {
-//			int stockId = 1;
-//	 
-//			Mockito.when(repository.findById(stockId)).thenReturn(Optional.empty());
-//	 
-//			assertThrows(StockItemNotFound.class, () -> {
-//				service.getStockItemById(stockId);
-//			});
-//		}
+		@Test
+		void getStockItemNotFoundTest() {
+			int stockId = 1;
+	 
+			Mockito.when(repository.findById(stockId)).thenReturn(Optional.empty());
+	 
+			assertThrows(StockItemNotFound.class, () -> {
+				service.getStockItemById(stockId);
+			});
+		}
 	 
 		@Test
 		void getAllStockItemsTest() {
@@ -104,13 +105,13 @@ class StockItemManagementServiceApplicationTests {
 		}
 		
 		@Test
-		void getStockItemsByZoneIdTest(){
+		void getStockItemsByZoneIdTest() {
 			int zoneId = 1;
 			StockItem stockItem = new StockItem(1,"samsung", "electronics", 20,3);
 	 
 			Mockito.when(repository.findById(zoneId)).thenReturn(Optional.of(stockItem));
 	 
-			StockItem foundStockItem = service.getStockItemById(zoneId);
+			List<StockItem> foundStockItem = service.findByZoneIdIs(zoneId);
 			assertEquals(stockItem, foundStockItem);
 		}
 }

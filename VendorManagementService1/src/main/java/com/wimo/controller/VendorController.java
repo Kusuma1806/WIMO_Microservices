@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.wimo.exceptions.VendorNotFound;
 import com.wimo.model.Vendor;
 import com.wimo.service.VendorService;
 @RestController
@@ -31,7 +32,7 @@ public class VendorController {
 		return service.updateVendor(vendor);
 	}
 	@GetMapping("/fetchById/{id}")
-	public Vendor getVendorById(@PathVariable("id") int vendorId){
+	public Vendor getVendorById(@PathVariable("id") int vendorId) throws VendorNotFound{
 		return service.getVendorById(vendorId);
 	}
 	@DeleteMapping("/deleteById/{id}")

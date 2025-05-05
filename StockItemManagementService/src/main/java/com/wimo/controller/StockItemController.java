@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.model.StockItem;
 import com.wimo.service.StockItemService;
 @RestController
@@ -31,7 +32,7 @@ public class StockItemController {
 		return service.updateStockItem(stockItem);
 	}
 	@GetMapping("/fetchById/{id}")
-	public StockItem getStockItemById(@PathVariable("id") int stockId){
+	public StockItem getStockItemById(@PathVariable("id") int stockId) throws StockItemNotFound{
 		return service.getStockItemById(stockId);
 	}
 	@DeleteMapping("/deleteById/{id}")
