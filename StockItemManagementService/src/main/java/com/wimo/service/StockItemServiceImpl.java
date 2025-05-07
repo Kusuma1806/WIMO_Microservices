@@ -27,13 +27,14 @@ public class StockItemServiceImpl implements StockItemService {
 
 	@Autowired
 	VendorClient vendorClient;
+	int UpdateCapacity;
 
 	@Override
 	public String saveStockItem(StockItem stockItem) throws SpaceNotAvailable {
 		repository.save(stockItem);
 		int zoneId = stockItem.getZoneId();
 		Zone zone = zoneClient.viewZone(zoneId);
-		int UpdateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
+		UpdateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
 		if(zone.getTotalCapacity()>UpdateCapacity) {	
 		zone.setStoredCapacity(UpdateCapacity);
 		zoneClient.updateZone(zone);
@@ -48,8 +49,8 @@ public class StockItemServiceImpl implements StockItemService {
 	public StockItem updateStockItemForInbound(StockItem stockItem) {
 		int zoneId = stockItem.getZoneId();
 		Zone zone = zoneClient.viewZone(zoneId);
-		int Updatecapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
-		zone.setStoredCapacity(Updatecapacity);
+		UpdateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
+		zone.setStoredCapacity(UpdateCapacity);
 		zoneClient.updateZone(zone);
 		return repository.save(stockItem);
 	}
@@ -57,16 +58,25 @@ public class StockItemServiceImpl implements StockItemService {
 	public StockItem updateStockItemForOutbound(StockItem stockItem) {
 		int zoneId = stockItem.getZoneId();
 		Zone zone = zoneClient.viewZone(zoneId);
-		int Updatecapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
-		zone.setStoredCapacity(Updatecapacity);
+		UpdateCapacity = zone.getStoredCapacity() - stockItem.getStockQuantity();
+		zone.setStoredCapacity(UpdateCapacity);
 		zoneClient.updateZone(zone);
 		return repository.save(stockItem);
 	}
 
 	@Override
-	public String removeStockItem(int stockId) {
+	public String removeStockItem(int stockId) throws StockItemNotFound {
+		StockItem stockItem=repository.findById(stockId).get();
+		if(stockItem==null) {
+			throw new StockItemNotFound("Stock Item not found");
+		}
+		int zoneId = stockItem.getZoneId();
+		Zone zone = zoneClient.viewZone(zoneId);
+		UpdateCapacity = zone.getStoredCapacity() - stockItem.getStockQuantity();
+		zone.setStoredCapacity(UpdateCapacity);
+		zoneClient.updateZone(zone);
 		repository.deleteById(stockId);
-		return "StockItem Deleted!!!";
+		return "StockItem Deleted and updated the zone capacity!!!";
 	}
 
 	@Override

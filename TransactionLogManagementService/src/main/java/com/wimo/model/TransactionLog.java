@@ -6,6 +6,9 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,12 +20,18 @@ import lombok.NoArgsConstructor;
 public class TransactionLog {
 	@Id
 	private int transactionId;
+	@Positive
 	private int stockId;
+	@NotNull
 	private int userId;
+	@Positive
 	private int quantity;
+	@NotBlank
 	private String type;
 	@CreationTimestamp
 	private LocalDateTime timestamp;
+	@Positive
+	@NotNull
 	private double price;
 
 	public TransactionLog(int userId, int transactionId, int stockId, int quantity, String type,

@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.wimo.dto.StockVendorResponseDTO;
 import com.wimo.dto.StockZoneResponseDTO;
+import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.model.StockItem;
 import com.wimo.service.StockItemService;
@@ -25,7 +26,7 @@ public class StockItemController {
     StockItemService service;
     
     @PostMapping("/save")
-	public String saveStockItem(@RequestBody @Validated StockItem stockItem) {
+	public String saveStockItem(@RequestBody @Validated StockItem stockItem) throws SpaceNotAvailable {
 		return service.saveStockItem(stockItem);
 	}
 
@@ -42,7 +43,7 @@ public class StockItemController {
 		return service.getStockItemById(stockId);
 	}
 	@DeleteMapping("/deleteById/{id}")
-	public String removeStockItem(@PathVariable("id") int stockId) {
+	public String removeStockItem(@PathVariable("id") int stockId) throws StockItemNotFound {
 		return service.removeStockItem(stockId);
 	}
 	@GetMapping("/fetchAll")

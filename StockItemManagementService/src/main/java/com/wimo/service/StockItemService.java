@@ -13,7 +13,7 @@ public interface StockItemService {
 
 	public abstract StockItem updateStockItemForInbound(StockItem stockItem);
 
-	public abstract String removeStockItem(int stockId);
+	public abstract String removeStockItem(int stockId) throws StockItemNotFound;
 
 	public abstract StockItem getStockItemById(int stockId) throws StockItemNotFound;
 

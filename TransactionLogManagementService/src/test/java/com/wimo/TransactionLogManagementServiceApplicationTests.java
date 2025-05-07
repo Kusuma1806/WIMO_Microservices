@@ -3,7 +3,6 @@ package com.wimo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -15,6 +14,7 @@ import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.wimo.dto.TransactionStockResponseDTO;
+import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.exceptions.TransactionLogNotFound;
 import com.wimo.model.TransactionLog;
 import com.wimo.repository.TransactionLogRepository;
@@ -29,7 +29,7 @@ class TransactionLogManagementApplicationTests {
 	TransactionLogServiceImpl service;
 
 	@Test
-	public void recordTransactionLogTest() {
+	public void recordTransactionLogTest() throws StockItemNotFound {
 		{
 			TransactionLog transactionLog = new TransactionLog(2, 1, 1, 10, "Inbound", 20000);
 			Mockito.when(repository.save(transactionLog)).thenReturn(transactionLog);

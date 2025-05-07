@@ -14,5 +14,5 @@ public interface ZoneClient {
 	@GetMapping("/fetchById/{id}")
 	public Zone viewZone(@PathVariable("id") int zoneId);
 	@PutMapping("/update")
-	public Zone updateZone(@RequestBody @Validated Zone zone);
+	public Zone updateZone(@RequestBody @Validated Zone zone); 	
 }
