@@ -31,7 +31,7 @@ public class CustomGlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(value = VendorNotFound.class)
-	public ResponseEntity<ExceptionResponse> handleException(VendorNotFound exception,
+	public ResponseEntity<ExceptionResponse> handleCustomException(VendorNotFound exception,
 			WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();
@@ -44,7 +44,7 @@ public class CustomGlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(value = Exception.class)
-	public ResponseEntity<ExceptionResponse> handleAccountIdException(Exception exception, WebRequest webRequest) {
+	public ResponseEntity<ExceptionResponse> handleException(Exception exception, WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();
 		exceptionResponse.setStatus(404);

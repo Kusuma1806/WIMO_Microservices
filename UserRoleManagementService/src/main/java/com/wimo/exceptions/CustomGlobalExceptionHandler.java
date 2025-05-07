@@ -31,7 +31,7 @@ public class CustomGlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(value = UserRoleNotFound.class)
-	public ResponseEntity<ExceptionResponse> handleAdminRegistrationException(UserRoleNotFound exception,
+	public ResponseEntity<ExceptionResponse> handleCustomException(UserRoleNotFound exception,
 			WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();

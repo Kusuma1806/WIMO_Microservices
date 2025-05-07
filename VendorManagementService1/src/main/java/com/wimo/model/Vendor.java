@@ -23,7 +23,5 @@ public class Vendor {
 	private String vendorName;
 	@NotNull(message = "contact info should not be null")
 	private long contactInfo;
-	@NotNull
-	private int stockId;
 
 }

@@ -26,5 +26,7 @@ public class StockItem {
 	 private int stockQuantity;
 	 @Positive(message="Id shouldn't be zero or negative value")
 	 private int zoneId;
+	 @NotNull
+	 private int vendorId;
 
 }

@@ -31,7 +31,7 @@ public class CustomGlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(value = StockItemNotFound.class)
-	public ResponseEntity<ExceptionResponse> handleException(StockItemNotFound exception,
+	public ResponseEntity<ExceptionResponse> handleCustomException(StockItemNotFound exception,
 			WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();
@@ -44,7 +44,7 @@ public class CustomGlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(value = Exception.class)
-	public ResponseEntity<ExceptionResponse> handleAccountIdException(Exception exception, WebRequest webRequest) {
+	public ResponseEntity<ExceptionResponse> handleException(Exception exception, WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();
 		exceptionResponse.setStatus(404);

@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.wimo.dto.StockVendorResponseDTO;
+import com.wimo.dto.StockZoneResponseDTO;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.model.StockItem;
 import com.wimo.service.StockItemService;
@@ -27,9 +29,13 @@ public class StockItemController {
 		return service.saveStockItem(stockItem);
 	}
 
-	@PutMapping("/update")
-	public StockItem updateStockItem(@RequestBody @Validated StockItem stockItem){
-		return service.updateStockItem(stockItem);
+	@PutMapping("/updateInbound")
+	public StockItem updateStockItemForInbound(@RequestBody @Validated StockItem stockItem){
+		return service.updateStockItemForInbound(stockItem);
+	}
+	@PutMapping("/updateOutbound")
+	public StockItem updateStockItemForOutbound(@RequestBody @Validated StockItem stockItem){
+		return service.updateStockItemForOutbound(stockItem);
 	}
 	@GetMapping("/fetchById/{id}")
 	public StockItem getStockItemById(@PathVariable("id") int stockId) throws StockItemNotFound{
@@ -48,8 +54,12 @@ public class StockItemController {
 		return service.findByStockCategoryIs(stockCategory);
 	}
 	@GetMapping("/fetchByZoneId/{zid}")
-	public List<StockItem> findByZoneIdIs(@PathVariable("zid") int zoneId){
+	public StockZoneResponseDTO findByZoneIdIs(@PathVariable("zid") int zoneId){
 		return service.findByZoneIdIs(zoneId);
+	}
+	@GetMapping("/fetchByVendorId/{vid}")
+	public StockVendorResponseDTO findByVendorIdIs(@PathVariable("vid") int vendorId){
+		return service.findByVendorIdIs(vendorId);
 	}
 
 }

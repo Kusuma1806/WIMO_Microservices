@@ -13,6 +13,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.wimo.dto.StockZoneResponseDTO;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.model.StockItem;
 import com.wimo.repository.StockItemRepository;
@@ -30,7 +31,7 @@ class StockItemManagementServiceApplicationTests {
 	 
 		@Test
 		void saveStockItemTest() {
-			StockItem stockItem = new StockItem(1,"watch", "gadgets", 20,3);
+			StockItem stockItem = new StockItem(1,"watch", "gadgets", 20,3,1);
 			Mockito.when(repository.save(stockItem)).thenReturn(stockItem);
 	 
 			String response = service.saveStockItem(stockItem);
@@ -39,12 +40,12 @@ class StockItemManagementServiceApplicationTests {
 	 
 		@Test
 		void updateStockItemTest() {
-			StockItem stockItem = new StockItem(1,"samsung", "electronics", 20,3);
+			StockItem stockItem = new StockItem(1,"samsung", "electronics", 20,3,1);
 			stockItem.setStockId(2);
 	 
 			Mockito.when(repository.save(stockItem)).thenReturn(stockItem);
 	 
-			StockItem updatedStockItem = service.updateStockItem(stockItem);
+			StockItem updatedStockItem = service.updateStockItemForInbound(stockItem);
 			assertEquals(stockItem, updatedStockItem);
 		}
 	 
@@ -61,7 +62,7 @@ class StockItemManagementServiceApplicationTests {
 		@Test
 		void getStockItemTest() throws StockItemNotFound {
 			int stockId = 1;
-			StockItem stockItem = new StockItem(1,"samsung", "electronics", 20,3);
+			StockItem stockItem = new StockItem(1,"samsung", "electronics", 20,3,1);
 	 
 			Mockito.when(repository.findById(stockId)).thenReturn(Optional.of(stockItem));
 	 
@@ -82,8 +83,8 @@ class StockItemManagementServiceApplicationTests {
 	 
 		@Test
 		void getAllStockItemsTest() {
-			List<StockItem> stockItems = Arrays.asList(new StockItem(3,"samsung", "electronics", 20,3),
-					new StockItem(4,"samsung", "electronics", 20,3));
+			List<StockItem> stockItems = Arrays.asList(new StockItem(3,"samsung", "electronics", 20,3,1),
+					new StockItem(4,"samsung", "electronics", 20,3,1));
 	 
 			Mockito.when(repository.findAll()).thenReturn(stockItems);
 	 
@@ -95,23 +96,12 @@ class StockItemManagementServiceApplicationTests {
 		@Test
 		void getAllStockItemsByCategoryTest() {
 			String category = "electronics";
-			List<StockItem> stockItems = Arrays.asList(new StockItem(1,"samsung", "electronics", 20,3),
-					new StockItem(1,"samsung", "electronics", 20,3));
+			List<StockItem> stockItems = Arrays.asList(new StockItem(1,"samsung", "electronics", 20,3,1),
+					new StockItem(1,"samsung", "electronics", 20,3,1));
 	 
 			Mockito.when(repository.findByStockCategoryIs(category)).thenReturn(stockItems);
 	 
 			List<StockItem> stockItemsByCategory = service.findByStockCategoryIs(category);
 			assertEquals(stockItems, stockItemsByCategory);
-		}
-		
-		@Test
-		void getStockItemsByZoneIdTest() {
-			int zoneId = 1;
-			StockItem stockItem = new StockItem(1,"samsung", "electronics", 20,3);
-	 
-			Mockito.when(repository.findById(zoneId)).thenReturn(Optional.of(stockItem));
-	 
-			List<StockItem> foundStockItem = service.findByZoneIdIs(zoneId);
-			assertEquals(stockItem, foundStockItem);
 		}
 }

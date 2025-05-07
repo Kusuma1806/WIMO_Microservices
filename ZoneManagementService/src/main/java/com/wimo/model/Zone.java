@@ -23,13 +23,11 @@ public class Zone {
 	 @NotBlank
 	 @Size(min = 3, max = 20,message="zone name should be in the range of 3-20")
 	 private String zoneName;
-	 @Min(value=1,message="Each zone should have atleast 1unit of storage capacity")
-	 @Max(value=100,message="Zone capacity reached the threshold")
+	 @Max(value=10000,message="Zone capacity reached the threshold")
      private int totalCapacity;
-	 @Min(value=1,message="Each zone should have atleast 1unit of storage capacity")
-	 @Max(value=100,message="Zone capacity reached the threshold")
+	 @Max(value=10000,message="Zone capacity reached the threshold")
      private int storedCapacity;
-     
+	 
      public int getAvailableSpace() {
     	 return totalCapacity-storedCapacity;
      }

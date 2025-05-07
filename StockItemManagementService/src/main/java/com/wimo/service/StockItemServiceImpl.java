@@ -6,22 +6,60 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.wimo.dto.StockVendorResponseDTO;
+import com.wimo.dto.StockZoneResponseDTO;
+import com.wimo.dto.Vendor;
+import com.wimo.dto.Zone;
+import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
+import com.wimo.feignclient.VendorClient;
+import com.wimo.feignclient.ZoneClient;
 import com.wimo.model.StockItem;
 import com.wimo.repository.StockItemRepository;
+
 @Service
 public class StockItemServiceImpl implements StockItemService {
 	@Autowired
 	StockItemRepository repository;
 
+	@Autowired
+	ZoneClient zoneClient;
+
+	@Autowired
+	VendorClient vendorClient;
+
 	@Override
-	public String saveStockItem(StockItem stockItem) {
+	public String saveStockItem(StockItem stockItem) throws SpaceNotAvailable {
 		repository.save(stockItem);
+		int zoneId = stockItem.getZoneId();
+		Zone zone = zoneClient.viewZone(zoneId);
+		int UpdateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
+		if(zone.getTotalCapacity()>UpdateCapacity) {	
+		zone.setStoredCapacity(UpdateCapacity);
+		zoneClient.updateZone(zone);
+		}
+		else {
+			throw new SpaceNotAvailable("Space not available to store the stock!!!!");
+		}
 		return "StockItem Saved!!!";
 	}
 
 	@Override
-	public StockItem updateStockItem(StockItem stockItem) {
+	public StockItem updateStockItemForInbound(StockItem stockItem) {
+		int zoneId = stockItem.getZoneId();
+		Zone zone = zoneClient.viewZone(zoneId);
+		int Updatecapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
+		zone.setStoredCapacity(Updatecapacity);
+		zoneClient.updateZone(zone);
+		return repository.save(stockItem);
+	}
+	@Override
+	public StockItem updateStockItemForOutbound(StockItem stockItem) {
+		int zoneId = stockItem.getZoneId();
+		Zone zone = zoneClient.viewZone(zoneId);
+		int Updatecapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
+		zone.setStoredCapacity(Updatecapacity);
+		zoneClient.updateZone(zone);
 		return repository.save(stockItem);
 	}
 
@@ -32,9 +70,9 @@ public class StockItemServiceImpl implements StockItemService {
 	}
 
 	@Override
-	public StockItem getStockItemById(int userId) throws StockItemNotFound{
-		Optional<StockItem> optional=repository.findById(userId);
-		if(optional.isPresent())
+	public StockItem getStockItemById(int stockId) throws StockItemNotFound {
+		Optional<StockItem> optional = repository.findById(stockId);
+		if (optional.isPresent())
 			return optional.get();
 		else
 			throw new StockItemNotFound("Stock is not Found........");
@@ -51,8 +89,19 @@ public class StockItemServiceImpl implements StockItemService {
 	}
 
 	@Override
-	public List<StockItem> findByZoneIdIs(int zoneId) {
-		return repository.findByZoneIdIs(zoneId);
+	public StockZoneResponseDTO findByZoneIdIs(int zoneId) {
+		Zone zone = zoneClient.viewZone(zoneId);
+		List<StockItem> stocks = repository.findByZoneIdIs(zoneId);
+		StockZoneResponseDTO responseDTO = new StockZoneResponseDTO(zone, stocks);
+		return responseDTO;
+	}
+
+	@Override
+	public StockVendorResponseDTO findByVendorIdIs(int vendorId) {
+		Vendor vendor = vendorClient.viewVendor(vendorId);
+		List<StockItem> stocks = repository.findByVendorIdIs(vendorId);
+		StockVendorResponseDTO responseDTO = new StockVendorResponseDTO(vendor, stocks);
+		return responseDTO;
 	}
 
 }
