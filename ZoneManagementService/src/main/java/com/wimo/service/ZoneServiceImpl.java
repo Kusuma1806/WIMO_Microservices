@@ -41,7 +41,7 @@ public class ZoneServiceImpl implements ZoneService {
 			stockClient.removeStockItem(stock.getStockId());
 		}
 		repository.deleteById(zoneId);
-		return "Zone Deleted!!!";
+		return "Zone and all the stocks in that are Deleted!!!";
 	}
 
 	@Override

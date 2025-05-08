@@ -20,12 +20,12 @@ public class Zone {
 	 @Id
 	 @Positive(message="Id shouldn't be zero or negative value")
 	 private int zoneId;
-	 @NotBlank
+	 @NotBlank(message="name shpuld not be blank")
 	 @Size(min = 3, max = 20,message="zone name should be in the range of 3-20")
 	 private String zoneName;
-	 @Max(value=10000,message="Zone capacity reached the threshold")
+	 @Max(value=100001,message="Zone capacity reached the threshold")
      private int totalCapacity;
-	 @Max(value=10000,message="Zone capacity reached the threshold")
+	 @Max(value=100000,message="Zone capacity reached the threshold")
      private int storedCapacity;
 	 
      public int getAvailableSpace() {

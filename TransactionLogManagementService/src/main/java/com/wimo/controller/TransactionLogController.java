@@ -50,7 +50,7 @@ public class TransactionLogController {
 	}
 
 	@GetMapping("/fetchAll")
-	public List<TransactionLog> getAllStocks() {
+	public List<TransactionLog> getAllTransactions() {
 		return service.getAllTransactionLogs();
 	}
 
@@ -67,13 +67,18 @@ public class TransactionLogController {
 	}
 
 	
-	@GetMapping("/fetchByTimestamp/{start}/{end}")
+	@GetMapping("/fetchByDateTimestamp/{start}/{end}")
 	public List<TransactionLog> getTransactionLogsByTimestampBetween(@PathVariable("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)  LocalDate startDate,
 			@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)  @PathVariable("end") LocalDate endDate) {
 		//convert LocalDate to LocalDateTime
 		LocalDateTime startDateTime = startDate.atStartOfDay();
 		LocalDateTime endDateTime = endDate.atTime(LocalTime.MAX);
 		return service.getTransactionLogsByTimestampBetween(startDateTime, endDateTime);
+	}
+	@GetMapping("/fetchByTimestamp/{start}/{end}")
+	public List<TransactionLog> findByTimestampBetween(@PathVariable("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)  LocalDateTime startDate,
+			 @PathVariable("end") @DateTimeFormat(iso= DateTimeFormat.ISO.DATE_TIME) LocalDateTime endDate) {
+		return service.getTransactionLogsByTimestampBetween(startDate, endDate);
 	}
 
 	@GetMapping("/fetchByPrice/{initial}/{final}")

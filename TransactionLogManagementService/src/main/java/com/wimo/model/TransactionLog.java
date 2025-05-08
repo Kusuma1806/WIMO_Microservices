@@ -25,6 +25,8 @@ public class TransactionLog {
 	@NotNull
 	private int userId;
 	@Positive
+	private int zoneId;
+	@Positive
 	private int quantity;
 	@NotBlank
 	private String type;
@@ -34,7 +36,7 @@ public class TransactionLog {
 	@NotNull
 	private double price;
 
-	public TransactionLog(int userId, int transactionId, int stockId, int quantity, String type,
+	public TransactionLog(int userId,int zoneId,int transactionId, int stockId, int quantity, String type,
 			double price) {
 		super();
 		this.transactionId = transactionId;

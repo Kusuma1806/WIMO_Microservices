@@ -58,7 +58,7 @@ public class StockItemServiceImpl implements StockItemService {
 	public StockItem updateStockItemForOutbound(StockItem stockItem) {
 		int zoneId = stockItem.getZoneId();
 		Zone zone = zoneClient.viewZone(zoneId);
-		UpdateCapacity = zone.getStoredCapacity() - stockItem.getStockQuantity();
+		UpdateCapacity = zone.getStoredCapacity()-stockItem.getStockQuantity();
 		zone.setStoredCapacity(UpdateCapacity);
 		zoneClient.updateZone(zone);
 		return repository.save(stockItem);
