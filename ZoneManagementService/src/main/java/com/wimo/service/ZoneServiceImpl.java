@@ -6,7 +6,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.wimo.dto.StockItem;
+import com.wimo.dto.StockZoneResponseDTO;
 import com.wimo.exceptions.ZoneNotFound;
+import com.wimo.feignclient.StockClient;
 import com.wimo.model.Zone;
 import com.wimo.repository.ZoneRepository;
 
@@ -15,6 +18,9 @@ public class ZoneServiceImpl implements ZoneService {
 
     @Autowired
     ZoneRepository repository;
+    
+    @Autowired
+    StockClient stockClient;
 
     @Override
 	public String saveZone(Zone zone) {
@@ -29,6 +35,11 @@ public class ZoneServiceImpl implements ZoneService {
 
 	@Override
 	public String removeZone(int zoneId) {
+		StockZoneResponseDTO responseDTO=stockClient.findByZoneIdIs(zoneId);
+		List<StockItem> stocks=responseDTO.getStock();
+		for(StockItem stock:stocks) {
+			stockClient.removeStockItem(stock.getStockId());
+		}
 		repository.deleteById(zoneId);
 		return "Zone Deleted!!!";
 	}

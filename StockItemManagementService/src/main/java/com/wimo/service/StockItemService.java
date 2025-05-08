@@ -25,7 +25,7 @@ public interface StockItemService {
 
 	public abstract StockVendorResponseDTO findByVendorIdIs(int vendorId);
 
-	public abstract StockItem updateStockItemForOutbound(StockItem stockItem);
+	StockItem updateStockItemForOutbound(StockItem stockItem);
 
 	
 
