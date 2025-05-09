@@ -1,0 +1,69 @@
+2025-05-09T10:38:48.314+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : Starting PerformanceMetricsServiceApplication using Java 21.0.6 with PID 22260 (C:\Users\2400899\git\WIMO_Final\PerformanceMetricsService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\PerformanceMetricsService)
+2025-05-09T10:38:48.317+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T10:38:48.399+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-05-09T10:38:48.400+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=PerformanceMetricsService, profiles=[default], label=null, version=cfe4a8e1a14beaa97e060ae5d2d8353529322bfb, state=
+2025-05-09T10:38:48.404+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-09T10:38:48.404+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-09T10:38:49.930+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09T10:38:50.232+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 281 ms. Found 1 JPA repository interface.
+2025-05-09T10:38:50.685+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9c06f686-c5e6-3a5f-9153-56acf2babb0d
+2025-05-09T10:38:51.618+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9096 (http)
+2025-05-09T10:38:51.642+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T10:38:51.643+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-09T10:38:51.765+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T10:38:51.765+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3360 ms
+2025-05-09T10:38:52.101+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09T10:38:52.217+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-09T10:38:52.284+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-09T10:38:52.817+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09T10:38:52.895+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-09T10:38:53.587+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19d8751e
+2025-05-09T10:38:53.593+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-09T10:38:53.701+05:30  WARN 22260 --- [PerformanceMetricsService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-09T10:38:53.740+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-09T10:38:55.639+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09T10:38:55.745+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09T10:38:56.462+05:30  WARN 22260 --- [PerformanceMetricsService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09T10:38:56.521+05:30  WARN 22260 --- [PerformanceMetricsService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-09T10:38:56.751+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ZONEMANAGEMENTSERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-05-09T10:38:56.833+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'TRANSACTIONLOGMANAGEMENTSERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-05-09T10:38:57.548+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-09T10:38:57.589+05:30  WARN 22260 --- [PerformanceMetricsService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-09T10:38:57.673+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-09T10:38:57.713+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-09T10:38:57.719+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T10:38:57.735+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-09T10:38:57.735+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-09T10:38:57.735+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-09T10:38:57.735+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-09T10:38:57.735+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-09T10:38:57.735+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-09T10:38:57.735+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-09T10:38:58.108+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-09T10:38:58.110+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-09T10:38:58.114+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-09T10:38:58.117+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1746767338116 with initial instances count: 0
+2025-05-09T10:38:58.124+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PERFORMANCEMETRICSSERVICE with eureka with status UP
+2025-05-09T10:38:58.125+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746767338125, current=UP, previous=STARTING]
+2025-05-09T10:38:58.128+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN620190.cts.com:PerformanceMetricsService:9096: registering service...
+2025-05-09T10:38:58.154+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9096 (http) with context path '/'
+2025-05-09T10:38:58.156+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9096
+2025-05-09T10:38:58.179+05:30  INFO 22260 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : Started PerformanceMetricsServiceApplication in 17.785 seconds (process running for 19.827)
+2025-05-09T10:38:58.197+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN620190.cts.com:PerformanceMetricsService:9096 - registration status: 204
+2025-05-09T10:39:28.116+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-09T10:39:28.116+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-09T10:39:28.116+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-09T10:39:28.116+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-09T10:39:28.116+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-09T10:39:28.116+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-05-09T10:39:28.116+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-09T10:39:28.148+05:30  INFO 22260 --- [PerformanceMetricsService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-09T10:43:57.752+05:30  INFO 22260 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T10:48:57.758+05:30  INFO 22260 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

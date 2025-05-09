@@ -22,24 +22,24 @@ public class VendorController {
 	@Autowired
 	VendorService service;
 
-	@PostMapping("/save")
+	@PostMapping("/save") //http://localhost:9090/vendors/save
 	public String saveVendor(@RequestBody @Validated Vendor vendor) {
 		return service.saveVendor(vendor);
 	}
 
-	@PutMapping("/update")
+	@PutMapping("/update") //http://localhost:9092/vendors/update
 	public Vendor updateVendor(@RequestBody @Validated Vendor vendor){
 		return service.updateVendor(vendor);
 	}
-	@GetMapping("/fetchById/{id}")
+	@GetMapping("/fetchById/{id}") //http://localhost:9090/vendors/fetchById/{id}
 	public Vendor getVendorById(@PathVariable("id") int vendorId) throws VendorNotFound{
 		return service.getVendorById(vendorId);
 	}
-	@DeleteMapping("/deleteById/{id}")
+	@DeleteMapping("/deleteById/{id}") //http://localhost:9090/vendors/deleteById/{id}
 	public String removeVendor(@PathVariable("id") int vendorId) {
 		return service.removeVendor(vendorId);
 	}
-	@GetMapping("/fetchAll")
+	@GetMapping("/fetchAll") //http://localhost:9090/vendors/fetchAll
 	public List<Vendor> getAllVendors() {
 		return service.getAllVendors();
 	}

@@ -17,11 +17,11 @@ public class PerformanceMetricsController {
 	@Autowired
 	PerformanceMetricsService service;
 
-    @GetMapping("/bytype/{stype}")
+    @GetMapping("/bytype/{stype}") // http://localhost:9090/metrics/bytype/{stype}
     public List<PerformanceMetrics> getMetrics(@PathVariable("stype") String type) {
            return service.findByType(type);
     }
-    @GetMapping("/calmetrics")
+    @GetMapping("/calmetrics") // http://localhost:9090/metrics/calmetrics
     public String calculateAndSaveMetrics() {
     	service.calculateAndSaveMetrics();
     	return "Metrics Generated";

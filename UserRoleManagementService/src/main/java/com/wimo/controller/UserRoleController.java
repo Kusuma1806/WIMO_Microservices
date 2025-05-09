@@ -23,12 +23,12 @@ public class UserRoleController {
 	@Autowired
 	UserRoleService service;
 
-	@PostMapping("/save")
+	@PostMapping("/save") //http://localhost:9090/users/save
 	public String saveUser(@RequestBody @Validated UserRole userRole) {
 		return service.saveUser(userRole);
 	}
 
-	@PutMapping("/update")
+	@PutMapping("/update") 
 	public UserRole updateUser(@RequestBody @Validated UserRole userRole){
 		return service.updateUser(userRole);
 	}

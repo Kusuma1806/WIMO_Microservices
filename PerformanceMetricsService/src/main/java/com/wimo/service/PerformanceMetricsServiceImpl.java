@@ -3,6 +3,8 @@ package com.wimo.service;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -25,12 +27,16 @@ public class PerformanceMetricsServiceImpl implements PerformanceMetricsService{
 	@Autowired
 	TransactionLogClient transactionClient;
 	
+	Logger log=LoggerFactory.getLogger(PerformanceMetricsServiceImpl.class);
+	
 	@Scheduled(cron="0 0 0 * * ?")//at every midnight
 	public void scheduleMetricsCalculation() {
 		calculateAndSaveMetrics();
 	}
+	//Calculating and saving the metrics....! 
 	@Override
     public void calculateAndSaveMetrics() {
+		log.info("Calculating and saving the metrics....! ");
 		double turnoverRate = calculateInventoryTurnoverRate();
 		PerformanceMetrics turnoverMetric = new PerformanceMetrics();
 		turnoverMetric.setType("Turnover");
@@ -82,8 +88,10 @@ public class PerformanceMetricsServiceImpl implements PerformanceMetricsService{
 		// Calculate space utilization
 		return totalCapacity > 0 ? ((double)usedSpace / totalCapacity * 100) : 0.0;
 	}
+	//Getting the Metrics based on the type ----turnover /space utilization
 	@Override
 	public List<PerformanceMetrics> findByType(String type) {
+		log.info("Getting the Metrics based on the type ----turnover /space utilization");;
 		return repository.findByTypeIs(type);
 	}
 }
