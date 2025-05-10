@@ -28,4 +28,9 @@ public class PerformanceMetrics {
 	private double value;
 	@CreationTimestamp
 	private LocalDateTime timestamp;
+	public PerformanceMetrics(String type,double value) {
+		super();
+		this.type = type;
+		this.value = value;
+	}
 }

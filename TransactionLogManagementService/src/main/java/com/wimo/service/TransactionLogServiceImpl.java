@@ -4,15 +4,15 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.wimo.dto.StockItem;
 import com.wimo.dto.TransactionStockResponseDTO;
 import com.wimo.dto.TransactionUserResponseDTO;
-import com.wimo.dto.UserRole;
+import com.wimo.dto.UserInfo;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.exceptions.TransactionLogNotFound;
 import com.wimo.feignclient.StockClient;
@@ -130,17 +130,17 @@ public class TransactionLogServiceImpl implements TransactionLogService {
     }
 
     @Override
-    public TransactionUserResponseDTO getTransactionLogsByUser(int userId) {
-        logger.info("Retrieving transaction logs for user ID: {}", userId);
+    public TransactionUserResponseDTO getTransactionLogsByUser(int id) {
+        logger.info("Retrieving transaction logs for user ID: {}", id);
         // Retrieve transaction logs by user ID from the repository
-        List<TransactionLog> transaction = repository.findByStockIdIs(userId);
+        List<TransactionLog> transaction = repository.findByStockIdIs(id);
         
         // Retrieve the user details using the user ID
-        UserRole user = userClient.viewTransactionByUser(userId);
+        UserInfo user = userClient.getUserById(id);
         
         // Create a response DTO with the user and transaction logs
         TransactionUserResponseDTO responseDTO = new TransactionUserResponseDTO(user, transaction);
-        logger.info("Transaction logs retrieved successfully for user ID: {}", userId);
+        logger.info("Transaction logs retrieved successfully for user ID: {}", id);
         return responseDTO;
     }
 

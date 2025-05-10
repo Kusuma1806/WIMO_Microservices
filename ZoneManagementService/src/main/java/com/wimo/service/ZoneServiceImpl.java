@@ -47,6 +47,7 @@ public class ZoneServiceImpl implements ZoneService {
 
 	@Override
 	public String removeZone(int zoneId) {
+		if(repository.existsById(zoneId)) {
 		logger.info("Removing zone with ID");
 		// Retrieve the stock items in the zone using the zone ID
 		StockZoneResponseDTO responseDTO = stockClient.findByZoneIdIs(zoneId);
@@ -62,10 +63,15 @@ public class ZoneServiceImpl implements ZoneService {
 		logger.info("Zone and all stocks in it removed successfully: {}", zoneId);
 		// Delete the zone using the zone ID
 		repository.deleteById(zoneId);
-
 		// Return a success message
 		return "Zone and all the stocks in that are Deleted!!!";
-	}
+		}
+		else {
+			return "Zone Not Found";
+		}
+		
+}
+
 
 	@Override
 	public Zone getZoneById(int userId) throws ZoneNotFound {
@@ -76,11 +82,13 @@ public class ZoneServiceImpl implements ZoneService {
 		Optional<Zone> optional = repository.findById(userId);
 
 		// Check if the zone exists
-		if (optional.isPresent())
+		if (optional.isPresent()) {
 			return optional.get();
-		else
+		}
+		else {
 			logger.error("Zone not found with ID: {}", userId);
 			throw new ZoneNotFound("Zone is not Found........");
+		}
 	}
 
 	@Override

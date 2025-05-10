@@ -17,5 +17,16 @@ public class TransactionLog {
 	private String type;
 	private LocalDateTime timestamp;
 	private double price;
+	public TransactionLog(int transactionId, int stockId, int zoneId, int userId, int quantity, String type,
+			double price) {
+		super();
+		this.transactionId = transactionId;
+		this.stockId = stockId;
+		this.zoneId = zoneId;
+		this.userId = userId;
+		this.quantity = quantity;
+		this.type = type;
+		this.price = price;
+	}
 
 }

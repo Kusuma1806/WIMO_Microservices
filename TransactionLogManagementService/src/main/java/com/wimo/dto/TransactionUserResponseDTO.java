@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class TransactionUserResponseDTO {
 
-	private UserRole user;
+	private UserInfo user;
 	private List<TransactionLog> transactionLog;
 
 }

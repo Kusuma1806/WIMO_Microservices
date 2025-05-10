@@ -4,12 +4,12 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.wimo.dto.UserRole;
+import com.wimo.dto.UserInfo;
 
 
-@FeignClient(name="USERROLEMANAGEMENTSERVICE",path="/users")
+@FeignClient(name="SECURITY-SERVICE",path="/auth")
 public interface UserClient {
-	@GetMapping("/fetchById/{id}")
-	public UserRole viewTransactionByUser(@PathVariable("id") int userId); 
+	@GetMapping("/fetchById/{id}") // http://localhost:9090/auth/fetchById/{id}
+	public UserInfo getUserById(@PathVariable("id") int id);
 
 }
