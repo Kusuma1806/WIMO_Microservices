@@ -1989,3 +1989,5 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2025-05-13T10:09:57.387+05:30  INFO 13152 --- [StockItemManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-05-13T10:14:57.403+05:30  INFO 13152 --- [StockItemManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-05-13T10:19:57.406+05:30  INFO 13152 --- [StockItemManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T10:24:57.412+05:30  INFO 13152 --- [StockItemManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T10:29:57.422+05:30  INFO 13152 --- [StockItemManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

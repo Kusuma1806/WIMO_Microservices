@@ -712,3 +712,5 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2025-05-13T10:09:55.875+05:30  INFO 17308 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-05-13T10:14:55.889+05:30  INFO 17308 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-05-13T10:19:55.895+05:30  INFO 17308 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T10:24:55.910+05:30  INFO 17308 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T10:29:55.911+05:30  INFO 17308 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

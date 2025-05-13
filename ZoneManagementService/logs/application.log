@@ -786,3 +786,5 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2025-05-13T10:09:59.660+05:30  INFO 992 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-05-13T10:14:59.666+05:30  INFO 992 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-05-13T10:19:59.677+05:30  INFO 992 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T10:24:59.683+05:30  INFO 992 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T10:29:59.689+05:30  INFO 992 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
