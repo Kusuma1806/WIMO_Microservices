@@ -11,7 +11,10 @@ import com.entity.UserInfo;
 import com.exceptions.UserRoleNotFound;
 import com.repository.UserInfoRepository;
 
+import lombok.AllArgsConstructor;
+
 @Service
+@AllArgsConstructor
 public class UserService {
 	@Autowired
 	private UserInfoRepository repository;

@@ -17,81 +17,95 @@ import com.wimo.model.PerformanceMetrics;
 import com.wimo.repository.PerformanceMetricsRepository;
 
 @Service
-public class PerformanceMetricsServiceImpl implements PerformanceMetricsService{
-	@Autowired
-	PerformanceMetricsRepository repository;
+public class PerformanceMetricsServiceImpl implements PerformanceMetricsService {
+   @Autowired
+    PerformanceMetricsRepository repository;
 
-	@Autowired
-	ZoneClient zoneClient;
+   @Autowired
+    ZoneClient zoneClient;
 
-	@Autowired
-	TransactionLogClient transactionClient;
-	
-	Logger log=LoggerFactory.getLogger(PerformanceMetricsServiceImpl.class);
-	
-	@Scheduled(cron="0 0 0 * * ?")//at every midnight
-	public void scheduleMetricsCalculation() {
-		calculateAndSaveMetrics();
-	}
-	//Calculating and saving the metrics....! 
-	@Override
+   @Autowired
+    TransactionLogClient transactionClient;
+
+    Logger log = LoggerFactory.getLogger(PerformanceMetricsServiceImpl.class);
+
+    /**
+     and save performance metrics at midnight every day.
+     */
+    @Scheduled(cron = "0 0 0 * * ?")
+    public void scheduleMetricsCalculation() {
+        calculateAndSaveMetrics();
+    }
+
+    /**
+     * Method to calculate and save performance metrics such as inventory turnover rate and space utilization.
+     */
+    @Override
     public void calculateAndSaveMetrics() {
-		log.info("Calculating and saving the metrics....! ");
-		double turnoverRate = calculateInventoryTurnoverRate();
-		PerformanceMetrics turnoverMetric = new PerformanceMetrics();
-		turnoverMetric.setType("Turnover");
-		turnoverMetric.setValue(turnoverRate);
-		repository.save(turnoverMetric);
+        log.info("Calculating and saving the metrics....! ");
+        double turnoverRate = calculateInventoryTurnoverRate();
+        PerformanceMetrics turnoverMetric = new PerformanceMetrics();
+        turnoverMetric.setType("Turnover");
+        turnoverMetric.setValue(turnoverRate);
+        repository.save(turnoverMetric);
 
-		double spaceUtilization = calculateSpaceUtilization();
-		PerformanceMetrics spaceUtilizationMetric = new PerformanceMetrics();
-		spaceUtilizationMetric.setType("Space Utilization");
-		spaceUtilizationMetric.setValue(spaceUtilization);
-		repository.save(spaceUtilizationMetric);
-	}
+        double spaceUtilization = calculateSpaceUtilization();
+        PerformanceMetrics spaceUtilizationMetric = new PerformanceMetrics();
+        spaceUtilizationMetric.setType("Space Utilization");
+        spaceUtilizationMetric.setValue(spaceUtilization);
+        repository.save(spaceUtilizationMetric);
+    }
 
-	private double calculateInventoryTurnoverRate() {
-		// Define the period for calculation (last 30 days)
-		LocalDateTime startDate = LocalDateTime.now().minusDays(30);
-		LocalDateTime endDate = LocalDateTime.now();
-		// Fetch all outbound transactions within the period
-		List<TransactionLog> outboundTransactions = transactionClient.findByTimestampBetween(startDate, endDate);
+    /**
+     * Method to calculate the inventory turnover rate based on transactions within the last 30 days.
+     * 
+     * @return the calculated inventory turnover rate
+     */
+    private double calculateInventoryTurnoverRate() {
+        LocalDateTime startDate = LocalDateTime.now().minusDays(30);
+        LocalDateTime endDate = LocalDateTime.now();
+        List<TransactionLog> outboundTransactions = transactionClient.findByTimestampBetween(startDate, endDate);
 
-		// Calculate total sales (outbound transactions)
-		int totalSales = outboundTransactions.stream().mapToInt(TransactionLog::getQuantity).sum();
+        int totalSales = outboundTransactions.stream().mapToInt(TransactionLog::getQuantity).sum();
+        List<TransactionLog> allTransactions = transactionClient.findByTimestampBetween(startDate, endDate);
 
-		// Fetch all inbound and outbound transactions within the period
-		List<TransactionLog> allTransactions = transactionClient.findByTimestampBetween(startDate, endDate);
+        double totalInventory = 0.0;
+        int count = 0;
+        for (TransactionLog transaction : allTransactions) {
+            if (transaction.getType().equalsIgnoreCase("INBOUND")) {
+                totalInventory += transaction.getQuantity();
+            } else if (transaction.getType().equalsIgnoreCase("OUTBOUND")) {
+                totalInventory -= transaction.getQuantity();
+            }
+            count++;
+        }
+        double averageInventory = count > 0 ? totalInventory / count : 0.0;
 
-		// Calculate average inventory
-		double totalInventory = 0.0;
-		int count = 0;
-		for (TransactionLog transaction : allTransactions) {
-			if (transaction.getType().equalsIgnoreCase("INBOUND")) {
-				totalInventory += transaction.getQuantity();
-			} else if (transaction.getType().equalsIgnoreCase("OUTBOUND")) {
-				totalInventory -= transaction.getQuantity();
-			}
-			count++;
-		}
-		double averageInventory = count > 0 ? totalInventory / count : 0.0;
+        return averageInventory > 0 ? (totalSales / averageInventory) : 0.0;
+    }
 
-		// Calculate inventory turnover rate
-		return averageInventory > 0 ? (totalSales / averageInventory) : 0.0;
-	}
+    /**
+     * Method to calculate space utilization based on the total capacity and used space in all zones.
+     * 
+     * @return the calculated space utilization percentage
+     */
+    private double calculateSpaceUtilization() {
+        List<Zone> allZones = zoneClient.viewAll();
+        int totalCapacity = allZones.stream().mapToInt(Zone::getTotalCapacity).sum();
+        int usedSpace = allZones.stream().mapToInt(Zone::getStoredCapacity).sum();
 
-	private double calculateSpaceUtilization() {
-		List<Zone> allZones = zoneClient.viewAll();
-		// Calculate total capacity and used space
-		int totalCapacity = allZones.stream().mapToInt(Zone::getTotalCapacity).sum();
-		int usedSpace = allZones.stream().mapToInt(Zone::getStoredCapacity).sum();
-		// Calculate space utilization
-		return totalCapacity > 0 ? ((double)usedSpace / totalCapacity * 100) : 0.0;
-	}
-	//Getting the Metrics based on the type ----turnover /space utilization
-	@Override
-	public List<PerformanceMetrics> findByType(String type) {
-		log.info("Getting the Metrics based on the type ----turnover /space utilization");;
-		return repository.findByTypeIs(type);
-	}
+        return totalCapacity > 0 ? ((double) usedSpace / totalCapacity * 100) : 0.0;
+    }
+
+    /**
+     * Method to retrieve performance metrics based on the specified type.
+     * 
+     * @param type the type of performance metrics to retrieve
+     * @return a list of performance metrics matching the specified type
+     */
+    @Override
+    public List<PerformanceMetrics> findByType(String type) {
+        log.info("Getting the Metrics based on the type ----turnover /space utilization");
+        return repository.findByTypeIs(type);
+    }
 }

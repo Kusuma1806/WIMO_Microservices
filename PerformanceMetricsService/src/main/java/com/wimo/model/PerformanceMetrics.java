@@ -22,12 +22,16 @@ public class PerformanceMetrics {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private int metricId;
-	@NotBlank
+
+	@NotBlank(message = "Type cannot be blank")
 	private String type;
-	@NotNull
+
+	@NotNull(message = "Value cannot be null")
 	private double value;
+
 	@CreationTimestamp
 	private LocalDateTime timestamp;
+
 	public PerformanceMetrics(String type,double value) {
 		super();
 		this.type = type;

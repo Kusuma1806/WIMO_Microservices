@@ -11,17 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.wimo.model.PerformanceMetrics;
 import com.wimo.service.PerformanceMetricsService;
 
+
 @RestController
 @RequestMapping("/metrics")
 public class PerformanceMetricsController {
 	@Autowired
 	PerformanceMetricsService service;
 
-    @GetMapping("/bytype/{stype}") // http://localhost:9090/metrics/bytype/{stype}
+    @GetMapping("/bytype/{stype}")
     public List<PerformanceMetrics> getMetrics(@PathVariable("stype") String type) {
            return service.findByType(type);
     }
-    @GetMapping("/calmetrics") // http://localhost:9090/metrics/calmetrics
+    @GetMapping("/calmetrics") 
     public String calculateAndSaveMetrics() {
     	service.calculateAndSaveMetrics();
     	return "Metrics Generated";

@@ -46,7 +46,7 @@ class StockItemManagementServiceApplicationTests {
 	private Vendor vendor;
 
 	@BeforeEach
-	public void setUp() {
+	 void setUp() {
 		stockItem = new StockItem(1, "watch", "gadgets", 20, 3, 1);
 		zone = new Zone(1, "zonename", 1000, 500);
 
@@ -105,7 +105,6 @@ class StockItemManagementServiceApplicationTests {
 	@Test
 	void getStockItemTest() throws StockItemNotFound {
 		int stockId = 1;
-		StockItem stockItem = new StockItem(1, "samsung", "electronics", 20, 3, 1);
 
 		Mockito.when(repository.findById(stockId)).thenReturn(Optional.of(stockItem));
 
@@ -148,7 +147,7 @@ class StockItemManagementServiceApplicationTests {
 	}
 
 	@Test
-	public void testFindByZoneIdIs() {
+	 void testFindByZoneIdIs() {
 		when(zoneClient.viewZone(1)).thenReturn(zone);
 		when(repository.findByZoneIdIs(1)).thenReturn(List.of(stockItem));
 		StockZoneResponseDTO result = service.findByZoneIdIs(1);
@@ -157,7 +156,7 @@ class StockItemManagementServiceApplicationTests {
 	}
 
 	@Test
-	public void testFindByVendorIdIs() {
+	 void testFindByVendorIdIs() {
 		when(vendorClient.viewVendor(1)).thenReturn(vendor);
 		when(repository.findByVendorIdIs(1)).thenReturn(List.of(stockItem));
 

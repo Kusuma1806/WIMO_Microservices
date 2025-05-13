@@ -1,12 +1,12 @@
 package com.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.validation.constraints.Pattern;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,6 +23,7 @@ public class UserInfo {
 	@NotBlank
 	@Size(min = 3, max = 20, message = "user name should be in the range of 3-20")
 	private String name;
+	@Email(message="Give proper email")
 	private String email;
 	@NotBlank
 	@Size(min = 8, message = "minimum length of the password should be 8")

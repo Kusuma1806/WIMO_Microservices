@@ -14,19 +14,25 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class StockItem {
-	 @Id
-	 @Positive(message="Id shouldn't be zero or negative value")
-	 private int stockId;
-	 @NotBlank
-	 private String stockName;
-	 @NotBlank
-	 private String	stockCategory;
-	 @NotNull
-	 @Min(value=1)
-	 private int stockQuantity;
-	 @Positive(message="Id shouldn't be zero or negative value")
-	 private int zoneId;
-	 @NotNull
-	 private int vendorId;
+	@Id
+	@Positive(message="Id shouldn't be zero or negative value")
+	private int stockId;
+
+	@NotBlank(message="Stock name cannot be blank")
+	private String stockName;
+
+	@NotBlank(message="Stock category cannot be blank")
+	private String stockCategory;
+
+	@NotNull(message="Stock quantity cannot be null")
+	@Min(value=1, message="Stock quantity must be at least 1")
+	private int stockQuantity;
+
+	@Positive(message="Zone Id shouldn't be zero or negative value")
+	private int zoneId;
+
+	@NotNull(message="Vendor Id cannot be null")
+	private int vendorId;
+
 
 }

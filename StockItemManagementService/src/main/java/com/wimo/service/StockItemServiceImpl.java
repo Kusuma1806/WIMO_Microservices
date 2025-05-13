@@ -3,10 +3,10 @@ package com.wimo.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.wimo.dto.StockVendorResponseDTO;
 import com.wimo.dto.StockZoneResponseDTO;
@@ -20,138 +20,142 @@ import com.wimo.model.StockItem;
 import com.wimo.repository.StockItemRepository;
 
 @Service
+//@AllArgsConstructor
 public class StockItemServiceImpl implements StockItemService {
     private static final Logger logger = LoggerFactory.getLogger(StockItemServiceImpl.class);
-
     @Autowired
     StockItemRepository repository;
-
     @Autowired
     ZoneClient zoneClient;
-
     @Autowired
     VendorClient vendorClient;
-    int UpdateCapacity;
+    int updateCapacity;
 
+    /**
+     * Method to save a stock item and update the zone capacity.
+     * 
+     * @param stockItem the stock item to be saved
+     * @return a success message
+     * @throws SpaceNotAvailable if there is not enough space to store the stock
+     */
     @Override
     public String saveStockItem(StockItem stockItem) throws SpaceNotAvailable {
         logger.info("Saving stock item: {}", stockItem);
-        // Save the stock item to the repository
         repository.save(stockItem);
         logger.info("Stock item saved successfully: {}", stockItem);
-        
-        // Get the zone ID from the stock item
+
         int zoneId = stockItem.getZoneId();
-        
-        // Retrieve the zone details using the zone ID
         Zone zone = zoneClient.viewZone(zoneId);
-        
-        // Calculate the updated capacity of the zone
-        int UpdateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
-        
-        // Check if the updated capacity is within the total capacity of the zone
-        if (zone.getTotalCapacity() > UpdateCapacity) {
-            // Update the stored capacity of the zone
-            zone.setStoredCapacity(UpdateCapacity);
+        updateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
+
+        if (zone.getTotalCapacity() > updateCapacity) {
+            zone.setStoredCapacity(updateCapacity);
             zoneClient.updateZone(zone);
             logger.info("Zone capacity updated successfully: {}", zone);
         } else {
             logger.error("Space not available to store the stock: {}", stockItem);
-            // Throw an exception if there is not enough space to store the stock
             throw new SpaceNotAvailable("Space not available to store the stock!!!!");
         }
-        
-        // Return a success message
+
         return "StockItem Saved!!!";
     }
 
+    /**
+     * Method to update a stock item for inbound transactions and update the zone capacity.
+     * 
+     * @param stockItem the stock item to be updated
+     * @return the updated stock item
+     */
     @Override
     public StockItem updateStockItemForInbound(StockItem stockItem) {
         logger.info("Updating stock item for inbound: {}", stockItem);
-        // Get the zone ID from the stock item
         int zoneId = stockItem.getZoneId();
-        
-        // Retrieve the zone details using the zone ID
-        Zone zone = zoneClient.viewZone(zoneId);
-        
-        // Calculate the updated capacity of the zone
-        int UpdateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
-        
-        // Update the stored capacity of the zone
-        zone.setStoredCapacity(UpdateCapacity);
+        Zone zone;
+        try {
+            zone = zoneClient.viewZone(zoneId);
+        } catch (RuntimeException e) {
+            logger.error("Zone ID not found: {}", zoneId);
+            throw new RuntimeException("Zone ID not found");
+        }
+        updateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
+        zone.setStoredCapacity(updateCapacity);
         zoneClient.updateZone(zone);
         logger.info("Zone capacity updated successfully for inbound: {}", zone);
-        
-        // Save the updated stock item to the repository
+
         StockItem updatedStockItem = repository.save(stockItem);
         logger.info("Stock item updated successfully for inbound: {}", updatedStockItem);
         return updatedStockItem;
     }
 
+    /**
+     * Method to update a stock item for outbound transactions and update the zone capacity.
+     * 
+     * @param stockItem the stock item to be updated
+     * @return the updated stock item
+     */
     @Override
     public StockItem updateStockItemForOutbound(StockItem stockItem) {
         logger.info("Updating stock item for outbound: {}", stockItem);
-        // Get the zone ID from the stock item
         int zoneId = stockItem.getZoneId();
-        
-        // Retrieve the zone details using the zone ID
-        Zone zone = zoneClient.viewZone(zoneId);
-        
-        // Calculate the updated capacity of the zone
-        int UpdateCapacity = zone.getStoredCapacity() - stockItem.getStockQuantity();
-        
-        // Update the stored capacity of the zone
-        zone.setStoredCapacity(UpdateCapacity);
+        Zone zone;
+        try {
+            zone = zoneClient.viewZone(zoneId);
+        } catch (RuntimeException e) {
+            logger.error("Zone ID not found: {}", zoneId);
+            throw new RuntimeException("Zone ID not found");
+        }
+        updateCapacity = zone.getStoredCapacity() - stockItem.getStockQuantity();
+        zone.setStoredCapacity(updateCapacity);
         zoneClient.updateZone(zone);
         logger.info("Zone capacity updated successfully for outbound: {}", zone);
-        
-        // Save the updated stock item to the repository
+
         StockItem updatedStockItem = repository.save(stockItem);
         logger.info("Stock item updated successfully for outbound: {}", updatedStockItem);
         return updatedStockItem;
     }
 
+    /**
+     * Method to remove a stock item and update the zone capacity.
+     * 
+     * @param stockId the ID of the stock item to be removed
+     * @return a success message
+     * @throws StockItemNotFound if the stock item is not found
+     */
     @Override
     public String removeStockItem(int stockId) throws StockItemNotFound {
         logger.info("Removing stock item with ID: {}", stockId);
-        // Retrieve the stock item using the stock ID
         StockItem stockItem = repository.findById(stockId).get();
-        
-        // Check if the stock item exists
+
         if (stockItem == null) {
             logger.error("Stock item not found with ID: {}", stockId);
             throw new StockItemNotFound("Stock Item not found");
         }
-        
-        // Get the zone ID from the stock item
+
         int zoneId = stockItem.getZoneId();
-        
-        // Retrieve the zone details using the zone ID
         Zone zone = zoneClient.viewZone(zoneId);
-        
-        // Calculate the updated capacity of the zone
-        int UpdateCapacity = zone.getStoredCapacity() - stockItem.getStockQuantity();
-        
-        // Update the stored capacity of the zone
-        zone.setStoredCapacity(UpdateCapacity);
+        updateCapacity = zone.getStoredCapacity() - stockItem.getStockQuantity();
+        zone.setStoredCapacity(updateCapacity);
         zoneClient.updateZone(zone);
         logger.info("Zone capacity updated successfully after removing stock item: {}", zone);
-        
-        // Delete the stock item from the repository
+
         repository.deleteById(stockId);
         logger.info("Stock item removed successfully: {}", stockId);
-        
-        // Return a success message
+
         return "StockItem Deleted and updated the zone capacity!!!";
     }
 
+    /**
+     * Method to retrieve a stock item by its ID.
+     * 
+     * @param stockId the ID of the stock item to be retrieved
+     * @return the retrieved stock item
+     * @throws StockItemNotFound if the stock item is not found
+     */
     @Override
     public StockItem getStockItemById(int stockId) throws StockItemNotFound {
         logger.info("Retrieving stock item with ID: {}", stockId);
-        // Retrieve the stock item using the stock ID
         Optional<StockItem> optional = repository.findById(stockId);
-        
-        // Check if the stock item exists
+
         if (optional.isPresent()) {
             logger.info("Stock item found: {}", optional.get());
             return optional.get();
@@ -161,49 +165,66 @@ public class StockItemServiceImpl implements StockItemService {
         }
     }
 
+    /**
+     * Method to retrieve all stock items.
+     * 
+     * @return a list of all stock items
+     */
     @Override
     public List<StockItem> getAllStockItems() {
         logger.info("Retrieving all stock items");
-        // Retrieve all stock items from the repository
         List<StockItem> stockItems = repository.findAll();
         logger.info("All stock items retrieved successfully");
         return stockItems;
     }
 
+    /**
+     * Method to retrieve stock items by their category.
+     * 
+     * @param stockCategory the category of the stock items to be retrieved
+     * @return a list of stock items matching the specified category
+     */
     @Override
     public List<StockItem> findByStockCategoryIs(String stockCategory) {
         logger.info("Retrieving stock items by category: {}", stockCategory);
-        // Retrieve stock items by category from the repository
         List<StockItem> stockItems = repository.findByStockCategoryIs(stockCategory);
         logger.info("Stock items retrieved successfully by category: {}", stockCategory);
         return stockItems;
     }
 
+    /**
+     * Method to retrieve zone details and stock items by zone ID.
+     * 
+     * @param zoneId the ID of the zone to be retrieved
+     * @return a response DTO containing the zone details and stock items
+     */
     @Override
     public StockZoneResponseDTO findByZoneIdIs(int zoneId) {
         logger.info("Retrieving zone and stock items by zone ID: {}", zoneId);
-        // Retrieve the zone details using the zone ID
-        Zone zone = zoneClient.viewZone(zoneId);
-        
-        // Retrieve stock items by zone ID from the repository
+        Zone zone;
+        try {
+            zone = zoneClient.viewZone(zoneId);
+        } catch (RuntimeException e) {
+            logger.error("Zone ID not found: {}", zoneId);
+            throw new RuntimeException("Zone ID not found");
+        }
         List<StockItem> stocks = repository.findByZoneIdIs(zoneId);
-        
-        // Create a response DTO with the zone and stock items
         StockZoneResponseDTO responseDTO = new StockZoneResponseDTO(zone, stocks);
         logger.info("Zone and stock items retrieved successfully by zone ID: {}", zoneId);
         return responseDTO;
     }
 
+    /**
+     * Method to retrieve vendor details and stock items by vendor ID.
+     * 
+     * @param vendorId the ID of the vendor to be retrieved
+     * @return a response DTO containing the vendor details and stock items
+     */
     @Override
     public StockVendorResponseDTO findByVendorIdIs(int vendorId) {
         logger.info("Retrieving vendor and stock items by vendor ID: {}", vendorId);
-        // Retrieve the vendor details using the vendor ID
         Vendor vendor = vendorClient.viewVendor(vendorId);
-        
-        // Retrieve stock items by vendor ID from the repository
         List<StockItem> stocks = repository.findByVendorIdIs(vendorId);
-        
-        // Create a response DTO with the vendor and stock items
         StockVendorResponseDTO responseDTO = new StockVendorResponseDTO(vendor, stocks);
         logger.info("Vendor and stock items retrieved successfully by vendor ID: {}", vendorId);
         return responseDTO;

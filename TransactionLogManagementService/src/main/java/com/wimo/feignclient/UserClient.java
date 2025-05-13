@@ -9,7 +9,7 @@ import com.wimo.dto.UserInfo;
 
 @FeignClient(name="SECURITY-SERVICE",path="/auth")
 public interface UserClient {
-	@GetMapping("/fetchById/{id}") // http://localhost:9090/auth/fetchById/{id}
-	public UserInfo getUserById(@PathVariable("id") int id);
+	@GetMapping("/fetchById/{uid}") 
+	public UserInfo getUserById(@PathVariable("uid") int id);
 
 }

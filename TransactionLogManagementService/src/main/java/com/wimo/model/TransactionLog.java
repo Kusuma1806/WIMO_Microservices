@@ -20,21 +20,29 @@ import lombok.NoArgsConstructor;
 public class TransactionLog {
 	@Id
 	private int transactionId;
-	@Positive
+
+	@Positive(message = "Stock ID must be a positive number.")
 	private int stockId;
-	@NotNull
+
+	@NotNull(message = "User ID cannot be null.")
 	private int userId;
-	@Positive
+
+	@Positive(message = "Zone ID must be a positive number.")
 	private int zoneId;
-	@Positive
+
+	@Positive(message = "Quantity must be a positive number.")
 	private int quantity;
-	@NotBlank
+
+	@NotBlank(message = "Type cannot be blank.")
 	private String type;
+
 	@CreationTimestamp
 	private LocalDateTime timestamp;
-	@Positive
-	@NotNull
+
+	@Positive(message = "Price must be a positive number.")
+	@NotNull(message = "Price cannot be null.")
 	private double price;
+
 
 	public TransactionLog(int userId,int zoneId,int transactionId, int stockId, int quantity, String type,
 			double price) {
@@ -42,6 +50,7 @@ public class TransactionLog {
 		this.transactionId = transactionId;
 		this.stockId = stockId;
 		this.userId = userId;
+		this.zoneId=zoneId;
 		this.quantity = quantity;
 		this.type = type;
 		this.price = price;

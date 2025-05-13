@@ -7,7 +7,6 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,13 +22,10 @@ import com.repository.UserInfoRepository;
 import com.service.JwtService;
 import com.service.UserService;
 
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin("*")
-@AllArgsConstructor
 @NoArgsConstructor
 public class AuthController {
 	@Autowired
@@ -41,17 +37,17 @@ public class AuthController {
 	@Autowired
 	private AuthenticationManager authenticationManager;
 
-	@GetMapping("/welcome") // http://localhost:9090/auth/welcome
+	@GetMapping("/welcome") 
 	public String welcome() {
 		return "Welcome this endpoint is not secure";
 	}
 
-	@PostMapping("/new") // http://localhost:9090/auth/new
+	@PostMapping("/new") 
 	public String addNewUser(@RequestBody UserInfo userInfo) {
 		return service.addUser(userInfo);
 	}
 
-	@PostMapping("/authenticate") // http://localhost:9090/auth/authenticate
+	@PostMapping("/authenticate") 
 	public String authenticateAndGetToken(@RequestBody AuthRequest authRequest) {
 		Authentication authentication = authenticationManager.authenticate(
 				new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
@@ -63,22 +59,22 @@ public class AuthController {
 		}
 	}
 
-	@GetMapping("/getroles/{username}") // http://localhost:9090/auth/getroles/{username}
+	@GetMapping("/getroles/{username}") 
 	public String getRoles(@PathVariable String username) {
 		return service.getRoles(username);
 	}
 
-	@GetMapping("/fetchById/{id}") // http://localhost:9090/auth/fetchById/{id}
-	public UserInfo getUserById(@PathVariable("id") int id) throws UserRoleNotFound {
+	@GetMapping("/fetchById/{uid}") 
+	public UserInfo getUserById(@PathVariable("uid") int id) throws UserRoleNotFound {
 		return service.getUserById(id);
 	}
 
-	@DeleteMapping("/deleteById/{uid}") // http://localhost:9090/auth/deleteById/{id}
+	@DeleteMapping("/deleteById/{uid}") 
 	public String removeUser(@PathVariable("uid") int id) {
 		return service.removeUser(id);
 	}
 
-	@GetMapping("/fetchAll") // http://localhost:9090/auth/fetchAll
+	@GetMapping("/fetchAll") 
 	public List<UserInfo> getAllUsers() {
 		return service.getAllUsers();
 	}

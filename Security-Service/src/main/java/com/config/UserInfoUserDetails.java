@@ -11,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.entity.UserInfo;
 
+@SuppressWarnings("serial")
 public class UserInfoUserDetails implements UserDetails {
 
 

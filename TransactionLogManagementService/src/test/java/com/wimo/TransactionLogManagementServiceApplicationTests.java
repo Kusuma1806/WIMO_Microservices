@@ -41,7 +41,7 @@ class TransactionLogManagementApplicationTests {
 	private StockClient stockClient;
 
 	@Test
-	public void testRecordTransactionLog() throws StockItemNotFound {
+	 void testRecordTransactionLog() throws StockItemNotFound {
 
 		StockItem stockItem = new StockItem(1, "watch", "gadgets", 20, 3, 1);
 
@@ -55,7 +55,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void testRecordTransactionLog_StockItemNotFound() {
+	 void testRecordTransactionLog_StockItemNotFound() {
 		TransactionLog transactionLog = new TransactionLog(1, 1, 1, 1, 1, "inbound", 100000.0);
 		Mockito.when(stockClient.viewTransactionByStock(transactionLog.getStockId())).thenReturn(null);
 		assertThrows(StockItemNotFound.class, () -> {
@@ -64,7 +64,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void testGetTransactionLogsByStock() {
+	 void testGetTransactionLogsByStock() {
 		StockItem stockItem = new StockItem(1, "watch", "gadgets", 20, 3, 1);
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000),
 				new TransactionLog(3, 1, 1, 1, 10, "Inbound", 20000));
@@ -75,7 +75,7 @@ class TransactionLogManagementApplicationTests {
 		assertEquals(transactionLogs, result.getTransactionLog());
 	}
 	@Test
-	public void testGetTransactionLogsByUser() {
+	 void testGetTransactionLogsByUser() {
 		UserInfo user = new UserInfo("Kusuma", "1234", "kusuma@gmail.com", "USER");
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000),
 				new TransactionLog(3, 1, 1, 1, 10, "Inbound", 20000));
@@ -86,7 +86,7 @@ class TransactionLogManagementApplicationTests {
 		assertEquals(transactionLogs, result.getTransactionLog());
 		}
 	@Test
-	public void testGetTransactionLogsByTimestampBetween() {
+	 void testGetTransactionLogsByTimestampBetween() {
 		LocalDateTime startDate = LocalDateTime.now().minusDays(1);
 		LocalDateTime endDate = LocalDateTime.now();
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000),
@@ -97,7 +97,7 @@ class TransactionLogManagementApplicationTests {
 		}
 
 	@Test
-	public void getTransactionLogByIdTest() throws TransactionLogNotFound {
+	 void getTransactionLogByIdTest() throws TransactionLogNotFound {
 		int transactionId = 2;
 		TransactionLog transactionLog = new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000);
 		Mockito.when(repository.findById(transactionId)).thenReturn(Optional.of(transactionLog));
@@ -118,7 +118,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void getAllTransactionLogsTest() {
+	 void getAllTransactionLogsTest() {
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000),
 				new TransactionLog(3, 1, 1, 1, 10, "Inbound", 20000));
 		Mockito.when(repository.findAll()).thenReturn(transactionLogs);
@@ -127,7 +127,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void deleteTransactionLogTest() {
+	 void deleteTransactionLogTest() {
 		int transactionId = 10;
 		Mockito.doNothing().when(repository).deleteById(transactionId);
 		String response = service.deleteTransactionLog(transactionId);
@@ -135,7 +135,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void getTransactionLogsByPriceBetweenTest() {
+	 void getTransactionLogsByPriceBetweenTest() {
 		Double initialPrice = 1000.00;
 		Double finalPrice = 25000.00;
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 1500),
@@ -146,7 +146,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void getTransactionLogsByTypeTest() {
+	 void getTransactionLogsByTypeTest() {
 		String type = "Inbound";
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 1500),
 				new TransactionLog(3, 1, 1, 1, 10, "Inbound", 20000));

@@ -23,10 +23,9 @@ public class CustomGlobalExceptionHandler {
 		Map<String, Object> body = new HashMap<>();
 		body.put("timestamp", new Date());
 		// Get all errors
-		ex.getBindingResult().getAllErrors().forEach(error -> {
-				body.put(((FieldError)error).getField(),error.getDefaultMessage());
-			});
-		return new ResponseEntity<Object>(body, HttpStatus.BAD_REQUEST);
+		ex.getBindingResult().getAllErrors().forEach(error -> 
+				body.put(((FieldError)error).getField(),error.getDefaultMessage()));
+		return new ResponseEntity<>(body, HttpStatus.BAD_REQUEST);
 
 	}
 
@@ -39,7 +38,7 @@ public class CustomGlobalExceptionHandler {
 		exceptionResponse.setTime(LocalDateTime.now());
 		exceptionResponse.setMessage(exception.getMessage());
 
-		return new ResponseEntity<ExceptionResponse>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
+		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
 
 	}
 
@@ -51,7 +50,7 @@ public class CustomGlobalExceptionHandler {
 		exceptionResponse.setTime(LocalDateTime.now());
 		exceptionResponse.setMessage(exception.getMessage());
 
-		return new ResponseEntity<ExceptionResponse>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
+		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
 
 	}
 }

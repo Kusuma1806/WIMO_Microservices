@@ -23,15 +23,26 @@ public class CustomGlobalExceptionHandler {
 		Map<String, Object> body = new HashMap<>();
 		body.put("timestamp", new Date());
 		// Get all errors
-		ex.getBindingResult().getAllErrors().forEach(error -> {
-				body.put(((FieldError)error).getField(),error.getDefaultMessage());
-	});
+		ex.getBindingResult().getAllErrors().forEach(error -> 
+				body.put(((FieldError)error).getField(),error.getDefaultMessage()));
 		return new ResponseEntity<>(body, HttpStatus.BAD_REQUEST);
 
 	}
 
 	@ExceptionHandler(value = TransactionLogNotFound.class)
 	public ResponseEntity<ExceptionResponse> handleCustomException(TransactionLogNotFound exception,
+			WebRequest webRequest) {
+
+		ExceptionResponse exceptionResponse = new ExceptionResponse();
+		exceptionResponse.setStatus(404);
+		exceptionResponse.setTime(LocalDateTime.now());
+		exceptionResponse.setMessage(exception.getMessage());
+
+		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
+
+	}
+	@ExceptionHandler(value = StockItemNotFound.class)
+	public ResponseEntity<ExceptionResponse> handleCustomException(StockItemNotFound exception,
 			WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();

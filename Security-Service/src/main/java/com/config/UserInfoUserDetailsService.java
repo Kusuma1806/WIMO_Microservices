@@ -3,7 +3,9 @@ package com.config;
 import com.entity.UserInfo;
 import com.repository.UserInfoRepository;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -12,9 +14,11 @@ import org.springframework.stereotype.Component;
 import java.util.Optional;
 
 @Component
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserInfoUserDetailsService implements UserDetailsService {
 
-    @Autowired
+    
     private UserInfoRepository repository;
 
     @Override

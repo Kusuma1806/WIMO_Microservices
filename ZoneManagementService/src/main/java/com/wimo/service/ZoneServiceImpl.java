@@ -16,86 +16,82 @@ import com.wimo.model.Zone;
 import com.wimo.repository.ZoneRepository;
 
 @Service
+//@AllArgsConstructor
 public class ZoneServiceImpl implements ZoneService {
 
-	@Autowired
-	ZoneRepository repository;
+    @Autowired
+    ZoneRepository repository;
 
-	@Autowired
-	StockClient stockClient;
-	
+   @Autowired
+    StockClient stockClient;
+    
     Logger logger = LoggerFactory.getLogger(ZoneServiceImpl.class);
 
+    /**
+     * Save the zone to the repository and return a success message.
+     */
+    @Override
+    public String saveZone(Zone zone) {
+        logger.info("Saving zone");
+        repository.save(zone);
+        logger.info("Zone saved successfully");
+        return "Zone Saved!!!";
+    }
 
-	@Override
-	public String saveZone(Zone zone) {
-		// Save the zone to the repository
-		logger.info("Saving zone");
-		repository.save(zone);
+    /**
+     * Update the zone in the repository.
+     */
+    @Override
+    public Zone updateZone(Zone zone) {
+        logger.info("Updating zone");
+        return repository.save(zone);
+    }
 
-		// Return a success message
-		logger.info("Zone saved successfully");
-		return "Zone Saved!!!";
-	}
+    /**
+     * Remove the zone and all stock items in it using the zone ID.
+     */
+    @Override
+    public String removeZone(int zoneId) {
+        if(repository.existsById(zoneId)) {
+            logger.info("Removing zone with ID");
+            StockZoneResponseDTO responseDTO = stockClient.findByZoneIdIs(zoneId);
+            List<StockItem> stocks = responseDTO.getStock();
 
-	@Override
-	public Zone updateZone(Zone zone) {
-		logger.info("Updating zone");
-		// Update the zone in the repository
-		return repository.save(zone);
-	}
+            for (StockItem stock : stocks) {
+                logger.info("Removing stock item: {}", stock);
+                stockClient.removeStockItem(stock.getStockId());
+            }
+            logger.info("Zone and all stocks in it removed successfully: {}", zoneId);
+            repository.deleteById(zoneId);
+            return "Zone and all the stocks in that are Deleted!!!";
+        } else {
+            return "Zone Not Found";
+        }
+    }
 
-	@Override
-	public String removeZone(int zoneId) {
-		if(repository.existsById(zoneId)) {
-		logger.info("Removing zone with ID");
-		// Retrieve the stock items in the zone using the zone ID
-		StockZoneResponseDTO responseDTO = stockClient.findByZoneIdIs(zoneId);
-		List<StockItem> stocks = responseDTO.getStock();
-
-		// Remove each stock item in the zone
-		for (StockItem stock : stocks) {
-            
-			logger.info("Removing stock item: {}", stock);
-
-			stockClient.removeStockItem(stock.getStockId());
-		}
-		logger.info("Zone and all stocks in it removed successfully: {}", zoneId);
-		// Delete the zone using the zone ID
-		repository.deleteById(zoneId);
-		// Return a success message
-		return "Zone and all the stocks in that are Deleted!!!";
-		}
-		else {
-			return "Zone Not Found";
-		}
-		
-}
-
-
-	@Override
-	public Zone getZoneById(int userId) throws ZoneNotFound {
-
+    /**
+     * Retrieve the zone using the user ID.
+     * @throws ZoneNotFound if the zone is not found.
+     */
+    @Override
+    public Zone getZoneById(int userId) throws ZoneNotFound {
         logger.info("Retrieving zone with ID: {}", userId);
+        Optional<Zone> optional = repository.findById(userId);
 
-		// Retrieve the zone using the user ID
-		Optional<Zone> optional = repository.findById(userId);
+        if (optional.isPresent()) {
+            return optional.get();
+        } else {
+            logger.error("Zone not found with ID: {}", userId);
+            throw new ZoneNotFound("Zone is not Found........");
+        }
+    }
 
-		// Check if the zone exists
-		if (optional.isPresent()) {
-			return optional.get();
-		}
-		else {
-			logger.error("Zone not found with ID: {}", userId);
-			throw new ZoneNotFound("Zone is not Found........");
-		}
-	}
-
-	@Override
-	public List<Zone> getAllZones() {
-		logger.info("Retrieving all zones");
-		// Retrieve all zones from the repository
-		return repository.findAll();
-	}
-
+    /**
+     * Retrieve all zones from the repository.
+     */
+    @Override
+    public List<Zone> getAllZones() {
+        logger.info("Retrieving all zones");
+        return repository.findAll();
+    }
 }

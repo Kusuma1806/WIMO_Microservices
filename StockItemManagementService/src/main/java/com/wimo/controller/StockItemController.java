@@ -21,44 +21,45 @@ import com.wimo.model.StockItem;
 import com.wimo.service.StockItemService;
 @RestController
 @RequestMapping("/stock")
+
 public class StockItemController {
-    @Autowired
+	@Autowired
     StockItemService service;
     
-    @PostMapping("/save") //http://localhost:9090/stock/save
+    @PostMapping("/save")
 	public String saveStockItem(@RequestBody @Validated StockItem stockItem) throws SpaceNotAvailable {
 		return service.saveStockItem(stockItem);
 	}
 
-	@PutMapping("/updateInbound") //http://localhost:9090/stock/updateInbound
+	@PutMapping("/updateInbound") 
 	public StockItem updateStockItemForInbound(@RequestBody @Validated StockItem stockItem){
 		return service.updateStockItemForInbound(stockItem);
 	}
-	@PutMapping("/updateOutbound") //http://localhost:9090/stock/updateOutbound
+	@PutMapping("/updateOutbound") 
 	public StockItem updateStockItemForOutbound(@RequestBody @Validated StockItem stockItem){
 		return service.updateStockItemForOutbound(stockItem);
 	}
-	@GetMapping("/fetchById/{id}") //http://localhost:9090/stock/fetchById/{id}
+	@GetMapping("/fetchById/{id}") 
 	public StockItem getStockItemById(@PathVariable("id") int stockId) throws StockItemNotFound{
 		return service.getStockItemById(stockId);
 	}
-	@DeleteMapping("/deleteById/{id}") //http://localhost:9090/stock/deleteById/{id}
+	@DeleteMapping("/deleteById/{id}") 
 	public String removeStockItem(@PathVariable("id") int stockId) throws StockItemNotFound {
 		return service.removeStockItem(stockId);
 	}
-	@GetMapping("/fetchAll") //http://localhost:9090/stock/fetchAll
+	@GetMapping("/fetchAll")
 	public List<StockItem> getAllStockItems() {
 		return service.getAllStockItems();
 	}
-	@GetMapping("/fetchByCategory/{category}") //http://localhost:9090/stock/fetchByCategory/{category}
+	@GetMapping("/fetchByCategory/{category}") 
 	public List<StockItem> findByStockCategoryIs(@PathVariable("category") String stockCategory){
 		return service.findByStockCategoryIs(stockCategory);
 	}
-	@GetMapping("/fetchByZoneId/{zid}") //http://localhost:9090/stock/fetchByZoneId/{zid}
+	@GetMapping("/fetchByZoneId/{zid}") 
 	public StockZoneResponseDTO findByZoneIdIs(@PathVariable("zid") int zoneId){
 		return service.findByZoneIdIs(zoneId);
 	}
-	@GetMapping("/fetchByVendorId/{vid}")//http://localhost:9090/stock/fetchByVendorId/{vid}
+	@GetMapping("/fetchByVendorId/{vid}")
 	public StockVendorResponseDTO findByVendorIdIs(@PathVariable("vid") int vendorId){
 		return service.findByVendorIdIs(vendorId);
 	}

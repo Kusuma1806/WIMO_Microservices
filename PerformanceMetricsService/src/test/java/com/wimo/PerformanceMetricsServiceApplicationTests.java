@@ -1,7 +1,6 @@
 package com.wimo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.time.LocalDateTime;
@@ -37,16 +36,15 @@ class PerformanceMetricsServiceApplicationTests {
 	    @InjectMocks
 	    private PerformanceMetricsServiceImpl performanceMetricsService;
 	    
-	    private Zone zone;
 	    private PerformanceMetrics performanceMetrics;
 
 	    @BeforeEach
-	    public void setUp() {
+	     void setUp() {
 	        performanceMetrics = new PerformanceMetrics("Turnover", 5.0);
 	    }
 
 	    @Test
-	    public void testCalculateAndSaveMetrics() {
+	     void testCalculateAndSaveMetrics() {
 	        LocalDateTime startDate = LocalDateTime.now().minusDays(30);
 	        LocalDateTime endDate = LocalDateTime.now();
 	        List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000),
@@ -61,7 +59,7 @@ class PerformanceMetricsServiceApplicationTests {
 	    }
 
 	    @Test
-	    public void testFindByType() {
+	     void testFindByType() {
 	        when(repository.findByTypeIs("Turnover")).thenReturn(List.of(performanceMetrics));
 	        List<PerformanceMetrics> result = performanceMetricsService.findByType("Turnover");
 

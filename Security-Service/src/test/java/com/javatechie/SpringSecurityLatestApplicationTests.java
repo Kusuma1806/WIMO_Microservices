@@ -36,7 +36,7 @@ class SpringSecurityLatestApplicationTests {
 	    private UserService userService;
 
 	    @Test
-	    public void testAddUser_NewUser() {
+	     void testAddUser_NewUser() {
 	    	UserInfo userInfo=new UserInfo("Kusuma","1234","kusuma@gmail.com","USER");
 	        when(repository.findByName(userInfo.getName())).thenReturn(Optional.empty());
 	        when(passwordEncoder.encode(userInfo.getPassword())).thenReturn("encodedPassword");
@@ -48,7 +48,7 @@ class SpringSecurityLatestApplicationTests {
 	    }
 
 	    @Test
-	    public void testAddUser_ExistingUser() {
+	     void testAddUser_ExistingUser() {
 	    	UserInfo userInfo=new UserInfo("Kusuma","1234","kusuma@gmail.com","USER");
 	        when(repository.findByName(userInfo.getName())).thenReturn(Optional.of(userInfo));
 
@@ -58,7 +58,7 @@ class SpringSecurityLatestApplicationTests {
 	    }
 
 	    @Test
-	    public void testGetRoles_UserExists() {
+	     void testGetRoles_UserExists() {
 	    	UserInfo userInfo=new UserInfo("Kusuma","1234","kusuma@gmail.com","USER");
 	        when(repository.findByName(userInfo.getName())).thenReturn(Optional.of(userInfo));
 	        userInfo.setRoles("USER");
@@ -69,7 +69,7 @@ class SpringSecurityLatestApplicationTests {
 	    }
 
 	    @Test
-	    public void testGetRoles_UserNotFound() {
+	     void testGetRoles_UserNotFound() {
 	    	UserInfo userInfo=new UserInfo("Kusuma","1234","kusuma@gmail.com","USER");
 	        when(repository.findByName(userInfo.getName())).thenReturn(Optional.empty());
 
@@ -79,7 +79,7 @@ class SpringSecurityLatestApplicationTests {
 	    }
 
 	    @Test
-	    public void testRemoveUser() {
+	     void testRemoveUser() {
 	    	int id=1;
 	        Mockito.doNothing().when(repository).deleteById(id);
 
@@ -88,7 +88,7 @@ class SpringSecurityLatestApplicationTests {
 	    }
 
 	    @Test
-	    public void testGetUserById_UserExists() throws UserRoleNotFound {
+	     void testGetUserById_UserExists() throws UserRoleNotFound {
 	    	int id=1;
 	    	UserInfo userInfo=new UserInfo("Kusuma","1234","kusuma@gmail.com","USER");
 	        when(repository.findById(id)).thenReturn(Optional.of(userInfo));
@@ -99,7 +99,7 @@ class SpringSecurityLatestApplicationTests {
 	    }
 
 	    @Test
-	    public void testGetUserById_UserNotFound() {
+	     void testGetUserById_UserNotFound() {
 	    	int id=1;
 	        when(repository.findById(id)).thenReturn(Optional.empty());
 
@@ -109,7 +109,7 @@ class SpringSecurityLatestApplicationTests {
 	    }
 
 	    @Test
-	    public void testGetAllUsers() {
+	     void testGetAllUsers() {
 	    	List<UserInfo> users=Arrays.asList(new UserInfo("Kusuma","1234","kusuma@gmail.com","USER"),new UserInfo("Kusuma","1234","kusuma@gmail.com","USER"));
 	        Mockito.when(repository.findAll()).thenReturn(users);
 

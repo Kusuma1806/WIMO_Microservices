@@ -55,7 +55,7 @@ class ZoneManagementServiceApplicationTests {
 	}
 
 	@Test
-	public void testRemoveZone_Success() {
+	 void testRemoveZone_Success() {
 		Zone zone = new Zone(1, "soaps", 5, 3);
 		Mockito.when(repository.existsById(zone.getZoneId())).thenReturn(true);
 		Mockito.when(stockClient.findByZoneIdIs(zone.getZoneId())).thenReturn(responseDTO);
@@ -68,7 +68,7 @@ class ZoneManagementServiceApplicationTests {
 	}
 
 	@Test
-	public void testRemoveZone_NotFound() {
+	 void testRemoveZone_NotFound() {
 		Zone zone = new Zone(1, "soaps", 5, 3);
 		Mockito.when(repository.existsById(zone.getZoneId())).thenReturn(false);
 		String result = service.removeZone(zone.getZoneId());
