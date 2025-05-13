@@ -41,7 +41,7 @@ public class StockItemServiceImpl implements StockItemService {
     @Override
     public String saveStockItem(StockItem stockItem) throws SpaceNotAvailable {
         logger.info("Saving stock item: {}", stockItem);
-        repository.save(stockItem);
+        repository.save(stockItem); 
         logger.info("Stock item saved successfully: {}", stockItem);
 
         int zoneId = stockItem.getZoneId();
