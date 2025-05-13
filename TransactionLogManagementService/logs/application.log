@@ -1858,3 +1858,76 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2025-05-13T13:22:11.972+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9095
 2025-05-13T13:22:12.008+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] ansactionLogManagementServiceApplication : Started TransactionLogManagementServiceApplication in 11.472 seconds (process running for 12.964)
 2025-05-13T13:22:12.025+05:30  INFO 21228 --- [TransactionLogManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TRANSACTIONLOGMANAGEMENTSERVICE/LTIN620190.cts.com:TransactionLogManagementService:9095 - registration status: 204
+2025-05-13T13:23:10.480+05:30  INFO 21228 --- [TransactionLogManagementService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-05-13T13:23:10.485+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TRANSACTIONLOGMANAGEMENTSERVICE with eureka with status DOWN
+2025-05-13T13:23:10.486+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747122790486, current=DOWN, previous=UP]
+2025-05-13T13:23:10.486+05:30  INFO 21228 --- [TransactionLogManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TRANSACTIONLOGMANAGEMENTSERVICE/LTIN620190.cts.com:TransactionLogManagementService:9095: registering service...
+2025-05-13T13:23:10.492+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-13T13:23:10.498+05:30  INFO 21228 --- [TransactionLogManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TRANSACTIONLOGMANAGEMENTSERVICE/LTIN620190.cts.com:TransactionLogManagementService:9095 - registration status: 204
+2025-05-13T13:23:10.504+05:30  INFO 21228 --- [TransactionLogManagementService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-13T13:23:10.514+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-13T13:23:10.520+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-13T13:23:10.541+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-13T13:23:10.543+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-13T13:23:13.545+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-13T13:23:13.546+05:30  WARN 21228 --- [TransactionLogManagementService] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-05-13T13:23:13.556+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TRANSACTIONLOGMANAGEMENTSERVICE/LTIN620190.cts.com:TransactionLogManagementService:9095 - deregister  status: 200
+2025-05-13T13:23:13.557+05:30  INFO 21228 --- [TransactionLogManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-13T13:23:14.520+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] ansactionLogManagementServiceApplication : Starting TransactionLogManagementServiceApplication using Java 21.0.6 with PID 21228 (C:\Users\2400899\git\WIMO_Final\TransactionLogManagementService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\TransactionLogManagementService)
+2025-05-13T13:23:14.520+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] ansactionLogManagementServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-05-13T13:23:14.524+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-05-13T13:23:14.524+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=TransactionLogManagementService, profiles=[default], label=null, version=4c061525a0d31d1dbd06ab15bc30029068a2a1c7, state=
+2025-05-13T13:23:15.035+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-13T13:23:15.065+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-05-13T13:23:15.233+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da1f67bb-5164-391f-9f19-d666f5fb6acc
+2025-05-13T13:23:15.375+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9095 (http)
+2025-05-13T13:23:15.377+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-13T13:23:15.378+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-13T13:23:15.486+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-13T13:23:15.487+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 962 ms
+2025-05-13T13:23:15.585+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-13T13:23:15.595+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-13T13:23:15.612+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-13T13:23:15.614+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-13T13:23:15.641+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ae23bbe
+2025-05-13T13:23:15.642+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-13T13:23:15.645+05:30  WARN 21228 --- [TransactionLogManagementService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-13T13:23:15.646+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-13T13:23:15.740+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-13T13:23:15.760+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-13T13:23:15.929+05:30  WARN 21228 --- [TransactionLogManagementService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-13T13:23:15.957+05:30  WARN 21228 --- [TransactionLogManagementService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-13T13:23:16.017+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'STOCKITEMMANAGEMENTSERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-05-13T13:23:16.076+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'SECURITY-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-05-13T13:23:16.340+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-13T13:23:16.357+05:30  WARN 21228 --- [TransactionLogManagementService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-13T13:23:16.394+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-13T13:23:16.398+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-13T13:23:16.398+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T13:23:16.399+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-13T13:23:16.400+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-13T13:23:16.400+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-13T13:23:16.400+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-13T13:23:16.400+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-13T13:23:16.401+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-13T13:23:16.401+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-13T13:23:16.474+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-13T13:23:16.475+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-13T13:23:16.476+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-13T13:23:16.477+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747122796477 with initial instances count: 5
+2025-05-13T13:23:16.479+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TRANSACTIONLOGMANAGEMENTSERVICE with eureka with status UP
+2025-05-13T13:23:16.479+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747122796479, current=UP, previous=STARTING]
+2025-05-13T13:23:16.480+05:30  INFO 21228 --- [TransactionLogManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TRANSACTIONLOGMANAGEMENTSERVICE/LTIN620190.cts.com:TransactionLogManagementService:9095: registering service...
+2025-05-13T13:23:16.499+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9095 (http) with context path '/'
+2025-05-13T13:23:16.499+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9095
+2025-05-13T13:23:16.503+05:30  INFO 21228 --- [TransactionLogManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TRANSACTIONLOGMANAGEMENTSERVICE/LTIN620190.cts.com:TransactionLogManagementService:9095 - registration status: 204
+2025-05-13T13:23:16.518+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] ansactionLogManagementServiceApplication : Started TransactionLogManagementServiceApplication in 2.863 seconds (process running for 77.474)
+2025-05-13T13:23:16.524+05:30  INFO 21228 --- [TransactionLogManagementService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-13T13:28:16.402+05:30  INFO 21228 --- [TransactionLogManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
