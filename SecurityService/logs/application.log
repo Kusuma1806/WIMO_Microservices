@@ -711,3 +711,210 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2025-05-13T10:23:15.659+05:30  INFO 24128 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2025-05-13T10:23:15.677+05:30  INFO 24128 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - deregister  status: 200
 2025-05-13T10:23:15.678+05:30  INFO 24128 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-13T11:19:54.561+05:30  INFO 11704 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Starting SpringSecurityLatestApplication using Java 21.0.6 with PID 11704 (C:\Users\2400899\git\WIMO_Final\SecurityService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\SecurityService)
+2025-05-13T11:19:54.564+05:30  INFO 11704 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-05-13T11:19:54.638+05:30  INFO 11704 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-05-13T11:19:54.639+05:30  INFO 11704 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=security-service, profiles=[default], label=null, version=4c061525a0d31d1dbd06ab15bc30029068a2a1c7, state=
+2025-05-13T11:19:54.641+05:30  INFO 11704 --- [security-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-13T11:19:54.642+05:30  INFO 11704 --- [security-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-13T11:19:56.826+05:30  INFO 11704 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-13T11:19:57.926+05:30  INFO 11704 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1085 ms. Found 1 JPA repository interface.
+2025-05-13T11:19:58.261+05:30  INFO 11704 --- [security-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=318c6688-c860-347b-9720-43a0efd41bf5
+2025-05-13T11:19:58.855+05:30  INFO 11704 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9097 (http)
+2025-05-13T11:19:58.885+05:30  INFO 11704 --- [security-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-13T11:19:58.886+05:30  INFO 11704 --- [security-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-13T11:19:58.989+05:30  INFO 11704 --- [security-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-13T11:19:58.990+05:30  INFO 11704 --- [security-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4347 ms
+2025-05-13T11:19:59.254+05:30  INFO 11704 --- [security-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-13T11:19:59.391+05:30  INFO 11704 --- [security-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-05-13T11:19:59.455+05:30  INFO 11704 --- [security-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-13T11:19:59.861+05:30  INFO 11704 --- [security-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-13T11:19:59.910+05:30  INFO 11704 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-13T11:20:00.360+05:30  INFO 11704 --- [security-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c034d7a
+2025-05-13T11:20:00.364+05:30  INFO 11704 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-13T11:20:00.458+05:30  WARN 11704 --- [security-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-13T11:20:00.482+05:30  INFO 11704 --- [security-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-13T11:20:01.751+05:30  INFO 11704 --- [security-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-13T11:20:01.816+05:30  INFO 11704 --- [security-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-13T11:20:02.299+05:30  INFO 11704 --- [security-service] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-13T11:20:02.299+05:30  WARN 11704 --- [security-service] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-13T11:20:02.358+05:30  WARN 11704 --- [security-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-13T11:20:03.209+05:30  WARN 11704 --- [security-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-13T11:20:03.297+05:30  INFO 11704 --- [security-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-13T11:20:03.352+05:30  WARN 11704 --- [security-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-13T11:20:03.415+05:30  INFO 11704 --- [security-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-13T11:20:03.445+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-13T11:20:03.453+05:30  INFO 11704 --- [security-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T11:20:03.462+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-13T11:20:03.462+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-13T11:20:03.462+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-13T11:20:03.463+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-13T11:20:03.463+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-13T11:20:03.463+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-13T11:20:03.463+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-13T11:20:03.775+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-13T11:20:03.777+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-13T11:20:03.781+05:30  INFO 11704 --- [security-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-13T11:20:03.784+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747115403784 with initial instances count: 6
+2025-05-13T11:20:03.789+05:30  INFO 11704 --- [security-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SECURITY-SERVICE with eureka with status UP
+2025-05-13T11:20:03.790+05:30  INFO 11704 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747115403790, current=UP, previous=STARTING]
+2025-05-13T11:20:03.794+05:30  INFO 11704 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097: registering service...
+2025-05-13T11:20:03.823+05:30  INFO 11704 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9097 (http) with context path '/'
+2025-05-13T11:20:03.825+05:30  INFO 11704 --- [security-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9097
+2025-05-13T11:20:03.848+05:30  INFO 11704 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Started SpringSecurityLatestApplication in 11.183 seconds (process running for 13.077)
+2025-05-13T11:20:03.878+05:30  INFO 11704 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - registration status: 204
+2025-05-13T11:20:38.082+05:30  INFO 11704 --- [security-service] [http-nio-9097-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-13T11:20:38.082+05:30  INFO 11704 --- [security-service] [http-nio-9097-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-13T11:20:38.085+05:30  INFO 11704 --- [security-service] [http-nio-9097-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-13T11:25:03.466+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T11:30:03.479+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T11:35:03.488+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T11:40:03.499+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T11:45:03.513+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T11:50:03.525+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T11:55:03.528+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T12:00:03.531+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T12:05:03.540+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T12:10:03.548+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T12:15:03.554+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T12:20:03.564+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T12:25:03.577+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T12:30:03.580+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T12:35:03.594+05:30  INFO 11704 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T13:18:38.472+05:30  INFO 34680 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Starting SpringSecurityLatestApplication using Java 21.0.6 with PID 34680 (C:\Users\2400899\git\WIMO_Final\SecurityService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\SecurityService)
+2025-05-13T13:18:38.476+05:30  INFO 34680 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-05-13T13:18:38.607+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-05-13T13:18:38.608+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=security-service, profiles=[default], label=null, version=4c061525a0d31d1dbd06ab15bc30029068a2a1c7, state=
+2025-05-13T13:18:38.614+05:30  INFO 34680 --- [security-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-13T13:18:38.615+05:30  INFO 34680 --- [security-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-13T13:18:43.656+05:30  INFO 34680 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-13T13:18:46.082+05:30  INFO 34680 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2407 ms. Found 1 JPA repository interface.
+2025-05-13T13:18:47.370+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=318c6688-c860-347b-9720-43a0efd41bf5
+2025-05-13T13:18:49.869+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9097 (http)
+2025-05-13T13:18:49.933+05:30  INFO 34680 --- [security-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-13T13:18:49.933+05:30  INFO 34680 --- [security-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-13T13:18:50.316+05:30  INFO 34680 --- [security-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-13T13:18:50.318+05:30  INFO 34680 --- [security-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11701 ms
+2025-05-13T13:18:51.315+05:30  INFO 34680 --- [security-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-13T13:18:51.645+05:30  INFO 34680 --- [security-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-05-13T13:18:51.798+05:30  INFO 34680 --- [security-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-13T13:18:53.541+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-13T13:18:53.747+05:30  INFO 34680 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-13T13:18:55.179+05:30  INFO 34680 --- [security-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@407e3943
+2025-05-13T13:18:55.190+05:30  INFO 34680 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-13T13:18:55.431+05:30  WARN 34680 --- [security-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-13T13:18:55.529+05:30  INFO 34680 --- [security-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-13T13:19:00.111+05:30  INFO 34680 --- [security-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-13T13:19:00.341+05:30  INFO 34680 --- [security-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-13T13:19:02.260+05:30  INFO 34680 --- [security-service] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-13T13:19:02.260+05:30  WARN 34680 --- [security-service] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-13T13:19:02.418+05:30  WARN 34680 --- [security-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-13T13:19:05.520+05:30  WARN 34680 --- [security-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-13T13:19:05.819+05:30  INFO 34680 --- [security-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-13T13:19:06.023+05:30  WARN 34680 --- [security-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-13T13:19:06.228+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-13T13:19:06.354+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-13T13:19:06.369+05:30  INFO 34680 --- [security-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T13:19:06.417+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-13T13:19:06.417+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-13T13:19:06.417+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-13T13:19:06.417+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-13T13:19:06.417+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-13T13:19:06.417+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-13T13:19:06.417+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-13T13:19:07.521+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-13T13:19:07.521+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-13T13:19:07.540+05:30  INFO 34680 --- [security-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-13T13:19:07.540+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747122547540 with initial instances count: 2
+2025-05-13T13:19:07.568+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SECURITY-SERVICE with eureka with status UP
+2025-05-13T13:19:07.568+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747122547568, current=UP, previous=STARTING]
+2025-05-13T13:19:07.568+05:30  INFO 34680 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097: registering service...
+2025-05-13T13:19:07.679+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9097 (http) with context path '/'
+2025-05-13T13:19:07.679+05:30  INFO 34680 --- [security-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9097
+2025-05-13T13:19:07.712+05:30  INFO 34680 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Started SpringSecurityLatestApplication in 39.907 seconds (process running for 41.85)
+2025-05-13T13:19:07.774+05:30  INFO 34680 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - registration status: 204
+2025-05-13T13:22:29.865+05:30  INFO 34680 --- [security-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-05-13T13:22:29.867+05:30  INFO 34680 --- [security-service] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SECURITY-SERVICE with eureka with status DOWN
+2025-05-13T13:22:29.868+05:30  INFO 34680 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747122749868, current=DOWN, previous=UP]
+2025-05-13T13:22:29.869+05:30  INFO 34680 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097: registering service...
+2025-05-13T13:22:29.874+05:30  INFO 34680 --- [security-service] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-13T13:22:29.881+05:30  INFO 34680 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - registration status: 204
+2025-05-13T13:22:29.886+05:30  INFO 34680 --- [security-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-13T13:22:29.898+05:30  INFO 34680 --- [security-service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-13T13:22:29.905+05:30  INFO 34680 --- [security-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-13T13:22:29.920+05:30  INFO 34680 --- [security-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-13T13:22:29.923+05:30  INFO 34680 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-13T13:22:32.931+05:30  INFO 34680 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-05-13T13:22:32.958+05:30  INFO 34680 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - deregister  status: 200
+2025-05-13T13:22:32.959+05:30  INFO 34680 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-13T13:22:34.114+05:30  INFO 34680 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Starting SpringSecurityLatestApplication using Java 21.0.6 with PID 34680 (C:\Users\2400899\git\WIMO_Final\SecurityService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\SecurityService)
+2025-05-13T13:22:34.114+05:30  INFO 34680 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-05-13T13:22:34.120+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-05-13T13:22:34.121+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=security-service, profiles=[default], label=null, version=4c061525a0d31d1dbd06ab15bc30029068a2a1c7, state=
+2025-05-13T13:22:35.458+05:30  INFO 34680 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-13T13:22:36.127+05:30  INFO 34680 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 666 ms. Found 1 JPA repository interface.
+2025-05-13T13:22:36.225+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=318c6688-c860-347b-9720-43a0efd41bf5
+2025-05-13T13:22:36.350+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9097 (http)
+2025-05-13T13:22:36.352+05:30  INFO 34680 --- [security-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-13T13:22:36.352+05:30  INFO 34680 --- [security-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-13T13:22:36.411+05:30  INFO 34680 --- [security-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-13T13:22:36.411+05:30  INFO 34680 --- [security-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2290 ms
+2025-05-13T13:22:36.560+05:30  INFO 34680 --- [security-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-13T13:22:36.563+05:30  INFO 34680 --- [security-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-13T13:22:36.599+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-13T13:22:36.601+05:30  INFO 34680 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-13T13:22:36.641+05:30  INFO 34680 --- [security-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@690f9343
+2025-05-13T13:22:36.641+05:30  INFO 34680 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-13T13:22:36.645+05:30  WARN 34680 --- [security-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-13T13:22:36.646+05:30  INFO 34680 --- [security-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-13T13:22:36.741+05:30  INFO 34680 --- [security-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-13T13:22:36.752+05:30  INFO 34680 --- [security-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-13T13:22:36.970+05:30  INFO 34680 --- [security-service] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-13T13:22:36.971+05:30  WARN 34680 --- [security-service] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-05-13T13:22:37.001+05:30  WARN 34680 --- [security-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-13T13:22:37.625+05:30  WARN 34680 --- [security-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-05-13T13:22:37.698+05:30  INFO 34680 --- [security-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-13T13:22:37.764+05:30  WARN 34680 --- [security-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-13T13:22:37.805+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-13T13:22:37.810+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-13T13:22:37.810+05:30  INFO 34680 --- [security-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-13T13:22:37.811+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-13T13:22:37.811+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-13T13:22:37.811+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-13T13:22:37.811+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-13T13:22:37.811+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-13T13:22:37.811+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-13T13:22:37.811+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-13T13:22:37.873+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-13T13:22:37.874+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-13T13:22:37.874+05:30  INFO 34680 --- [security-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-13T13:22:37.875+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747122757875 with initial instances count: 5
+2025-05-13T13:22:37.880+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SECURITY-SERVICE with eureka with status UP
+2025-05-13T13:22:37.880+05:30  INFO 34680 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747122757880, current=UP, previous=STARTING]
+2025-05-13T13:22:37.881+05:30  INFO 34680 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097: registering service...
+2025-05-13T13:22:37.888+05:30  INFO 34680 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9097 (http) with context path '/'
+2025-05-13T13:22:37.890+05:30  INFO 34680 --- [security-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9097
+2025-05-13T13:22:37.911+05:30  INFO 34680 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - registration status: 204
+2025-05-13T13:22:37.911+05:30  INFO 34680 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Started SpringSecurityLatestApplication in 4.838 seconds (process running for 252.035)
+2025-05-13T13:22:37.918+05:30  INFO 34680 --- [security-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

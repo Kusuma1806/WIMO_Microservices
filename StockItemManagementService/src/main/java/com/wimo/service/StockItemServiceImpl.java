@@ -14,6 +14,7 @@ import com.wimo.dto.Vendor;
 import com.wimo.dto.Zone;
 import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
+import com.wimo.exceptions.ZoneNotFound;
 import com.wimo.feignclient.VendorClient;
 import com.wimo.feignclient.ZoneClient;
 import com.wimo.model.StockItem;
@@ -37,17 +38,23 @@ public class StockItemServiceImpl implements StockItemService {
      * @param stockItem the stock item to be saved
      * @return a success message
      * @throws SpaceNotAvailable if there is not enough space to store the stock
+     * @throws ZoneNotFound 
      */
     @Override
-    public String saveStockItem(StockItem stockItem) throws SpaceNotAvailable {
+    public String saveStockItem(StockItem stockItem) throws SpaceNotAvailable, ZoneNotFound {
         logger.info("Saving stock item: {}", stockItem);
         repository.save(stockItem); 
         logger.info("Stock item saved successfully: {}", stockItem);
 
         int zoneId = stockItem.getZoneId();
-        Zone zone = zoneClient.viewZone(zoneId);
+        Zone zone;
+        try {
+            zone = zoneClient.viewZone(zoneId);
+        } catch (RuntimeException e) {
+            logger.error("Zone ID not found: {}", zoneId);
+            throw new ZoneNotFound("Zone ID not found");
+        }
         updateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
-
         if (zone.getTotalCapacity() > updateCapacity) {
             zone.setStoredCapacity(updateCapacity);
             zoneClient.updateZone(zone);
@@ -65,9 +72,11 @@ public class StockItemServiceImpl implements StockItemService {
      * 
      * @param stockItem the stock item to be updated
      * @return the updated stock item
+     * @throws ZoneNotFound 
+     * @throws SpaceNotAvailable 
      */
     @Override
-    public StockItem updateStockItemForInbound(StockItem stockItem) {
+    public StockItem updateStockItemForInbound(StockItem stockItem) throws ZoneNotFound, SpaceNotAvailable {
         logger.info("Updating stock item for inbound: {}", stockItem);
         int zoneId = stockItem.getZoneId();
         Zone zone;
@@ -75,9 +84,17 @@ public class StockItemServiceImpl implements StockItemService {
             zone = zoneClient.viewZone(zoneId);
         } catch (RuntimeException e) {
             logger.error("Zone ID not found: {}", zoneId);
-            throw new RuntimeException("Zone ID not found");
+            throw new ZoneNotFound("Zone ID not found");
         }
         updateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();
+        if (zone.getTotalCapacity() > updateCapacity) {
+            zone.setStoredCapacity(updateCapacity);
+            zoneClient.updateZone(zone);
+            logger.info("Zone capacity updated successfully: {}", zone);
+        } else {
+            logger.error("Space not available to store the stock: {}", stockItem);
+            throw new SpaceNotAvailable("Space not available to store the stock!!!!");
+        }
         zone.setStoredCapacity(updateCapacity);
         zoneClient.updateZone(zone);
         logger.info("Zone capacity updated successfully for inbound: {}", zone);
@@ -92,9 +109,10 @@ public class StockItemServiceImpl implements StockItemService {
      * 
      * @param stockItem the stock item to be updated
      * @return the updated stock item
+     * @throws ZoneNotFound 
      */
     @Override
-    public StockItem updateStockItemForOutbound(StockItem stockItem) {
+    public StockItem updateStockItemForOutbound(StockItem stockItem) throws ZoneNotFound {
         logger.info("Updating stock item for outbound: {}", stockItem);
         int zoneId = stockItem.getZoneId();
         Zone zone;
@@ -102,7 +120,7 @@ public class StockItemServiceImpl implements StockItemService {
             zone = zoneClient.viewZone(zoneId);
         } catch (RuntimeException e) {
             logger.error("Zone ID not found: {}", zoneId);
-            throw new RuntimeException("Zone ID not found");
+            throw new ZoneNotFound("Zone ID not found");
         }
         updateCapacity = zone.getStoredCapacity() - stockItem.getStockQuantity();
         zone.setStoredCapacity(updateCapacity);
@@ -197,16 +215,17 @@ public class StockItemServiceImpl implements StockItemService {
      * 
      * @param zoneId the ID of the zone to be retrieved
      * @return a response DTO containing the zone details and stock items
+     * @throws ZoneNotFound 
      */
     @Override
-    public StockZoneResponseDTO findByZoneIdIs(int zoneId) {
+    public StockZoneResponseDTO findByZoneIdIs(int zoneId) throws ZoneNotFound  {
         logger.info("Retrieving zone and stock items by zone ID: {}", zoneId);
         Zone zone;
         try {
             zone = zoneClient.viewZone(zoneId);
         } catch (RuntimeException e) {
             logger.error("Zone ID not found: {}", zoneId);
-            throw new RuntimeException("Zone ID not found");
+            throw new ZoneNotFound("Zone ID not found");
         }
         List<StockItem> stocks = repository.findByZoneIdIs(zoneId);
         StockZoneResponseDTO responseDTO = new StockZoneResponseDTO(zone, stocks);

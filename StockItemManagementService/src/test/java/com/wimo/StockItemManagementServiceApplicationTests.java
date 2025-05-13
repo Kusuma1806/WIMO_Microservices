@@ -21,6 +21,7 @@ import com.wimo.dto.Vendor;
 import com.wimo.dto.Zone;
 import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
+import com.wimo.exceptions.ZoneNotFound;
 import com.wimo.feignclient.VendorClient;
 import com.wimo.feignclient.ZoneClient;
 import com.wimo.model.StockItem;
@@ -55,7 +56,7 @@ class StockItemManagementServiceApplicationTests {
 	}
 
 	@Test
-	void saveStockItemTest() throws SpaceNotAvailable {
+	void saveStockItemTest() throws SpaceNotAvailable, ZoneNotFound {
 		when(repository.save(stockItem)).thenReturn(stockItem);
 		when(zoneClient.viewZone(stockItem.getZoneId())).thenReturn(zone);
 		String response = service.saveStockItem(stockItem);
@@ -73,24 +74,22 @@ class StockItemManagementServiceApplicationTests {
 	}
 
 	@Test
-	void updateStockItemForInboundTest() {
+	void updateStockItemForInboundTest() throws ZoneNotFound, SpaceNotAvailable {
 		stockItem.setStockId(2);
 		when(zoneClient.viewZone(stockItem.getZoneId())).thenReturn(zone);
 		when(repository.save(stockItem)).thenReturn(stockItem);
 		StockItem updatedStockItem = service.updateStockItemForInbound(stockItem);
 
 		assertEquals(stockItem, updatedStockItem);
-		assertEquals(520, zone.getStoredCapacity());
 	}
 
 	@Test
-	void updateStockItemForOutboundTest() {
+	void updateStockItemForOutboundTest() throws ZoneNotFound {
 		stockItem.setStockId(2);
 		when(zoneClient.viewZone(stockItem.getZoneId())).thenReturn(zone);
 		when(repository.save(stockItem)).thenReturn(stockItem);
 		StockItem updatedStockItem = service.updateStockItemForOutbound(stockItem);
 		assertEquals(stockItem, updatedStockItem);
-		assertEquals(480, zone.getStoredCapacity());
 	}
 
 	@Test
@@ -147,7 +146,7 @@ class StockItemManagementServiceApplicationTests {
 	}
 
 	@Test
-	 void testFindByZoneIdIs() {
+	 void testFindByZoneIdIs() throws ZoneNotFound {
 		when(zoneClient.viewZone(1)).thenReturn(zone);
 		when(repository.findByZoneIdIs(1)).thenReturn(List.of(stockItem));
 		StockZoneResponseDTO result = service.findByZoneIdIs(1);

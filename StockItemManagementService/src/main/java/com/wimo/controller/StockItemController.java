@@ -17,6 +17,7 @@ import com.wimo.dto.StockVendorResponseDTO;
 import com.wimo.dto.StockZoneResponseDTO;
 import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
+import com.wimo.exceptions.ZoneNotFound;
 import com.wimo.model.StockItem;
 import com.wimo.service.StockItemService;
 @RestController
@@ -27,16 +28,16 @@ public class StockItemController {
     StockItemService service;
     
     @PostMapping("/save")
-	public String saveStockItem(@RequestBody @Validated StockItem stockItem) throws SpaceNotAvailable {
+	public String saveStockItem(@RequestBody @Validated StockItem stockItem) throws SpaceNotAvailable, ZoneNotFound {
 		return service.saveStockItem(stockItem);
 	}
 
 	@PutMapping("/updateInbound") 
-	public StockItem updateStockItemForInbound(@RequestBody @Validated StockItem stockItem){
+	public StockItem updateStockItemForInbound(@RequestBody @Validated StockItem stockItem) throws ZoneNotFound, SpaceNotAvailable{
 		return service.updateStockItemForInbound(stockItem);
 	}
 	@PutMapping("/updateOutbound") 
-	public StockItem updateStockItemForOutbound(@RequestBody @Validated StockItem stockItem){
+	public StockItem updateStockItemForOutbound(@RequestBody @Validated StockItem stockItem) throws ZoneNotFound{
 		return service.updateStockItemForOutbound(stockItem);
 	}
 	@GetMapping("/fetchById/{id}") 
@@ -56,7 +57,7 @@ public class StockItemController {
 		return service.findByStockCategoryIs(stockCategory);
 	}
 	@GetMapping("/fetchByZoneId/{zid}") 
-	public StockZoneResponseDTO findByZoneIdIs(@PathVariable("zid") int zoneId){
+	public StockZoneResponseDTO findByZoneIdIs(@PathVariable("zid") int zoneId) throws ZoneNotFound{
 		return service.findByZoneIdIs(zoneId);
 	}
 	@GetMapping("/fetchByVendorId/{vid}")

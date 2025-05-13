@@ -44,6 +44,12 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 	 */
 	@Override
 	public String recordTransactionLog(TransactionLog transactionLog) throws StockItemNotFound {
+		int stockId = transactionLog.getStockId();
+		StockItem stockItem = stockClient.viewTransactionByStock(stockId);
+		if (stockItem == null) {
+			logger.error("Stock item not found with ID: {}", stockId);
+			throw new StockItemNotFound("StockItem Not Found");
+		}
 		logger.info("Recording transaction log: {}", transactionLog);
 		repository.save(transactionLog);
 		logger.info("Transaction log saved successfully: {}", transactionLog);
