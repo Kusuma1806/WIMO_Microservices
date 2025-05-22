@@ -51,7 +51,7 @@ public class StockItemServiceImpl implements StockItemService {
         try {
             zone = zoneClient.viewZone(zoneId);
         } catch (RuntimeException e) {
-            logger.error("Zone ID not found: {}", zoneId);
+            logger.error("Zone ID not found");
             throw new ZoneNotFound("Zone ID not found");
         }
         updateCapacity = zone.getStoredCapacity() + stockItem.getStockQuantity();

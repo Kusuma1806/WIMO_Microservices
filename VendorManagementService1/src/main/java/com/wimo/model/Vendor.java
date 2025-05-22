@@ -2,6 +2,7 @@ package com.wimo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -23,5 +24,6 @@ public class Vendor {
 	private String vendorName;
 	@NotNull(message = "contact info should not be null")
 	private long contactInfo;
-
+	@Email(message="Provide the correct email address")
+	private String vendorEmail;
 }

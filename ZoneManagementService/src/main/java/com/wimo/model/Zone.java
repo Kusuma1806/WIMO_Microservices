@@ -22,6 +22,7 @@ public class Zone {
 	 @NotBlank(message="name shpuld not be blank")
 	 @Size(min = 3, max = 20,message="zone name should be in the range of 3-20")
 	 private String zoneName;
+	 private int userId;
 	 @Max(value=100001,message="Zone capacity reached the threshold")
      private int totalCapacity;
 	 @Max(value=100000,message="Zone capacity reached the threshold")

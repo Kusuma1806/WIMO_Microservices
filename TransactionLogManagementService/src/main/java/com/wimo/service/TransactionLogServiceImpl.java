@@ -45,17 +45,21 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 	@Override
 	public String recordTransactionLog(TransactionLog transactionLog) throws StockItemNotFound {
 		int stockId = transactionLog.getStockId();
-		StockItem stockItem = stockClient.viewTransactionByStock(stockId);
-		if (stockItem == null) {
-			logger.error("Stock item not found with ID: {}", stockId);
+		StockItem stockItem;
+		try {
+			stockItem = stockClient.viewTransactionByStock(stockId);
+		}catch (RuntimeException e) {
+			logger.error("Exception caught: {}", e.getMessage());
 			throw new StockItemNotFound("StockItem Not Found");
-		}
+	      }
 		logger.info("Recording transaction log: {}", transactionLog);
 		repository.save(transactionLog);
 		logger.info("Transaction log saved successfully: {}", transactionLog);
 		updateStockItemBasedOnTransaction(transactionLog);
 		return "Transaction Saved and Stock Updated!!!";
 	}
+
+
 
 	/**
 	 * Updates the stock item based on the transaction details.
@@ -210,7 +214,7 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 	 */
 	@Override
 	public String deleteTransactionLog(int transactionId) {
-		logger.info("Deleting transaction log with ID: {}", transactionId);
+		logger.warn("Deleting transaction log with ID: {}", transactionId);
 		repository.deleteById(transactionId);
 		logger.info("Transaction log deleted successfully: {}", transactionId);
 		return "Transaction Deleted!!!";

@@ -49,7 +49,7 @@ class StockItemManagementServiceApplicationTests {
 	@BeforeEach
 	 void setUp() {
 		stockItem = new StockItem(1, "watch", "gadgets", 20, 3, 1);
-		zone = new Zone(1, "zonename", 1000, 500);
+		zone = new Zone(1, "zonename",1, 1000, 500);
 
 		vendor = new Vendor(1, "vendorname", 98786675645l);
 
