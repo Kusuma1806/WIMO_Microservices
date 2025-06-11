@@ -28,7 +28,7 @@ public class VendorController {
 	public String saveVendor(@RequestBody @Validated Vendor vendor) {
 		return service.saveVendor(vendor);
 	}
-
+	
 	@PutMapping("/update") 
 	public Vendor updateVendor(@RequestBody @Validated Vendor vendor){
 		return service.updateVendor(vendor);

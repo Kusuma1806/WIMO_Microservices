@@ -9,15 +9,16 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.wimo.dto.StockItem;
+import com.wimo.dto.StockUpdateQuantityDto;
 
 @FeignClient(name="STOCKITEMMANAGEMENTSERVICE",path="/stock")
 public interface StockClient {
 	@GetMapping("/fetchById/{id}")
 	public StockItem viewTransactionByStock(@PathVariable("id") int stockId); 
-	@PutMapping("/updateInbound")
-	public StockItem updateStockItemForInbound(@RequestBody @Validated StockItem stockItem);
 	@PutMapping("/updateOutbound")
-	public StockItem updateStockItemForOutbound(@RequestBody @Validated StockItem stockItem);
+    StockItem updateStockItemForOutbound(@RequestBody StockUpdateQuantityDto updateDto);
+    @PutMapping("/updateInbound")
+    StockItem updateStockItemForInbound(@RequestBody StockUpdateQuantityDto updateDto);
 	@PostMapping("/save")
 	public String saveStockItem(@RequestBody @Validated StockItem stockItem);
 }

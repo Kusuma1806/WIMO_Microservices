@@ -18,6 +18,7 @@ import com.wimo.dto.StockItem;
 import com.wimo.dto.TransactionStockResponseDTO;
 import com.wimo.dto.TransactionUserResponseDTO;
 import com.wimo.dto.UserInfo;
+import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.exceptions.TransactionLogNotFound;
 import com.wimo.feignclient.StockClient;
@@ -41,7 +42,7 @@ class TransactionLogManagementApplicationTests {
 	private StockClient stockClient;
 
 	@Test
-	 void testRecordTransactionLog() throws StockItemNotFound {
+	 void testRecordTransactionLog() throws StockItemNotFound, SpaceNotAvailable {
 
 		StockItem stockItem = new StockItem(1, "watch", "gadgets", 20, 3, 1);
 

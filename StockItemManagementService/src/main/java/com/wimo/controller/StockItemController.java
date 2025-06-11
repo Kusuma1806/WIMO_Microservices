@@ -2,7 +2,9 @@ package com.wimo.controller;
 
 import java.util.List;
 
+import org.apache.hc.core5.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +21,10 @@ import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.exceptions.ZoneNotFound;
 import com.wimo.model.StockItem;
+import com.wimo.model.StockUpdateQuantityDto;
 import com.wimo.service.StockItemService;
+
+import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/stock")
 
@@ -32,14 +37,17 @@ public class StockItemController {
 		return service.saveStockItem(stockItem);
 	}
 
-	@PutMapping("/updateInbound") 
-	public StockItem updateStockItemForInbound(@RequestBody @Validated StockItem stockItem) throws ZoneNotFound, SpaceNotAvailable{
-		return service.updateStockItemForInbound(stockItem);
-	}
-	@PutMapping("/updateOutbound") 
-	public StockItem updateStockItemForOutbound(@RequestBody @Validated StockItem stockItem) throws ZoneNotFound{
-		return service.updateStockItemForOutbound(stockItem);
-	}
+    @PutMapping("/updateInbound")
+    public StockItem updateStockItemForInbound(@Valid @RequestBody StockUpdateQuantityDto updateDto)
+            throws ZoneNotFound, SpaceNotAvailable, StockItemNotFound {
+        return service.updateStockItemForInbound(updateDto);
+    }
+
+    @PutMapping("/updateOutbound")
+    public StockItem updateStockItemForOutbound(@Valid @RequestBody StockUpdateQuantityDto updateDto)
+            throws ZoneNotFound, StockItemNotFound {
+        return service.updateStockItemForOutbound(updateDto);
+    }
 	@GetMapping("/fetchById/{id}") 
 	public StockItem getStockItemById(@PathVariable("id") int stockId) throws StockItemNotFound{
 		return service.getStockItemById(stockId);

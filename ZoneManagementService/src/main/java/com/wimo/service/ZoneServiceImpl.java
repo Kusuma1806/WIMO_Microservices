@@ -74,14 +74,14 @@ public class ZoneServiceImpl implements ZoneService {
      * @throws ZoneNotFound if the zone is not found.
      */
     @Override
-    public Zone getZoneById(int userId) throws ZoneNotFound {
-        logger.info("Retrieving zone with ID: {}", userId);
-        Optional<Zone> optional = repository.findById(userId);
+    public Zone getZoneById(int zoneId) throws ZoneNotFound {
+        logger.info("Retrieving zone with ID: {}", zoneId);
+        Optional<Zone> optional = repository.findById(zoneId);
 
         if (optional.isPresent()) {
             return optional.get();
         } else {
-            logger.error("Zone not found with ID: {}", userId);
+            logger.error("Zone not found with ID: {}", zoneId);
             throw new ZoneNotFound("Zone is not Found........");
         }
     }

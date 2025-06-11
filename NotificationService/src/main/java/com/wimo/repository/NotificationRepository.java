@@ -2,8 +2,8 @@ package com.wimo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.wimo.model.Notification;
+import com.wimo.dto.AdminNotificationRequest;
 
-public interface NotificationRepository extends JpaRepository<Notification, Integer> {
-
+public interface NotificationRepository extends JpaRepository<AdminNotificationRequest, Integer>{
+	
 }

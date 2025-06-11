@@ -5,12 +5,13 @@ import java.util.List;
 
 import com.wimo.dto.TransactionStockResponseDTO;
 import com.wimo.dto.TransactionUserResponseDTO;
+import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.exceptions.TransactionLogNotFound;
 import com.wimo.model.TransactionLog;
 
 public interface TransactionLogService {
-	public String recordTransactionLog(TransactionLog transactionLog) throws StockItemNotFound;
+	public String recordTransactionLog(TransactionLog transactionLog) throws StockItemNotFound, SpaceNotAvailable;
 
 	public TransactionLog getTransactionLogById(int transactionId) throws TransactionLogNotFound;
 	

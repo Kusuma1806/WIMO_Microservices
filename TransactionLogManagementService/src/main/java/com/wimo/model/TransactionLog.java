@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -19,6 +21,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class TransactionLog {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int transactionId;
 
 	@Positive(message = "Stock ID must be a positive number.")

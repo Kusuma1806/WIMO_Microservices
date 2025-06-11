@@ -1,26 +1,26 @@
-2025-05-22T20:04:14.606+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : Starting VendorManagementServiceApplication using Java 21.0.6 with PID 22764 (C:\Users\2400899\git\WIMO_Final\VendorManagementService1\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\VendorManagementService1)
-2025-05-22T20:04:14.622+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T20:04:14.714+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2025-05-22T20:04:14.716+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=VendorManagementService, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
-2025-05-22T20:04:14.724+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-22T20:04:14.725+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-22T20:04:17.377+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T20:04:17.734+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 330 ms. Found 1 JPA repository interface.
-2025-05-22T20:04:18.273+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a3afe1f4-4cd7-3614-90dc-bcd35ff70b02
-2025-05-22T20:04:20.018+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9092 (http)
-2025-05-22T20:04:20.044+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T20:04:20.044+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T20:04:20.215+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T20:04:20.215+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5489 ms
-2025-05-22T20:04:21.211+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T20:04:21.417+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T20:04:21.520+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T20:04:22.315+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T20:04:22.403+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T20:04:23.069+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56b754d0
-2025-05-22T20:04:23.073+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T20:04:23.221+05:30  WARN 22764 --- [VendorManagementService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T20:04:23.272+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-11T08:08:54.376+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : Starting VendorManagementServiceApplication using Java 21.0.6 with PID 23268 (C:\Users\2400899\git\WIMO_Final\VendorManagementService1\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\VendorManagementService1)
+2025-06-11T08:08:54.390+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T08:08:54.483+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-11T08:08:54.483+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=VendorManagementService, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
+2025-06-11T08:08:54.488+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-11T08:08:54.488+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-11T08:08:56.772+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T08:08:57.165+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 365 ms. Found 1 JPA repository interface.
+2025-06-11T08:08:57.610+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a3afe1f4-4cd7-3614-90dc-bcd35ff70b02
+2025-06-11T08:08:58.916+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9092 (http)
+2025-06-11T08:08:58.936+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T08:08:58.937+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T08:08:59.043+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T08:08:59.045+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4554 ms
+2025-06-11T08:08:59.934+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T08:09:00.062+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-11T08:09:00.148+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T08:09:00.638+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T08:09:00.703+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T08:09:01.295+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ef03619
+2025-06-11T08:09:01.300+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T08:09:01.383+05:30  WARN 23268 --- [VendorManagementService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T08:09:01.409+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -28,148 +28,111 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T20:04:25.466+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T20:04:25.606+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:04:26.447+05:30  WARN 22764 --- [VendorManagementService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T20:04:29.075+05:30  WARN 22764 --- [VendorManagementService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2025-05-22T20:04:29.165+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-05-22T20:04:29.330+05:30  WARN 22764 --- [VendorManagementService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-22T20:04:29.357+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2025-05-22T20:04:29.593+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-22T20:04:29.645+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-22T20:04:29.654+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:04:29.677+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T20:04:29.677+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T20:04:29.677+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T20:04:29.677+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T20:04:29.677+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T20:04:29.677+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-05-22T20:04:29.678+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T20:04:30.545+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T20:04:30.547+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-05-22T20:04:30.552+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-22T20:04:30.555+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747924470555 with initial instances count: 0
-2025-05-22T20:04:30.574+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VENDORMANAGEMENTSERVICE with eureka with status UP
-2025-05-22T20:04:30.576+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747924470576, current=UP, previous=STARTING]
-2025-05-22T20:04:30.581+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092: registering service...
-2025-05-22T20:04:30.624+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9092 (http) with context path '/'
-2025-05-22T20:04:30.626+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9092
-2025-05-22T20:04:30.662+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : Started VendorManagementServiceApplication in 23.204 seconds (process running for 25.163)
-2025-05-22T20:04:30.879+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092 - registration status: 204
-2025-05-22T20:04:31.088+05:30  INFO 22764 --- [VendorManagementService] [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T20:04:31.089+05:30  INFO 22764 --- [VendorManagementService] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T20:04:31.093+05:30  INFO 22764 --- [VendorManagementService] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-05-22T20:05:00.551+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T20:05:00.551+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T20:05:00.552+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T20:05:00.552+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T20:05:00.552+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T20:05:00.553+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2025-05-22T20:05:00.553+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T20:05:00.583+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T20:06:57.156+05:30  INFO 22764 --- [VendorManagementService] [http-nio-9092-exec-4] com.wimo.service.VendorServiceImpl       : Retrieving vendor with ID: 1
-2025-05-22T20:06:57.367+05:30  INFO 22764 --- [VendorManagementService] [http-nio-9092-exec-4] com.wimo.service.VendorServiceImpl       : Vendor found: Vendor(vendorId=1, vendorName=Krishna, contactInfo=8106335040, vendorEmail=muralikrishna5040hi@gmail.com)
-2025-05-22T20:08:09.182+05:30  INFO 22764 --- [VendorManagementService] [http-nio-9092-exec-6] com.wimo.service.VendorServiceImpl       : Retrieving vendor with ID: 1
-2025-05-22T20:08:09.189+05:30  INFO 22764 --- [VendorManagementService] [http-nio-9092-exec-6] com.wimo.service.VendorServiceImpl       : Vendor found: Vendor(vendorId=1, vendorName=Krishna, contactInfo=8106335040, vendorEmail=muralikrishna5040hi@gmail.com)
-2025-05-22T20:09:29.696+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:14:29.712+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:19:29.721+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:24:29.727+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:29:29.734+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:34:29.742+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:39:29.753+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:44:29.762+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:49:29.772+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:54:29.786+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:59:29.802+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:04:29.817+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:09:29.823+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:14:29.831+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:19:29.846+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:24:29.854+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:29:29.859+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:34:29.866+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:39:29.870+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:44:29.881+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:49:29.896+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:56:07.594+05:30  WARN 22764 --- [VendorManagementService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m42s895ms122µs400ns).
-2025-05-22T21:57:42.802+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:02:42.811+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:07:42.814+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:12:42.825+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:13:41.700+05:30  INFO 22764 --- [VendorManagementService] [http-nio-9092-exec-8] com.wimo.service.VendorServiceImpl       : Retrieving vendor with ID: 1
-2025-05-22T22:13:41.750+05:30  INFO 22764 --- [VendorManagementService] [http-nio-9092-exec-8] com.wimo.service.VendorServiceImpl       : Vendor found: Vendor(vendorId=1, vendorName=Krishna, contactInfo=8106335040, vendorEmail=muralikrishna5040hi@gmail.com)
-2025-05-22T22:17:42.839+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:22:42.846+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:27:42.850+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:32:42.866+05:30  INFO 22764 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:34:28.734+05:30  INFO 22764 --- [VendorManagementService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
-2025-05-22T22:34:28.753+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application VENDORMANAGEMENTSERVICE with eureka with status DOWN
-2025-05-22T22:34:28.753+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747933468753, current=DOWN, previous=UP]
-2025-05-22T22:34:28.753+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092: registering service...
-2025-05-22T22:34:28.782+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092 - registration status: 204
-2025-05-22T22:34:28.792+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T22:34:28.804+05:30  INFO 22764 --- [VendorManagementService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T22:34:28.831+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T22:34:28.860+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T22:34:28.877+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T22:34:28.879+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-05-22T22:34:31.888+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2025-05-22T22:34:31.921+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092 - deregister  status: 200
-2025-05-22T22:34:31.922+05:30  INFO 22764 --- [VendorManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2025-05-22T22:34:33.373+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : Starting VendorManagementServiceApplication using Java 21.0.6 with PID 22764 (C:\Users\2400899\git\WIMO_Final\VendorManagementService1\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\VendorManagementService1)
-2025-05-22T22:34:33.374+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T22:34:33.378+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2025-05-22T22:34:33.378+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=VendorManagementService, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
-2025-05-22T22:34:34.346+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T22:34:34.366+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
-2025-05-22T22:34:34.505+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a3afe1f4-4cd7-3614-90dc-bcd35ff70b02
-2025-05-22T22:34:34.828+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9092 (http)
-2025-05-22T22:34:34.831+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T22:34:34.831+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T22:34:34.876+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T22:34:34.877+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1499 ms
-2025-05-22T22:34:35.142+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T22:34:35.146+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T22:34:35.171+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T22:34:35.173+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-05-22T22:34:35.190+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14c95b0b
-2025-05-22T22:34:35.190+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-05-22T22:34:35.191+05:30  WARN 22764 --- [VendorManagementService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T22:34:35.192+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-22T22:34:35.252+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T22:34:35.266+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T22:34:35.483+05:30  WARN 22764 --- [VendorManagementService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T22:34:36.040+05:30  WARN 22764 --- [VendorManagementService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2025-05-22T22:34:36.060+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-05-22T22:34:36.099+05:30  WARN 22764 --- [VendorManagementService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-22T22:34:36.104+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2025-05-22T22:34:36.145+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-22T22:34:36.149+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-22T22:34:36.149+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:34:36.149+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T22:34:36.149+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T22:34:36.150+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T22:34:36.150+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T22:34:36.150+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T22:34:36.150+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-05-22T22:34:36.150+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T22:34:36.188+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T22:34:36.189+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-05-22T22:34:36.190+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-22T22:34:36.190+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747933476190 with initial instances count: 8
-2025-05-22T22:34:36.194+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VENDORMANAGEMENTSERVICE with eureka with status UP
-2025-05-22T22:34:36.195+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747933476195, current=UP, previous=STARTING]
-2025-05-22T22:34:36.195+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092: registering service...
-2025-05-22T22:34:36.198+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9092 (http) with context path '/'
-2025-05-22T22:34:36.200+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9092
-2025-05-22T22:34:36.215+05:30  INFO 22764 --- [VendorManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092 - registration status: 204
-2025-05-22T22:34:36.220+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : Started VendorManagementServiceApplication in 4.044 seconds (process running for 9030.721)
-2025-05-22T22:34:36.223+05:30  INFO 22764 --- [VendorManagementService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T08:09:02.982+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T08:09:03.074+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:09:03.653+05:30  WARN 23268 --- [VendorManagementService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T08:09:05.321+05:30  WARN 23268 --- [VendorManagementService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-11T08:09:05.382+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T08:09:05.491+05:30  WARN 23268 --- [VendorManagementService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T08:09:05.517+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-11T08:09:05.673+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T08:09:05.713+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T08:09:05.721+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:09:05.739+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T08:09:05.740+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T08:09:05.740+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T08:09:05.740+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T08:09:05.740+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T08:09:05.740+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T08:09:05.741+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T08:09:06.191+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T08:09:06.195+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T08:09:06.199+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T08:09:06.204+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749609546203 with initial instances count: 5
+2025-06-11T08:09:06.219+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VENDORMANAGEMENTSERVICE with eureka with status UP
+2025-06-11T08:09:06.221+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749609546221, current=UP, previous=STARTING]
+2025-06-11T08:09:06.225+05:30  INFO 23268 --- [VendorManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092: registering service...
+2025-06-11T08:09:06.259+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9092 (http) with context path '/'
+2025-06-11T08:09:06.262+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9092
+2025-06-11T08:09:06.296+05:30  INFO 23268 --- [VendorManagementService] [restartedMain] c.w.VendorManagementServiceApplication   : Started VendorManagementServiceApplication in 14.069 seconds (process running for 15.97)
+2025-06-11T08:09:06.308+05:30  INFO 23268 --- [VendorManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENDORMANAGEMENTSERVICE/LTIN620190.cts.com:VendorManagementService:9092 - registration status: 204
+2025-06-11T08:09:06.499+05:30  INFO 23268 --- [VendorManagementService] [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T08:09:06.499+05:30  INFO 23268 --- [VendorManagementService] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T08:09:06.501+05:30  INFO 23268 --- [VendorManagementService] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-11T08:14:05.749+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:16:06.463+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-1] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T08:16:06.569+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-1] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T08:16:45.133+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-2] com.wimo.service.VendorServiceImpl       : Saving vendor: Vendor(vendorId=0, vendorName=Example, contactInfo=3245687690, vendorEmail=ksdk@gmail.com)
+2025-06-11T08:16:45.182+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-2] com.wimo.service.VendorServiceImpl       : Vendor saved successfully: Vendor(vendorId=10, vendorName=Example, contactInfo=3245687690, vendorEmail=ksdk@gmail.com)
+2025-06-11T08:16:45.201+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-3] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T08:16:45.211+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-3] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T08:17:18.196+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-4] com.wimo.service.VendorServiceImpl       : Updating vendor: Vendor(vendorId=10, vendorName=Example, contactInfo=3245687690, vendorEmail=wasdf@gmail.com)
+2025-06-11T08:17:18.226+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-4] com.wimo.service.VendorServiceImpl       : Vendor updated successfully: Vendor(vendorId=10, vendorName=Example, contactInfo=3245687690, vendorEmail=wasdf@gmail.com)
+2025-06-11T08:17:18.244+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-6] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T08:17:18.251+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-6] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T08:17:24.939+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-5] com.wimo.service.VendorServiceImpl       : Removing vendor with ID: 10
+2025-06-11T08:17:24.969+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-5] com.wimo.service.VendorServiceImpl       : Vendor removed successfully: 10
+2025-06-11T08:17:24.989+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-7] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T08:17:25.001+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-7] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T08:18:24.496+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-8] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T08:18:24.505+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-8] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T08:19:05.761+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:22:55.660+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-10] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T08:22:55.667+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-10] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T08:23:02.128+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-1] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T08:23:02.140+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-1] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T08:24:05.771+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:29:05.772+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:34:05.772+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:39:05.777+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:44:05.782+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:49:05.785+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:54:05.797+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:59:05.807+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:04:05.812+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:09:05.815+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:14:05.819+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:19:05.820+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:24:05.822+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:29:05.824+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:34:05.836+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:35:48.053+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-3] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T09:35:48.153+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-3] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T09:39:05.844+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:41:01.693+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-6] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T09:41:01.712+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-6] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T09:44:05.855+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:49:05.870+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:49:09.783+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-7] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T09:49:09.804+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-7] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T09:49:10.961+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-8] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T09:49:10.973+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-8] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T09:49:27.285+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-9] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T09:49:27.309+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-9] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T09:53:26.039+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-1] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T09:53:26.058+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-1] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T09:54:05.885+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:55:46.827+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-3] com.wimo.service.VendorServiceImpl       : Retrieving vendor with ID: 6
+2025-06-11T09:55:46.839+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-3] com.wimo.service.VendorServiceImpl       : Vendor found: Vendor(vendorId=6, vendorName=Charan, contactInfo=6301627251, vendorEmail=areyentraidhi850@gmail.com)
+2025-06-11T09:58:53.905+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-6] com.wimo.service.VendorServiceImpl       : Retrieving all vendors
+2025-06-11T09:58:53.924+05:30  INFO 23268 --- [VendorManagementService] [http-nio-9092-exec-6] com.wimo.service.VendorServiceImpl       : All vendors retrieved successfully
+2025-06-11T09:59:05.891+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:04:05.902+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:09:05.907+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:14:05.919+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:19:05.922+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:24:05.936+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:29:05.941+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:36:55.125+05:30  WARN 23268 --- [VendorManagementService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m51s578ms587µs600ns).
+2025-06-11T10:39:27.509+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:44:27.510+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:49:27.521+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:54:27.529+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:59:27.877+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:08:09.196+05:30  WARN 23268 --- [VendorManagementService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m13s574ms289µs500ns).
+2025-06-11T11:10:11.451+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:15:11.453+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:20:12.523+05:30  WARN 23268 --- [VendorManagementService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s199ms929µs400ns).
+2025-06-11T11:21:44.637+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:26:44.643+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:31:44.654+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -8,11 +8,10 @@ import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.exceptions.ZoneNotFound;
 import com.wimo.model.StockItem;
+import com.wimo.model.StockUpdateQuantityDto;
 
 public interface StockItemService {
-	public abstract String saveStockItem(StockItem stockItem) throws SpaceNotAvailable, ZoneNotFound;
-
-	public abstract StockItem updateStockItemForInbound(StockItem stockItem) throws ZoneNotFound, SpaceNotAvailable;
+	public abstract String saveStockItem(StockItem stockItem) throws SpaceNotAvailable, ZoneNotFound;	
 
 	public abstract String removeStockItem(int stockId) throws StockItemNotFound;
 
@@ -26,7 +25,8 @@ public interface StockItemService {
 
 	public abstract StockVendorResponseDTO findByVendorIdIs(int vendorId);
 
-	StockItem updateStockItemForOutbound(StockItem stockItem) throws ZoneNotFound;
+	StockItem updateStockItemForInbound(StockUpdateQuantityDto updateDto) throws ZoneNotFound, SpaceNotAvailable, StockItemNotFound;
+    StockItem updateStockItemForOutbound(StockUpdateQuantityDto updateDto) throws ZoneNotFound, StockItemNotFound;
 
 	
 

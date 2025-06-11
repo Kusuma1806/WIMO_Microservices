@@ -1,26 +1,26 @@
-2025-05-22T20:04:14.001+05:30  INFO 11928 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Starting SpringSecurityLatestApplication using Java 21.0.6 with PID 11928 (C:\Users\2400899\git\WIMO_Final\SecurityService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\SecurityService)
-2025-05-22T20:04:14.009+05:30  INFO 11928 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T20:04:14.090+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2025-05-22T20:04:14.091+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=security-service, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
-2025-05-22T20:04:14.095+05:30  INFO 11928 --- [security-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-22T20:04:14.096+05:30  INFO 11928 --- [security-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-22T20:04:18.421+05:30  INFO 11928 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T20:04:20.777+05:30  INFO 11928 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2333 ms. Found 1 JPA repository interface.
-2025-05-22T20:04:21.521+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=318c6688-c860-347b-9720-43a0efd41bf5
-2025-05-22T20:04:22.806+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9097 (http)
-2025-05-22T20:04:22.836+05:30  INFO 11928 --- [security-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T20:04:22.837+05:30  INFO 11928 --- [security-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-05-22T20:04:23.025+05:30  INFO 11928 --- [security-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T20:04:23.026+05:30  INFO 11928 --- [security-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8928 ms
-2025-05-22T20:04:23.541+05:30  INFO 11928 --- [security-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T20:04:23.773+05:30  INFO 11928 --- [security-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-05-22T20:04:23.891+05:30  INFO 11928 --- [security-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T20:04:24.764+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T20:04:24.832+05:30  INFO 11928 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T20:04:25.485+05:30  INFO 11928 --- [security-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46eb5ee7
-2025-05-22T20:04:25.490+05:30  INFO 11928 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T20:04:25.629+05:30  WARN 11928 --- [security-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T20:04:25.683+05:30  INFO 11928 --- [security-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-11T08:08:50.561+05:30  INFO 3336 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Starting SpringSecurityLatestApplication using Java 21.0.6 with PID 3336 (C:\Users\2400899\git\WIMO_Final\SecurityService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\SecurityService)
+2025-06-11T08:08:50.578+05:30  INFO 3336 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T08:08:50.688+05:30  INFO 3336 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-11T08:08:50.688+05:30  INFO 3336 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=security-service, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
+2025-06-11T08:08:50.693+05:30  INFO 3336 --- [security-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-11T08:08:50.694+05:30  INFO 3336 --- [security-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-11T08:08:53.759+05:30  INFO 3336 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T08:08:55.757+05:30  INFO 3336 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1981 ms. Found 1 JPA repository interface.
+2025-06-11T08:08:56.370+05:30  INFO 3336 --- [security-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=318c6688-c860-347b-9720-43a0efd41bf5
+2025-06-11T08:08:57.435+05:30  INFO 3336 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9097 (http)
+2025-06-11T08:08:57.460+05:30  INFO 3336 --- [security-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T08:08:57.460+05:30  INFO 3336 --- [security-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-06-11T08:08:57.598+05:30  INFO 3336 --- [security-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T08:08:57.600+05:30  INFO 3336 --- [security-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6905 ms
+2025-06-11T08:08:58.135+05:30  INFO 3336 --- [security-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T08:08:58.270+05:30  INFO 3336 --- [security-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-06-11T08:08:58.344+05:30  INFO 3336 --- [security-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T08:08:58.818+05:30  INFO 3336 --- [security-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T08:08:58.870+05:30  INFO 3336 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T08:08:59.393+05:30  INFO 3336 --- [security-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b61be21
+2025-06-11T08:08:59.396+05:30  INFO 3336 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T08:08:59.491+05:30  WARN 3336 --- [security-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T08:08:59.531+05:30  INFO 3336 --- [security-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -28,149 +28,76 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T20:04:28.213+05:30  INFO 11928 --- [security-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T20:04:28.336+05:30  INFO 11928 --- [security-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:04:29.464+05:30  INFO 11928 --- [security-service] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-05-22T20:04:29.466+05:30  WARN 11928 --- [security-service] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-05-22T20:04:29.544+05:30  WARN 11928 --- [security-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T20:04:31.449+05:30  WARN 11928 --- [security-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2025-05-22T20:04:31.697+05:30  INFO 11928 --- [security-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-05-22T20:04:31.816+05:30  WARN 11928 --- [security-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-22T20:04:31.932+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-22T20:04:31.993+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-22T20:04:32.002+05:30  INFO 11928 --- [security-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:04:32.022+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T20:04:32.022+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T20:04:32.022+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T20:04:32.023+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T20:04:32.023+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T20:04:32.023+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-05-22T20:04:32.023+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T20:04:32.576+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T20:04:32.578+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-05-22T20:04:32.581+05:30  INFO 11928 --- [security-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-22T20:04:32.584+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747924472583 with initial instances count: 0
-2025-05-22T20:04:32.592+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SECURITY-SERVICE with eureka with status UP
-2025-05-22T20:04:32.594+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747924472594, current=UP, previous=STARTING]
-2025-05-22T20:04:32.598+05:30  INFO 11928 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097: registering service...
-2025-05-22T20:04:32.633+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9097 (http) with context path '/'
-2025-05-22T20:04:32.635+05:30  INFO 11928 --- [security-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9097
-2025-05-22T20:04:32.655+05:30  INFO 11928 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Started SpringSecurityLatestApplication in 29.928 seconds (process running for 32.144)
-2025-05-22T20:04:32.681+05:30  INFO 11928 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - registration status: 204
-2025-05-22T20:05:02.586+05:30  INFO 11928 --- [security-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T20:05:02.586+05:30  INFO 11928 --- [security-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T20:05:02.586+05:30  INFO 11928 --- [security-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T20:05:02.586+05:30  INFO 11928 --- [security-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T20:05:02.586+05:30  INFO 11928 --- [security-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T20:05:02.586+05:30  INFO 11928 --- [security-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2025-05-22T20:05:02.586+05:30  INFO 11928 --- [security-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T20:05:02.631+05:30  INFO 11928 --- [security-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T20:09:32.039+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:14:32.048+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:19:32.057+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:24:32.060+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:29:32.063+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:34:32.079+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:39:32.083+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:44:32.085+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:49:32.092+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:54:32.106+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:59:32.108+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:04:32.123+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:09:32.131+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:14:32.135+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:19:32.141+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:24:32.149+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:29:32.156+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:34:32.165+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:39:32.176+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:44:32.189+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:49:32.203+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:56:10.132+05:30  WARN 11928 --- [security-service] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m42s890ms775µs700ns).
-2025-05-22T21:57:45.093+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:02:45.109+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:07:45.115+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:12:24.845+05:30  INFO 11928 --- [security-service] [http-nio-9097-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T22:12:24.847+05:30  INFO 11928 --- [security-service] [http-nio-9097-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T22:12:24.889+05:30  INFO 11928 --- [security-service] [http-nio-9097-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 41 ms
-2025-05-22T22:12:45.117+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:17:45.130+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:19:04.342+05:30  WARN 11928 --- [security-service] [http-nio-9097-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exceptions.UserRoleNotFound: User is not Found........]
-2025-05-22T22:22:45.142+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:27:45.155+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:28:59.435+05:30  WARN 11928 --- [security-service] [http-nio-9097-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exceptions.UserRoleNotFound: User is not Found........]
-2025-05-22T22:31:29.731+05:30  WARN 11928 --- [security-service] [http-nio-9097-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exceptions.UserRoleNotFound: User is not Found........]
-2025-05-22T22:31:31.916+05:30  WARN 11928 --- [security-service] [http-nio-9097-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exceptions.UserRoleNotFound: User is not Found........]
-2025-05-22T22:31:33.251+05:30  WARN 11928 --- [security-service] [http-nio-9097-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exceptions.UserRoleNotFound: User is not Found........]
-2025-05-22T22:32:45.160+05:30  INFO 11928 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:34:27.061+05:30  INFO 11928 --- [security-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
-2025-05-22T22:34:27.067+05:30  INFO 11928 --- [security-service] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SECURITY-SERVICE with eureka with status DOWN
-2025-05-22T22:34:27.068+05:30  INFO 11928 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747933467068, current=DOWN, previous=UP]
-2025-05-22T22:34:27.068+05:30  INFO 11928 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097: registering service...
-2025-05-22T22:34:27.074+05:30  INFO 11928 --- [security-service] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T22:34:27.084+05:30  INFO 11928 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - registration status: 204
-2025-05-22T22:34:27.085+05:30  INFO 11928 --- [security-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T22:34:27.101+05:30  INFO 11928 --- [security-service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T22:34:27.109+05:30  INFO 11928 --- [security-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T22:34:27.122+05:30  INFO 11928 --- [security-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T22:34:27.123+05:30  INFO 11928 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-05-22T22:34:30.129+05:30  INFO 11928 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2025-05-22T22:34:30.147+05:30  INFO 11928 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - deregister  status: 200
-2025-05-22T22:34:30.149+05:30  INFO 11928 --- [security-service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2025-05-22T22:34:31.009+05:30  INFO 11928 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Starting SpringSecurityLatestApplication using Java 21.0.6 with PID 11928 (C:\Users\2400899\git\WIMO_Final\SecurityService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\SecurityService)
-2025-05-22T22:34:31.009+05:30  INFO 11928 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T22:34:31.012+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2025-05-22T22:34:31.012+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=security-service, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
-2025-05-22T22:34:32.653+05:30  INFO 11928 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T22:34:33.246+05:30  INFO 11928 --- [security-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 591 ms. Found 1 JPA repository interface.
-2025-05-22T22:34:33.415+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=318c6688-c860-347b-9720-43a0efd41bf5
-2025-05-22T22:34:33.632+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9097 (http)
-2025-05-22T22:34:33.635+05:30  INFO 11928 --- [security-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T22:34:33.635+05:30  INFO 11928 --- [security-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-05-22T22:34:33.694+05:30  INFO 11928 --- [security-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T22:34:33.694+05:30  INFO 11928 --- [security-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2682 ms
-2025-05-22T22:34:33.892+05:30  INFO 11928 --- [security-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T22:34:33.896+05:30  INFO 11928 --- [security-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T22:34:33.953+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T22:34:33.956+05:30  INFO 11928 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-05-22T22:34:33.979+05:30  INFO 11928 --- [security-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e7d1305
-2025-05-22T22:34:33.980+05:30  INFO 11928 --- [security-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-05-22T22:34:33.982+05:30  WARN 11928 --- [security-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T22:34:33.983+05:30  INFO 11928 --- [security-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-22T22:34:34.078+05:30  INFO 11928 --- [security-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T22:34:34.095+05:30  INFO 11928 --- [security-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T22:34:34.309+05:30  INFO 11928 --- [security-service] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-05-22T22:34:34.310+05:30  WARN 11928 --- [security-service] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2025-05-22T22:34:34.342+05:30  WARN 11928 --- [security-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T22:34:34.887+05:30  WARN 11928 --- [security-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2025-05-22T22:34:34.964+05:30  INFO 11928 --- [security-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-05-22T22:34:35.017+05:30  WARN 11928 --- [security-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-22T22:34:35.055+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-22T22:34:35.058+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-22T22:34:35.059+05:30  INFO 11928 --- [security-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:34:35.059+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T22:34:35.059+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T22:34:35.059+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T22:34:35.059+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T22:34:35.059+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T22:34:35.059+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-05-22T22:34:35.059+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T22:34:35.087+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T22:34:35.088+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-05-22T22:34:35.088+05:30  INFO 11928 --- [security-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-22T22:34:35.090+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747933475090 with initial instances count: 8
-2025-05-22T22:34:35.092+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SECURITY-SERVICE with eureka with status UP
-2025-05-22T22:34:35.093+05:30  INFO 11928 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747933475093, current=UP, previous=STARTING]
-2025-05-22T22:34:35.093+05:30  INFO 11928 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097: registering service...
-2025-05-22T22:34:35.097+05:30  INFO 11928 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9097 (http) with context path '/'
-2025-05-22T22:34:35.098+05:30  INFO 11928 --- [security-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9097
-2025-05-22T22:34:35.108+05:30  INFO 11928 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - registration status: 204
-2025-05-22T22:34:35.111+05:30  INFO 11928 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Started SpringSecurityLatestApplication in 4.836 seconds (process running for 9034.601)
-2025-05-22T22:34:35.115+05:30  INFO 11928 --- [security-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T08:09:01.391+05:30  INFO 3336 --- [security-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T08:09:01.486+05:30  INFO 3336 --- [security-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:09:02.426+05:30  INFO 3336 --- [security-service] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-11T08:09:02.427+05:30  WARN 3336 --- [security-service] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-11T08:09:02.482+05:30  WARN 3336 --- [security-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T08:09:03.918+05:30  WARN 3336 --- [security-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-11T08:09:04.044+05:30  INFO 3336 --- [security-service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T08:09:04.123+05:30  WARN 3336 --- [security-service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T08:09:04.200+05:30  INFO 3336 --- [security-service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T08:09:04.246+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T08:09:04.251+05:30  INFO 3336 --- [security-service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:09:04.270+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T08:09:04.270+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T08:09:04.270+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T08:09:04.270+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T08:09:04.271+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T08:09:04.271+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T08:09:04.271+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T08:09:04.708+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T08:09:04.711+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T08:09:04.714+05:30  INFO 3336 --- [security-service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T08:09:04.716+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749609544716 with initial instances count: 5
+2025-06-11T08:09:04.724+05:30  INFO 3336 --- [security-service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SECURITY-SERVICE with eureka with status UP
+2025-06-11T08:09:04.725+05:30  INFO 3336 --- [security-service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749609544725, current=UP, previous=STARTING]
+2025-06-11T08:09:04.729+05:30  INFO 3336 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097: registering service...
+2025-06-11T08:09:04.759+05:30  INFO 3336 --- [security-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9097 (http) with context path '/'
+2025-06-11T08:09:04.760+05:30  INFO 3336 --- [security-service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9097
+2025-06-11T08:09:04.776+05:30  INFO 3336 --- [security-service] [restartedMain] com.SpringSecurityLatestApplication      : Started SpringSecurityLatestApplication in 17.054 seconds (process running for 18.946)
+2025-06-11T08:09:04.798+05:30  INFO 3336 --- [security-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SECURITY-SERVICE/LTIN620190.cts.com:security-service:9097 - registration status: 204
+2025-06-11T08:13:42.334+05:30  INFO 3336 --- [security-service] [http-nio-9097-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T08:13:42.335+05:30  INFO 3336 --- [security-service] [http-nio-9097-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T08:13:42.337+05:30  INFO 3336 --- [security-service] [http-nio-9097-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T08:14:04.275+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:19:04.279+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:24:04.280+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:29:04.286+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:34:04.293+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:39:04.300+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:44:04.309+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:49:04.314+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:54:04.315+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:59:04.317+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:04:04.325+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:09:04.328+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:14:04.333+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:19:04.343+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:24:04.354+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:29:04.367+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:34:04.399+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:39:04.408+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:44:04.417+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:49:04.419+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:54:04.434+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:59:04.442+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:04:04.455+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:09:04.466+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:14:04.470+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:19:04.474+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:24:04.487+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:29:04.488+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:36:53.305+05:30  WARN 3336 --- [security-service] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m51s567ms679µs901ns).
+2025-06-11T10:39:26.062+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:44:26.078+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:49:26.105+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:54:26.114+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:59:26.119+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:08:07.279+05:30  WARN 3336 --- [security-service] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m13s580ms384µs499ns).
+2025-06-11T11:10:09.693+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:15:09.702+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:20:10.658+05:30  WARN 3336 --- [security-service] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s191ms964µs100ns).
+2025-06-11T11:21:42.898+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:26:42.901+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:31:42.908+05:30  INFO 3336 --- [security-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

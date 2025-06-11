@@ -25,6 +25,7 @@ import com.wimo.exceptions.ZoneNotFound;
 import com.wimo.feignclient.VendorClient;
 import com.wimo.feignclient.ZoneClient;
 import com.wimo.model.StockItem;
+import com.wimo.model.StockUpdateQuantityDto;
 import com.wimo.repository.StockItemRepository;
 import com.wimo.service.StockItemServiceImpl;
 
@@ -43,15 +44,17 @@ class StockItemManagementServiceApplicationTests {
 	private VendorClient vendorClient;
 	@Mock
 	private StockItem stockItem;
+	@Mock
+	private StockUpdateQuantityDto stock;
 	private Zone zone;
 	private Vendor vendor;
 
 	@BeforeEach
 	 void setUp() {
 		stockItem = new StockItem(1, "watch", "gadgets", 20, 3, 1);
-		zone = new Zone(1, "zonename",1, 1000, 500);
-
-		vendor = new Vendor(1, "vendorname", 98786675645l);
+		zone = new Zone(1, "zonename", 1000, 500);
+		stock=new StockUpdateQuantityDto(1,100);
+		vendor = new Vendor(1, "vendorname","snehithak@gmail.com", 98786675645l);
 
 	}
 
@@ -74,21 +77,21 @@ class StockItemManagementServiceApplicationTests {
 	}
 
 	@Test
-	void updateStockItemForInboundTest() throws ZoneNotFound, SpaceNotAvailable {
+	void updateStockItemForInboundTest() throws ZoneNotFound, SpaceNotAvailable, StockItemNotFound {
 		stockItem.setStockId(2);
 		when(zoneClient.viewZone(stockItem.getZoneId())).thenReturn(zone);
 		when(repository.save(stockItem)).thenReturn(stockItem);
-		StockItem updatedStockItem = service.updateStockItemForInbound(stockItem);
+		StockItem updatedStockItem = service.updateStockItemForInbound(stock);
 
 		assertEquals(stockItem, updatedStockItem);
 	}
 
 	@Test
-	void updateStockItemForOutboundTest() throws ZoneNotFound {
+	void updateStockItemForOutboundTest() throws ZoneNotFound, StockItemNotFound{
 		stockItem.setStockId(2);
 		when(zoneClient.viewZone(stockItem.getZoneId())).thenReturn(zone);
 		when(repository.save(stockItem)).thenReturn(stockItem);
-		StockItem updatedStockItem = service.updateStockItemForOutbound(stockItem);
+		StockItem updatedStockItem = service.updateStockItemForOutbound(stock);
 		assertEquals(stockItem, updatedStockItem);
 	}
 

@@ -32,7 +32,7 @@ public class PerformanceMetricsServiceImpl implements PerformanceMetricsService 
     /**
      and save performance metrics at midnight every day.
      */
-    @Scheduled(cron = "0 0 0 * * ?")
+    @Scheduled(cron = "0 0 */5 * * ?", zone = "Asia/Kolkata")
     public void scheduleMetricsCalculation() {
         calculateAndSaveMetrics();
     }
@@ -79,9 +79,11 @@ public class PerformanceMetricsServiceImpl implements PerformanceMetricsService 
             }
             count++;
         }
-        double averageInventory = count > 0 ? totalInventory / count : 0.0;
+        double averageInventory = count > 0 ? (totalInventory / count): 0.0;
 
         return averageInventory > 0 ? (totalSales / averageInventory) : 0.0;
+
+        
     }
 
     /**
@@ -93,9 +95,12 @@ public class PerformanceMetricsServiceImpl implements PerformanceMetricsService 
         List<Zone> allZones = zoneClient.viewAll();
         int totalCapacity = allZones.stream().mapToInt(Zone::getTotalCapacity).sum();
         int usedSpace = allZones.stream().mapToInt(Zone::getStoredCapacity).sum();
+        
+        double utilization = totalCapacity > 0 ? ((double) usedSpace / totalCapacity * 100) : 0.0;
 
-        return totalCapacity > 0 ? ((double) usedSpace / totalCapacity * 100) : 0.0;
+        return utilization;
     }
+
 
     /**
      * Method to retrieve performance metrics based on the specified type.

@@ -28,7 +28,7 @@ import lombok.NoArgsConstructor;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin("*")
+//@CrossOrigin("*")
 @AllArgsConstructor
 @NoArgsConstructor
 public class AuthController {

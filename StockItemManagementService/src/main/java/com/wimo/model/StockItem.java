@@ -1,6 +1,8 @@
 package com.wimo.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -15,7 +17,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class StockItem {
 	@Id
-	@Positive(message="Id shouldn't be zero or negative value")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int stockId;
 
 	@NotBlank(message="Stock name cannot be blank")

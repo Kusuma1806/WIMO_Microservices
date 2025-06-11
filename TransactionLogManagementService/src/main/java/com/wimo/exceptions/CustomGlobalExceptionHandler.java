@@ -53,6 +53,18 @@ public class CustomGlobalExceptionHandler {
 		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
 
 	}
+	@ExceptionHandler(value = SpaceNotAvailable.class)
+	public ResponseEntity<ExceptionResponse> handleCustomException(SpaceNotAvailable exception,
+			WebRequest webRequest) {
+
+		ExceptionResponse exceptionResponse = new ExceptionResponse();
+		exceptionResponse.setStatus(404);
+		exceptionResponse.setTime(LocalDateTime.now());
+		exceptionResponse.setMessage(exception.getMessage());
+
+		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
+
+	}
 
 	@ExceptionHandler(value = Exception.class)
 	public ResponseEntity<ExceptionResponse> handleException(Exception exception, WebRequest webRequest) {

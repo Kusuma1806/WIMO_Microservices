@@ -36,7 +36,7 @@ class ZoneManagementServiceApplicationTests {
 
 	@Test
 	void saveZoneTest() {
-		Zone zone = new Zone(1, "soaps", 1,5, 3);
+		Zone zone = new Zone(1, "soaps", 5, 3);
 		Mockito.when(repository.save(zone)).thenReturn(zone);
 
 		String response = service.saveZone(zone);
@@ -45,7 +45,7 @@ class ZoneManagementServiceApplicationTests {
 
 	@Test
 	void updateZoneTest() {
-		Zone zone = new Zone(1, "soaps", 1,5, 3);
+		Zone zone = new Zone(1, "soaps", 5, 3);
 		zone.setZoneId(1);
 
 		Mockito.when(repository.save(zone)).thenReturn(zone);
@@ -56,7 +56,7 @@ class ZoneManagementServiceApplicationTests {
 
 	@Test
 	 void testRemoveZone_Success() {
-		Zone zone = new Zone(1, "soaps",1, 5, 3);
+		Zone zone = new Zone(1, "soaps", 5, 3);
 		Mockito.when(repository.existsById(zone.getZoneId())).thenReturn(true);
 		Mockito.when(stockClient.findByZoneIdIs(zone.getZoneId())).thenReturn(responseDTO);
 		for (StockItem stock : responseDTO.getStock()) {
@@ -69,7 +69,7 @@ class ZoneManagementServiceApplicationTests {
 
 	@Test
 	 void testRemoveZone_NotFound() {
-		Zone zone = new Zone(1, "soaps",1, 5, 3);
+		Zone zone = new Zone(1, "soaps", 5, 3);
 		Mockito.when(repository.existsById(zone.getZoneId())).thenReturn(false);
 		String result = service.removeZone(zone.getZoneId());
 		assertEquals("Zone Not Found", result);
@@ -78,7 +78,7 @@ class ZoneManagementServiceApplicationTests {
 	@Test
 	void getZoneTest() throws ZoneNotFound {
 		int zoneId = 1;
-		Zone zone = new Zone(1, "soaps",1, 5, 3);
+		Zone zone = new Zone(1, "soaps", 5, 3);
 		zone.setZoneId(zoneId);
 
 		Mockito.when(repository.findById(zoneId)).thenReturn(Optional.of(zone));
@@ -100,7 +100,7 @@ class ZoneManagementServiceApplicationTests {
 
 	@Test
 	void getAllZonesTest() {
-		List<Zone> zones = Arrays.asList(new Zone(1, "soaps",1, 5, 3), new Zone(1, "soaps",1, 5, 3));
+		List<Zone> zones = Arrays.asList(new Zone(1, "soaps", 5, 3), new Zone(1, "soaps", 5, 3));
 
 		Mockito.when(repository.findAll()).thenReturn(zones);
 

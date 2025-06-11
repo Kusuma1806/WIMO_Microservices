@@ -1,26 +1,26 @@
-2025-05-22T20:04:15.380+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : Starting ZoneManagementServiceApplication using Java 21.0.6 with PID 18472 (C:\Users\2400899\git\WIMO_Final\ZoneManagementService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\ZoneManagementService)
-2025-05-22T20:04:15.392+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T20:04:15.492+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2025-05-22T20:04:15.493+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ZoneManagementService, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
-2025-05-22T20:04:15.496+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-22T20:04:15.497+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-22T20:04:18.397+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T20:04:18.727+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 308 ms. Found 1 JPA repository interface.
-2025-05-22T20:04:19.367+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=031a92bc-e47d-3c0e-9e22-e8fba60ef6a3
-2025-05-22T20:04:21.078+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
-2025-05-22T20:04:21.109+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T20:04:21.110+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T20:04:21.259+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T20:04:21.262+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5764 ms
-2025-05-22T20:04:22.247+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T20:04:22.385+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T20:04:22.469+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T20:04:23.082+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T20:04:23.159+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T20:04:23.887+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a573330
-2025-05-22T20:04:23.891+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T20:04:24.011+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T20:04:24.057+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-11T08:08:59.550+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : Starting ZoneManagementServiceApplication using Java 21.0.6 with PID 16368 (C:\Users\2400899\git\WIMO_Final\ZoneManagementService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\ZoneManagementService)
+2025-06-11T08:08:59.562+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T08:08:59.655+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-11T08:08:59.656+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ZoneManagementService, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
+2025-06-11T08:08:59.660+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-11T08:08:59.660+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-11T08:09:01.882+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T08:09:02.212+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 294 ms. Found 1 JPA repository interface.
+2025-06-11T08:09:02.608+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=031a92bc-e47d-3c0e-9e22-e8fba60ef6a3
+2025-06-11T08:09:03.790+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
+2025-06-11T08:09:03.815+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T08:09:03.816+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T08:09:03.935+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T08:09:03.935+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4274 ms
+2025-06-11T08:09:04.633+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T08:09:04.714+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-11T08:09:04.789+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T08:09:05.223+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T08:09:05.281+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T08:09:05.786+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e9e9be9
+2025-06-11T08:09:05.789+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T08:09:05.868+05:30  WARN 16368 --- [ZoneManagementService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T08:09:05.897+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -28,231 +28,185 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T20:04:26.030+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T20:04:26.150+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T20:04:27.051+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T20:04:27.297+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2025-05-22T20:04:27.444+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'STOCKITEMMANAGEMENTSERVICE' URL not provided. Will try picking an instance via load-balancing.
-2025-05-22T20:04:29.839+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-05-22T20:04:29.940+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-22T20:04:30.002+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2025-05-22T20:04:30.260+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-22T20:04:30.323+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-22T20:04:30.330+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:04:30.352+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T20:04:30.353+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T20:04:30.353+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T20:04:30.353+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T20:04:30.353+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T20:04:30.354+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-05-22T20:04:30.354+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T20:04:30.980+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T20:04:30.983+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-05-22T20:04:30.990+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-22T20:04:30.995+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747924470994 with initial instances count: 0
-2025-05-22T20:04:31.016+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZONEMANAGEMENTSERVICE with eureka with status UP
-2025-05-22T20:04:31.019+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747924471019, current=UP, previous=STARTING]
-2025-05-22T20:04:31.024+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093: registering service...
-2025-05-22T20:04:31.094+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
-2025-05-22T20:04:31.096+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
-2025-05-22T20:04:31.145+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : Started ZoneManagementServiceApplication in 24.599 seconds (process running for 26.65)
-2025-05-22T20:04:31.154+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093 - registration status: 204
-2025-05-22T20:04:31.758+05:30  INFO 18472 --- [ZoneManagementService] [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T20:04:31.758+05:30  INFO 18472 --- [ZoneManagementService] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T20:04:31.762+05:30  INFO 18472 --- [ZoneManagementService] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-05-22T20:05:00.990+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T20:05:00.990+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T20:05:00.990+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T20:05:00.990+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T20:05:00.991+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T20:05:00.991+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2025-05-22T20:05:00.991+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T20:05:01.024+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T20:09:30.368+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:14:30.369+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:19:30.372+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:24:30.375+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:29:30.379+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:34:30.383+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:39:30.385+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:44:30.402+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:49:30.404+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:54:30.411+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T20:59:30.415+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:04:30.424+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:09:30.431+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:14:30.436+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:19:30.440+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:24:30.448+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:29:30.455+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:34:30.464+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:39:30.465+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:44:30.473+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:49:30.487+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:56:03.566+05:30  INFO 18472 --- [ZoneManagementService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-22T21:56:03.592+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ZONEMANAGEMENTSERVICE with eureka with status DOWN
-2025-05-22T21:56:03.593+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747931163593, current=DOWN, previous=UP]
-2025-05-22T21:56:03.635+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T21:56:03.659+05:30  INFO 18472 --- [ZoneManagementService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T21:56:03.710+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T21:56:03.754+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T21:56:03.785+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T21:56:03.789+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-05-22T21:56:03.790+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093: registering service...
-2025-05-22T21:56:03.829+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093 - registration status: 204
-2025-05-22T21:56:03.832+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2025-05-22T21:56:03.846+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093 - deregister  status: 200
-2025-05-22T21:56:03.847+05:30  INFO 18472 --- [ZoneManagementService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2025-05-22T21:56:06.111+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : Starting ZoneManagementServiceApplication using Java 21.0.6 with PID 18472 (C:\Users\2400899\git\WIMO_Final\ZoneManagementService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\ZoneManagementService)
-2025-05-22T21:56:06.112+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T21:56:06.121+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2025-05-22T21:56:06.122+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ZoneManagementService, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
-2025-05-22T21:56:06.799+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T21:56:06.822+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
-2025-05-22T21:56:07.033+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=031a92bc-e47d-3c0e-9e22-e8fba60ef6a3
-2025-05-22T21:56:07.263+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
-2025-05-22T21:56:07.266+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T21:56:07.267+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T21:56:07.320+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T21:56:07.321+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1198 ms
-2025-05-22T21:56:07.612+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T21:56:07.625+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T21:56:07.666+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T21:56:07.669+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-05-22T21:56:07.694+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59071a0f
-2025-05-22T21:56:07.694+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-05-22T21:56:07.697+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T21:56:07.698+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-22T21:56:07.815+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T21:56:07.985+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T21:56:08.196+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T21:56:08.273+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2025-05-22T21:56:08.325+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'STOCKITEMMANAGEMENTSERVICE' URL not provided. Will try picking an instance via load-balancing.
-2025-05-22T21:56:09.187+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-05-22T21:56:09.236+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-22T21:56:09.250+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2025-05-22T21:56:09.318+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-22T21:56:09.325+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-22T21:56:09.325+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:56:09.326+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T21:56:09.326+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T21:56:09.326+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T21:56:09.327+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T21:56:09.327+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T21:56:09.327+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-05-22T21:56:09.327+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T21:56:09.366+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T21:56:09.366+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-05-22T21:56:09.367+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-22T21:56:09.367+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747931169367 with initial instances count: 8
-2025-05-22T21:56:09.372+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZONEMANAGEMENTSERVICE with eureka with status UP
-2025-05-22T21:56:09.372+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747931169372, current=UP, previous=STARTING]
-2025-05-22T21:56:09.373+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093: registering service...
-2025-05-22T21:56:09.379+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
-2025-05-22T21:56:09.380+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
-2025-05-22T21:56:09.393+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093 - registration status: 204
-2025-05-22T21:56:09.401+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : Started ZoneManagementServiceApplication in 5.242 seconds (process running for 6724.905)
-2025-05-22T21:56:09.406+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-22T21:56:10.604+05:30  INFO 18472 --- [ZoneManagementService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
-2025-05-22T21:56:10.606+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ZONEMANAGEMENTSERVICE with eureka with status DOWN
-2025-05-22T21:56:10.606+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747931170606, current=DOWN, previous=UP]
-2025-05-22T21:56:10.607+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093: registering service...
-2025-05-22T21:56:10.608+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T21:56:10.611+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093 - registration status: 204
-2025-05-22T21:56:10.614+05:30  INFO 18472 --- [ZoneManagementService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T21:56:10.619+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T21:56:10.620+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2025-05-22T21:56:10.627+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2025-05-22T21:56:10.628+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-05-22T21:56:13.643+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2025-05-22T21:56:13.660+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093 - deregister  status: 200
-2025-05-22T21:56:13.660+05:30  INFO 18472 --- [ZoneManagementService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2025-05-22T21:56:14.689+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : Starting ZoneManagementServiceApplication using Java 21.0.6 with PID 18472 (C:\Users\2400899\git\WIMO_Final\ZoneManagementService\target\classes started by 2400899 in C:\Users\2400899\git\WIMO_Final\ZoneManagementService)
-2025-05-22T21:56:14.689+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T21:56:14.691+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
-2025-05-22T21:56:14.691+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ZoneManagementService, profiles=[default], label=null, version=bb3b0bb8d68fbd73beec1d704ca10e1b600e6453, state=
-2025-05-22T21:56:15.141+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T21:56:15.156+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
-2025-05-22T21:56:15.270+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=031a92bc-e47d-3c0e-9e22-e8fba60ef6a3
-2025-05-22T21:56:15.460+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9093 (http)
-2025-05-22T21:56:15.462+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T21:56:15.462+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T21:56:15.514+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T21:56:15.514+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 823 ms
-2025-05-22T21:56:15.715+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T21:56:15.719+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T21:56:15.737+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T21:56:15.739+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-05-22T21:56:15.755+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@587d0f71
-2025-05-22T21:56:15.755+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-05-22T21:56:15.757+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T21:56:15.757+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-22T21:56:15.813+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T21:56:15.825+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T21:56:15.957+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T21:56:16.021+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2025-05-22T21:56:16.064+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'STOCKITEMMANAGEMENTSERVICE' URL not provided. Will try picking an instance via load-balancing.
-2025-05-22T21:56:16.763+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-05-22T21:56:16.806+05:30  WARN 18472 --- [ZoneManagementService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-22T21:56:16.819+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2025-05-22T21:56:16.891+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-22T21:56:16.897+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-22T21:56:16.898+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T21:56:16.898+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-05-22T21:56:16.899+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-05-22T21:56:16.899+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-05-22T21:56:16.899+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-05-22T21:56:16.899+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-05-22T21:56:16.900+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-05-22T21:56:16.900+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-05-22T21:56:16.959+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-05-22T21:56:16.960+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-05-22T21:56:16.961+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-05-22T21:56:16.961+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747931176961 with initial instances count: 7
-2025-05-22T21:56:16.972+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZONEMANAGEMENTSERVICE with eureka with status UP
-2025-05-22T21:56:16.972+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747931176972, current=UP, previous=STARTING]
-2025-05-22T21:56:16.972+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093: registering service...
-2025-05-22T21:56:16.981+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
-2025-05-22T21:56:16.982+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
-2025-05-22T21:56:16.993+05:30  INFO 18472 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093 - registration status: 204
-2025-05-22T21:56:17.000+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : Started ZoneManagementServiceApplication in 3.222 seconds (process running for 6732.504)
-2025-05-22T21:56:17.004+05:30  INFO 18472 --- [ZoneManagementService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-22T22:01:16.912+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:06:16.915+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:11:16.926+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:16:16.933+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:17:17.073+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T22:17:17.074+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T22:17:17.075+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-22T22:17:17.126+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 1
-2025-05-22T22:17:17.261+05:30 ERROR 18472 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Zone not found with ID: 1
-2025-05-22T22:17:17.328+05:30  WARN 18472 --- [ZoneManagementService] [http-nio-9093-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.wimo.exceptions.ZoneNotFound: Zone is not Found........]
-2025-05-22T22:18:29.644+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 1
-2025-05-22T22:18:29.649+05:30 ERROR 18472 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Zone not found with ID: 1
-2025-05-22T22:18:29.652+05:30  WARN 18472 --- [ZoneManagementService] [http-nio-9093-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.wimo.exceptions.ZoneNotFound: Zone is not Found........]
-2025-05-22T22:18:49.652+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
-2025-05-22T22:19:04.244+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 2
-2025-05-22T22:21:16.943+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:26:16.955+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:28:53.402+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 1
-2025-05-22T22:28:53.408+05:30 ERROR 18472 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Zone not found with ID: 1
-2025-05-22T22:28:53.410+05:30  WARN 18472 --- [ZoneManagementService] [http-nio-9093-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.wimo.exceptions.ZoneNotFound: Zone is not Found........]
-2025-05-22T22:28:59.404+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 2
-2025-05-22T22:31:16.967+05:30  INFO 18472 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-05-22T22:31:29.707+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 2
-2025-05-22T22:31:31.901+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 2
-2025-05-22T22:31:33.229+05:30  INFO 18472 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 2
+2025-06-11T08:09:06.986+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T08:09:07.036+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:09:07.594+05:30  WARN 16368 --- [ZoneManagementService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T08:09:07.754+05:30  WARN 16368 --- [ZoneManagementService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-11T08:09:07.862+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'STOCKITEMMANAGEMENTSERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T08:09:09.954+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T08:09:10.036+05:30  WARN 16368 --- [ZoneManagementService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T08:09:10.073+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-11T08:09:10.256+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T08:09:10.289+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T08:09:10.298+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:09:10.314+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T08:09:10.314+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T08:09:10.315+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T08:09:10.315+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T08:09:10.315+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T08:09:10.315+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T08:09:10.315+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T08:09:10.697+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T08:09:10.702+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T08:09:10.705+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T08:09:10.707+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749609550707 with initial instances count: 5
+2025-06-11T08:09:10.715+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ZONEMANAGEMENTSERVICE with eureka with status UP
+2025-06-11T08:09:10.716+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749609550716, current=UP, previous=STARTING]
+2025-06-11T08:09:10.719+05:30  INFO 16368 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093: registering service...
+2025-06-11T08:09:10.742+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9093 (http) with context path '/'
+2025-06-11T08:09:10.744+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9093
+2025-06-11T08:09:10.764+05:30  INFO 16368 --- [ZoneManagementService] [restartedMain] c.wimo.ZoneManagementServiceApplication  : Started ZoneManagementServiceApplication in 13.644 seconds (process running for 15.34)
+2025-06-11T08:09:10.773+05:30  INFO 16368 --- [ZoneManagementService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ZONEMANAGEMENTSERVICE/LTIN620190.cts.com:ZoneManagementService:9093 - registration status: 204
+2025-06-11T08:09:11.350+05:30  INFO 16368 --- [ZoneManagementService] [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T08:09:11.351+05:30  INFO 16368 --- [ZoneManagementService] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T08:09:11.354+05:30  INFO 16368 --- [ZoneManagementService] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-11T08:14:10.322+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:14:11.768+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:14:48.891+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Saving zone
+2025-06-11T08:14:48.944+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Zone saved successfully
+2025-06-11T08:14:48.960+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:15:26.093+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T08:15:26.141+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:15:45.655+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Removing zone with ID
+2025-06-11T08:15:45.851+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 23
+2025-06-11T08:15:45.991+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Zone and all stocks in it removed successfully: 23
+2025-06-11T08:15:46.019+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:18:24.497+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:19:10.326+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:19:30.437+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 3
+2025-06-11T08:19:30.452+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T08:20:06.593+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 3
+2025-06-11T08:20:06.602+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T08:22:19.025+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 12
+2025-06-11T08:22:19.036+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T08:23:02.127+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:23:43.356+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:24:10.335+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:24:27.076+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 12
+2025-06-11T08:24:27.084+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T08:26:41.509+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:26:42.069+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:27:17.783+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:28:06.103+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 12
+2025-06-11T08:28:06.113+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T08:29:10.338+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:30:12.253+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:30:13.847+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:33:28.319+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:33:43.776+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:34:10.355+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:34:21.683+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T08:36:00.871+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:38:26.772+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:39:10.355+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:39:24.103+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:40:02.357+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T08:44:10.370+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:44:27.830+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:45:18.306+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T08:48:13.730+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:48:48.098+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T08:49:10.374+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:54:10.388+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:56:08.983+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T08:56:33.872+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T08:59:10.399+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:00:42.162+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:01:05.580+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T09:03:07.359+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:03:10.994+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:03:43.631+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T09:04:10.407+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:05:15.026+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:05:43.636+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T09:06:28.797+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T09:06:28.813+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:09:10.411+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:14:10.414+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:19:10.425+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:24:10.433+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:24:40.275+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:25:36.971+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:26:16.630+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:26:44.809+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:27:08.409+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T09:27:47.743+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:27:57.099+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:29:10.444+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:29:49.644+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:30:20.589+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T09:31:15.575+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T09:31:15.594+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:31:33.263+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:31:42.819+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:32:10.523+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 4
+2025-06-11T09:32:10.538+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:32:19.441+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:34:10.453+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:35:43.273+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:35:47.988+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:35:55.488+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:36:25.279+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 4
+2025-06-11T09:36:25.294+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:38:57.198+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 10
+2025-06-11T09:38:57.215+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:39:03.440+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:39:09.521+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:39:10.459+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:39:27.592+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 12
+2025-06-11T09:39:27.606+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:39:51.561+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 6
+2025-06-11T09:39:51.575+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:40:50.263+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 3
+2025-06-11T09:40:50.275+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:41:01.690+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:41:43.226+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 2
+2025-06-11T09:41:43.241+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:41:50.009+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:42:46.981+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 2
+2025-06-11T09:42:46.990+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:42:53.625+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:44:10.470+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:49:08.640+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:49:09.776+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:49:10.472+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:49:11.944+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:49:14.419+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-2] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:49:27.283+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:50:10.421+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 9
+2025-06-11T09:50:10.435+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:51:19.889+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-8] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:51:48.439+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 9
+2025-06-11T09:51:48.453+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:51:55.853+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:53:23.410+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:53:26.034+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:53:56.771+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-6] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:54:10.482+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:55:46.704+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-9] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 9
+2025-06-11T09:55:46.722+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-10] com.wimo.service.ZoneServiceImpl         : Updating zone
+2025-06-11T09:55:46.761+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-1] com.wimo.service.ZoneServiceImpl         : Retrieving zone with ID: 9
+2025-06-11T09:58:53.889+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-3] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T09:59:10.486+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:59:30.223+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-4] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T10:00:00.088+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-5] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T10:00:12.124+05:30  INFO 16368 --- [ZoneManagementService] [http-nio-9093-exec-7] com.wimo.service.ZoneServiceImpl         : Retrieving all zones
+2025-06-11T10:04:10.500+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:09:10.508+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:14:10.514+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:19:10.525+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:24:10.528+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:29:10.542+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:36:59.399+05:30  WARN 16368 --- [ZoneManagementService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m51s571ms72µs300ns).
+2025-06-11T10:39:32.120+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:44:32.123+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:49:32.132+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:54:32.135+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:59:32.136+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:08:13.393+05:30  WARN 16368 --- [ZoneManagementService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m13s572ms145µs800ns).
+2025-06-11T11:10:15.707+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:15:15.722+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:20:16.708+05:30  WARN 16368 --- [ZoneManagementService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s184ms808µs700ns).
+2025-06-11T11:21:48.914+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:26:48.917+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:31:48.919+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

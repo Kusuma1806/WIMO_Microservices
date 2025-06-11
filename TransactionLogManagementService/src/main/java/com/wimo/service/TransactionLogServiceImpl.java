@@ -9,10 +9,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.wimo.dto.StockItem;
+import com.wimo.dto.StockItem; // Assuming this StockItem DTO is what StockClient expects
+import com.wimo.dto.StockUpdateQuantityDto;
 import com.wimo.dto.TransactionStockResponseDTO;
 import com.wimo.dto.TransactionUserResponseDTO;
 import com.wimo.dto.UserInfo;
+import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.exceptions.TransactionLogNotFound;
 import com.wimo.feignclient.StockClient;
@@ -39,57 +41,40 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 	 *
 	 * @param transactionLog the transaction log to be recorded
 	 * @return a success message indicating the transaction was saved and stock
-	 *         updated
+	 * updated
 	 * @throws StockItemNotFound if the stock item is not found
+	 * @throws SpaceNotAvailable 
 	 */
 	@Override
-	public String recordTransactionLog(TransactionLog transactionLog) throws StockItemNotFound {
-		int stockId = transactionLog.getStockId();
-		StockItem stockItem;
+	public String recordTransactionLog(TransactionLog transactionLog) throws StockItemNotFound, SpaceNotAvailable {
 		try {
-			stockItem = stockClient.viewTransactionByStock(stockId);
-		}catch (RuntimeException e) {
-			logger.error("Exception caught: {}", e.getMessage());
-			throw new StockItemNotFound("StockItem Not Found");
-	      }
+		updateStockItemBasedOnTransaction(transactionLog);
+		}catch(RuntimeException e) {
+			throw new SpaceNotAvailable("Insufficient Space to store!!");
+		}
 		logger.info("Recording transaction log: {}", transactionLog);
 		repository.save(transactionLog);
 		logger.info("Transaction log saved successfully: {}", transactionLog);
-		updateStockItemBasedOnTransaction(transactionLog);
 		return "Transaction Saved and Stock Updated!!!";
 	}
 
-
-
-	/**
-	 * Updates the stock item based on the transaction details.
-	 *
-	 * @param transactionLog the transaction log containing the details for updating
-	 *                       the stock item
-	 * @throws StockItemNotFound if the stock item is not found
-	 */
 	private void updateStockItemBasedOnTransaction(TransactionLog transactionLog) throws StockItemNotFound {
 		logger.info("Updating stock item based on transaction: {}", transactionLog);
 		int stockId = transactionLog.getStockId();
-		StockItem stockItem = stockClient.viewTransactionByStock(stockId);
 
-		if (stockItem == null) {
-			logger.error("Stock item not found with ID: {}", stockId);
-			throw new StockItemNotFound("StockItem Not Found");
-		}
+		// *** CRITICAL CHANGE: Create an instance of the NEW StockUpdateQuantityDto ***
+		StockUpdateQuantityDto stockUpdatePayload = new StockUpdateQuantityDto();
+		stockUpdatePayload.setStockId(stockId);
+		stockUpdatePayload.setStockQuantity(transactionLog.getQuantity()); // This is the delta quantity
 
 		if (transactionLog.getType().equalsIgnoreCase("inbound")) {
-			logger.info("Processing inbound transaction for stock item: {}", stockItem);
-			stockClient.updateStockItemForInbound(stockItem);
-			stockItem.setStockQuantity(stockItem.getStockQuantity() + transactionLog.getQuantity());
-			stockClient.saveStockItem(stockItem);
-			logger.info("Stock item updated successfully for inbound transaction: {}", stockItem);
+			logger.info("Processing inbound transaction for stock item (sending StockUpdateQuantityDto): {}", stockUpdatePayload);
+			stockClient.updateStockItemForInbound(stockUpdatePayload);
+			logger.info("Stock item updated successfully for inbound transaction.");
 		} else if (transactionLog.getType().equalsIgnoreCase("outbound")) {
-			logger.info("Processing outbound transaction for stock item: {}", stockItem);
-			stockClient.updateStockItemForOutbound(stockItem);
-			stockItem.setStockQuantity(stockItem.getStockQuantity() - transactionLog.getQuantity());
-			stockClient.saveStockItem(stockItem);
-			logger.info("Stock item updated successfully for outbound transaction: {}", stockItem);
+			logger.info("Processing outbound transaction for stock item (sending StockUpdateQuantityDto): {}", stockUpdatePayload);
+			stockClient.updateStockItemForOutbound(stockUpdatePayload);
+			logger.info("Stock item updated successfully for outbound transaction.");
 		} else {
 			logger.error("Invalid transaction type: {}", transactionLog.getType());
 			throw new IllegalArgumentException("Invalid transaction type");

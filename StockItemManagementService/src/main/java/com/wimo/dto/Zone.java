@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 public class Zone {
 	private int zoneId;
 	private String zoneName;
-	private int userId;
 	private int totalCapacity;
 	private int storedCapacity;
 

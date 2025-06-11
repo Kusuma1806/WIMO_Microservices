@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.wimo.dto.TransactionStockResponseDTO;
 import com.wimo.dto.TransactionUserResponseDTO;
+import com.wimo.exceptions.SpaceNotAvailable;
 import com.wimo.exceptions.StockItemNotFound;
 import com.wimo.exceptions.TransactionLogNotFound;
 import com.wimo.model.TransactionLog;
@@ -31,7 +32,7 @@ public class TransactionLogController {
 	TransactionLogService service;
 
 	@PostMapping("/save")
-	public String recordTransactionLog(@RequestBody TransactionLog transactionLog) throws StockItemNotFound {
+	public String recordTransactionLog(@RequestBody TransactionLog transactionLog) throws StockItemNotFound, SpaceNotAvailable {
 		return service.recordTransactionLog(transactionLog);
 	}
 
