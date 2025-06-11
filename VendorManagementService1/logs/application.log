@@ -136,3 +136,4 @@
 2025-06-11T11:21:44.637+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-06-11T11:26:44.643+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-06-11T11:31:44.654+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:36:44.664+05:30  INFO 23268 --- [VendorManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

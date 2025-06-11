@@ -210,3 +210,4 @@
 2025-06-11T11:21:48.914+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-06-11T11:26:48.917+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-06-11T11:31:48.919+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:36:48.926+05:30  INFO 16368 --- [ZoneManagementService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
